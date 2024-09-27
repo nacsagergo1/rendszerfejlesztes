@@ -1,30 +1,16 @@
-# `Szallítmányozás` Projektterv `2021`
+# `Étel` Projektterv `2024`
 
 ## 1. Összefoglaló 
 
-`A hatékony szállítmányozás lényege, hogy a küldemény a lehető legkisebb költséggel, legbiztonságosabban, és legoptimálisabb időben jusson el a rendeltetési helyére. Ez tipikusan megkövetel egy online is elérhető nyilvántartást, ahol rugalmasan és egyszerűen lehet kezelni a kapcsolódó feladatokat. Éppen ezért ennek a projektnek a célja, hogy a szállítmányozással foglalkozó cégek számára egy webalkalmazást fejlesszünk, amely képes leváltani a hagyományos, papír alapú nyilvántartásokat. Legyen szó árukészletről, sofőrökről vagy útvonalakról, a cél, hogy a kapcsolódó funkciókat egy letisztult felületen keresztül tudja elérni a szállítmányozással foglalkozó cég adminisztrátorai.`
 
-```
-Ide írj egy tömör és általános leírást (4-6 mondatban), hogy miről szól a projekt és miért van a weboldalra szükség. 
-Itt konkrét funkciót még nem kell megemlíteni.
+Az étteremben töltött ídő minőségét, a vacsoránk élményét nagyban befolyásolja az étterem dolgozóinak vendégszeretete, az étel ízélménye, továbbá a környezet hangulata. Mindez azonban csak a fantáziánkban élhet tovább, ha nincs jól leszervezve a délutáni programunk.
+Weboldalunkon lehetővé tesszük, hogy az étel és italkínálatunk megtekintése mellett a megfelelő asztalt lefoglalhassa, a foglalásait kezelhesse, valamint az élményeit, tapasztalatait megossza velünk, hogy a jövőben tovább fejlődhessünk.
 
-A dokumentumban a szürke háttérrel rendelkező szövegnek illetve a blokkokkal (keretben) kiemelt szövegeknek két jelentése van: 
-(a) minta/sablon szöveg, amit le kell cserélni (pl. gyakorlatvezető neve).
-(b) segítő/magyarázó szöveg. 
-
-Az átadott (beadott) dokumentumban már nem szerepelhetnek se szürke hátterű, se blokkban szereplő részek!
-Azaz a dokumentum kitöltése közben ezeket formázás nélküli szövegre kell cserélni.
-Az eredetileg is feketével írt részek törlése tilos, azok közösek.
-```
 
 ## 2. A projekt bemutatása
 
-`Ez a projektterv a Szallítmányozás projektet mutatja be, amely 2021-09-20-től 2021-11-27-ig tart, azaz összesen 68 napon keresztül fog futni. A projekten három fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni a megrendelőnek, annak érdekében, hogy biztosítsuk a projekt folyamatos előrehaladását.`
+Ez a projektterv az Étel projektet mutatja be, amely 2024-09-16-tól 2024-12-04-ig tart, azaz összesen 79 napon keresztül fog futni. A projekten öt fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni a megrendelőnek, annak érdekében, hogy biztosítsuk a projekt folyamatos előrehaladását.
 
-```
-A megvalósítás további általános leírása, pl. mennyi ideig tart a projekt, mennyi főből áll a csapat, 
-mennyi átadandó lesz a megrendelőnek átadva a félév során (szintén 2-3 mondattal leírva).
-```
 
 ### 2.1. Rendszerspecifikáció
 
