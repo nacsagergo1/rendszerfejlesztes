@@ -1,4 +1,4 @@
-# `Étel` Projektterv `2024`
+# Étel Projektterv 2024
 
 ## 1. Összefoglaló 
 
@@ -14,32 +14,17 @@ Ez a projektterv az Étel projektet mutatja be, amely 2024-09-16-tól 2024-12-04
 
 ### 2.1. Rendszerspecifikáció
 
-`A rendszernek képesnek kell lennie arra, hogy egy adott szállítmányozó cég raktárait illetve a raktárak állapotát (telítettség, fizikai pozíció, speciális tulajdonság pl. veszélyes anyag tárolás) nyilvántartsa annak érdekében, hogy az adminisztrátorok képesek legyenek egy-egy bejövő szállítmányozási kérést kiszolgálni a raktárak vagy külső helyszín között. Ezenkívül a szállítmányozó cég alkalmazásában álló sofőröket, illetve a cég kamionjait is kezelnie kell (pl. van-e képzettsége veszélyes anyag szállítására, elérhető-e éppen a megfelelő pótkocsi a szállításhoz). A bejövő szállítmányozási kérés alapján az alkalmazás számolja ki leghamarabb mikor teljesíthető a kérés, majd jelenítsük meg grafikusan egy útvonalat, amely alapján - akár több raktár érintésével - a külső helyszínre szállítja az anyagot. Minden funkció a megfelelő felhasználói jogosultság mellett használható, annak függvényében írható, olvasható vagy nem megtekinthető az adat.`
+A rendszernek képesnek kell lennie az étterem asztalai foglaltsági állapotának ellenőrzésére, valamint azok lefoglalására a felhasználók által. A regisztrált és bejelentkezett felhasználók képesek a meglévő foglalásaik kezelésére, módosítására, valamint a foglalás időtartama után visszajelzés írására, amit az új vendégek a főoldalon meg tudnak tekinteni. Ezen felül meg tudják tekinteni az étel és italkínálatot, valamint az aktuális heti menüt.
 
-```
-Itt már specifikusabban, részletesebben írd le, hogy mik a fő célok, mit fog tudni a rendszer (4-6 mondatban), 
-ami a projekt keretében kerül megvalósításra. Mik a megrendelő és a felhasználók igényei?
-```
 
 ### 2.2. Funkcionális követelmények
 
- - `Felhasználók kezelése (admin, raktáros, sofőr) (CRUD)`
- - `Felhasználói munkamenet megvalósítása több jogosultsági szinttel `
- - `Raktárak kezelése (CRUD)`
- - `Árukészletek kezelése (CRUD)`
- - `Járművek kezelése (CRUD)`
- - `Fuvarok/szállítmányok kezelése (CRUD)`
- - `Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
- - `Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
- - `Biztonsági mentés automatikus létrehozása`
-
-```
-Itt lehet pontosan felsorolni a rendszerrel szemben támasztott funkcionális igényeket, azaz amit a rendszernek tudnia kell. 
-Ezeket a feladatokat kell majd a csapattagok között szétosztani a 8-as fejezetben.
-
-A CRUD rövidítés a következőt jelenti: Create, Read, Update, Delete.
-Azaz a funkcióhoz tartozó adat létrehozása, olvasása, frissítése, törlése.
-```
+ - Felhasználók kezelése
+ - Felhasználói munkamenet megvalósítása
+ - Asztalfoglalások kezelése
+ - Vélemények kezelése és dinamikus megjelenítése
+ - Elfelejtett jeszó visszaállítása
+ - Felhasználói profil aktiválása email-en keresztül
 
 ### 2.3. Nem funkcionális követelmények
 
