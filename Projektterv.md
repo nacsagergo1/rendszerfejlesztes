@@ -28,51 +28,41 @@ A rendszernek képesnek kell lennie az étterem asztalai foglaltsági állapotá
 
 ### 2.3. Nem funkcionális követelmények
 
- - `A kliens oldal böngészőfüggetlen legyen`
- - `Reszponzív megjelenés`
- - `Az érzékeny adatokat biztonságosan tároljuk`
- - `A legfrissebb technológiákat használja a rendszer`
+ - A kliens oldal böngészőfüggetlen legyen
+ - Reszponzív megjelenés
+ - Az érzékeny adatokat biztonságosan tároljuk
+ - Mobilon is megjeleníthető legyen
 
-```
-A rendszer nem funkcionális követelményei, pl.: milyen környezetben fusson, milyen teljesítményt kell produkálnia, 
-milyen megjelenéssel kell rendelkeznie. Ha lehetséges, akkor ezeket a feladatokat is ki kell osztani a csapattagok között.
-```
 
 ## 3. Költség- és erőforrás-szükségletek
 
 Az erőforrásigényünk összesen `57` személynap, átlagosan `19` személynap/fő.
 
-A rendelkezésünkre áll összesen `3 * 70 = 210` pont.
+A rendelkezésünkre áll összesen 5 * 70 = 350 pont.
 
-```
-Becsült sarokszámok, a rendelkezésre álló erőforrás fejenként általában 17-21 személynap, 
-a pontok száma = fejenként a projektre kapható maxpont * tagok száma.
-```
 
 ## 4. Szervezeti felépítés és felelősségmegosztás
 
-A projekt megrendelője `Dr. Márkus András`. A `Szállítmányozás` projektet a projektcsapat fogja végrehajtani, amely `jelenleg három fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is, A tapasztalt projekttagok több éve dolgoznak az iparban, számos sikeres projektten vannak túl.`
- - `Teszt Elek (3 év ipari tapasztalat a Számító Gép Kft.-nél)`
- - `Remek Elek (3 év egyetemi tapasztalat)`
- - `Lev Elek (<1 év tapasztalatő)`
+A projekt megrendelője Mihály Pál. Az Étel projektet a projektcsapat fogja végrehajtani, amely jelenleg öt fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is. A tapasztalt projekttagok több éve dolgoznak az iparban, számos sikeres projektten vannak túl.
+ - `Mangó Ferenc Ákos (írd ide a tapasztalatodat)`
+ - `Nacsa Gergő (írd ide a tapasztalatodat)`
+ - `Rózsás Péter (írd ide a tapasztalatodat)`
+ - Sánta Krisztina Csilla (3 év egyetemi és magánprojekt tapasztalat)
+ - `Varga Csanád Sándor (írd ide a tapasztalatodat)`
 
-```
-Itt lehet részletezni pl. a tagok szakmai tapasztalatait, vagy akár a releváns gyakorlati helyeket, munkahelyeket megemlíteni.
-```
 
 ### 4.1 Projektcsapat
 
 A projekt a következő emberekből áll:
 
-| Név          | Pozíció          |   E-mail cím (stud-os)        |
-|--------------|------------------|-------------------------------|
-| `Teszt Elek` | Projektmenedzser | `h123456@stud.u-szeged.hu`    |
-| `Remek Elek` | Projekt tag      | `h654321@stud.u-szeged.hu`    |
-| `Lev Elek`   | Projekt tag      | `h000000@stud.u-szeged.hu`    |
+| Név            | Pozíció          |   E-mail cím (stud-os)        |
+|----------------|------------------|-------------------------------|
+|Sánta Krisztina | Projektmenedzser | h269825@stud.u-szeged.hu      |
+| Mangó Ákos     | Projekt tag      | `h000000@stud.u-szeged.hu`    |
+| Nacsa Gergő    | Projekt tag      | `h000000@stud.u-szeged.hu`    |
+| Rózsás Péter   | Projekt tag      | `h000000@stud.u-szeged.hu`    |
+| Varga Csanád   | Projekt tag      | `h000000@stud.u-szeged.hu`    | 
 
-```
-Betölthető pozíciók: projektmenedzser, projekt tag.
-```
 
 ## 5. A munka feltételei
 
@@ -80,8 +70,10 @@ Betölthető pozíciók: projektmenedzser, projekt tag.
 
 A projekt a következő munkaállomásokat fogja használni a munka során:
 
--Asus Zenbook UX534 I7 8565U, GTX 1650 Mobile Max Design
--
+`Minenki írja ide pls`
+
+- Asus Zenbook UX534 I7 8565U, GTX 1650 Mobile Max Design
+- Acer Swift 3 SF314-43 laptop (CPU: AMD Ryzen 5 5500U, RAM: 16 GB, GPU: AMD Radeon, OS: Windows 11)
 
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
 
@@ -91,7 +83,7 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
  - `Thymeleaf dinamikus tartalom megjelenítés a felhasználói felületen`
  - `Maven szoftverprojekt menedzselő szoftver`
  - `Eclipse IDE fejlesztőkörnyezet`
- - `Git verziókövető (GitLab)`
+ - Git verziókövető (GitLab)
  
 ```
 Milyen gépet használnak a projekttagok, milyen operációs rendszeren fejlesztenek, milyen szoftverkörnyezetben, stb.
@@ -101,54 +93,33 @@ Milyen gépet használnak a projekttagok, milyen operációs rendszeren fejleszt
 
 | Kockázat                                    | Leírás                                                                                                                                                                                     | Valószínűség | Hatás  |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|
-| `Betegség`                                  | `Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása`        | `nagy`       | `erős` |
-| `Kommunikációs fennakadás a csapattagokkal` | `A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések` | `kis`        | `erős` |
-
-```
-A rizikótényezők bemutatása, amely hátráltathatja a projekt befejezését. 
-Minden rizikót érdemes megemlíteni, részletezve, hogy mit jelent, 
-milyen valószínűséggel következhet be (kis, közepes és nagy), 
-mekkora a várható hatása (gyenge, közepes és erős) 
-és hogy milyen tervvel készültök, amennyiben egy ilyen esemény bekövetkezik. 
-Pl.: betegség, szoftver-hardver probléma, tag kiesése, extrém ZH időszak, pandémia, stb. 
-```
+| Betegség                                  | Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása        | közepes       | erős |
+| Kommunikációs fennakadás a csapattagokkal | A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések | kis        | erős |
+| Hirtelen sok zh | A mennyiségtől és a tantárgyak nehézségétől függően több/kevesebb időre hátráltatja a munkavégzőt. Megoldás: feladatok átcsoportosítása | közepes | erős |
+| Szoftver-hardver problémák | Ez a probléma, mivel kifejezetten a munkaeszközön jelentkezik, teljesen megakaszthatja a munkavégzőt. Megoldás: segítség a csapattagnak, feladatok átszervezése. | kis | erős |
+ 
 
 ## 6. Jelentések
 
 ### 6.1. Munka menedzsment
-A munkát `Teszt Elek` koordinálja. `Fő feladata, hogy folyamatosan egyeztessen a csapattagokkal az előrehaladásról és a fellépő problémákról, esetlegesen a megoldásban is segítséget nyújhat a projekt csúszásának elkerülése végett. További feladata a heti szinten tartandó csoportgyűlések időpontjának és helyszínének leszervezése, erről email-ben tájékoztatja a projektcsapatot.`
+A munkát Sánta Krisztina koordinálja. Fő feladata, hogy folyamatosan egyeztessen a csapattagokkal az előrehaladásról és a fellépő problémákról, esetlegesen a megoldásban is segítséget nyújhat a projekt csúszásának elkerülése végett. További feladata a heti szinten tartandó csoportgyűlések időpontjának és helyszínének leszervezése, erről Discordon tájékoztatja a projektcsapatot.
 
-```
-Írd le, hogy ki menedzseli a munkát (tipikusan a projekt menedzser), mik a feladatai, és azokat hogyan hajtja végre.
-```
 
 ### 6.2. Csoportgyűlések
 
-`A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problémáit, illetve hogy megbeszéljék a következő hét feladatait. A megbeszélésről minden esetben memó készül.`
+A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problémáit, illetve hogy megbeszéljék a következő hét feladatait. A megbeszélésről minden esetben memó készül.
 
-`1. megbeszélés:`
- - `Időpont: 2021.09.15.`
- - `Hely: SZTE Irinyi épület - Szeged, Tisza Lajos krt. 103`
- - `Résztvevők: Teszt Elek, Remek Elek, Lev Elek`
- - `Érintett témák: Ismerkedés, projekttéma kiválasztása`
+1. megbeszélés:
+ - Időpont: 2024.09.22.
+ - Hely: online
+ - Résztvevők: Nacsa Gergő, Sánta Krisztina, Rózsás Péter, Varga Csanád
+ - Érintett témák: Ismerkedés, projekttéma kiválasztása, projektvezető megválasztása, ötletek felvázolása
 
-`2. megbeszélés:`
- - `Időpont: 2021.09.22.`
- - `Hely: Pivovár - Szeged, Vitéz utca 26.`
- - `Résztvevők: Teszt Elek, Remek Elek, Lev Elek`
- - `Érintett témák: A projektben használt technológiák rögzítése, a projektterv áttekintése, szerepkörök és vállalások kiosztása`
-
-`3. Megbeszélés:`
- - `Időpont: 2021.09.29.`
- - `Hely: TIK – Szeged, Ady tér 10.`
- - `Résztvevők: Teszt Elek, Remek Elek`
- - `Érintett témák: Egyeztetés az UML diagramokról, illetve az adatbázis táblák és kapcsolatok meghatározása`
-
-```
-A memókat a teljes projekt során vezetni kell, amely tartalmazza a következőket: 
-jelenlévők listája, megbeszélés helye és ideje, megbeszélt tevékenységek, felmerült kérdések és igények. 
-Lényege, hogy betekintést kapjunk hogyan szerveződnek, zajlanak a csoportgyűlések, milyen problémák, kérdések merültek fel.
-```
+2. megbeszélés:
+ - Időpont: 2021.09.27.
+ - Hely: online
+ - Résztvevők: Mangó Ferenc, Nacsa Gergő, Sánta Krisztina, Varga Csanád
+ - Érintett témák: A projektben használt technológiák rögzítése, a projektterv áttekintése, szerepkörök és vállalások kiosztása
 
 ### 6.3. Minőségbiztosítás
 
@@ -161,7 +132,7 @@ Az alábbi lehetőségek vannak a szoftver megfelelő minőségének biztosítá
 
 ### 6.4. Átadás, eredmények elfogadása
 
-A projekt eredményeit a megrendelő, `Dr. Márkus András` fogja elfogadni. A projektterven változásokat csak a megrendelő írásos engedélyével lehet tenni. A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el. Az esetleges késések pontlevonást eredményeznek. 
+A projekt eredményeit a megrendelő, Mihály Pál fogja elfogadni. A projektterven változásokat csak a megrendelő írásos engedélyével lehet tenni. A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el. Az esetleges késések pontlevonást eredményeznek. 
 Az elfogadás feltételeire és beadás formájára vonatkozó részletes leírás a következő honlapon olvasható: https://okt.inf.szte.hu/rf1/
 
 ### 6.5. Státuszjelentés
@@ -172,14 +143,9 @@ Minden mérföldkő leadásnál a projekten dolgozók jelentést tesznek a mérf
 
 ### 7.1. Tervezett szoftverfolyamat modell és architektúra
 
-`A szoftver fejlesztése során az agilis fejlesztési modellt alkalmazzuk, mivel a fejlesztés során nagy hangsúlyt fektetünk a folyamatos kommunikcióra. A fejlesztés során a szoftver specifikációi rugalmasan vátozhatnak, és ezzel a módszertannal tudunk a leggyorsabban alkalmazkodni az új elvárásokhoz.`
+A szoftver fejlesztése során az agilis fejlesztési modellt alkalmazzuk, mivel a fejlesztés során nagy hangsúlyt fektetünk a folyamatos kommunikcióra. A fejlesztés során a szoftver specifikációi rugalmasan vátozhatnak, és ezzel a módszertannal tudunk a leggyorsabban alkalmazkodni az új elvárásokhoz.
 
-`A webalkalmazás az MVC (modell-view-controller) felépítést követi, a szerver és a kliens függetlenek, csupán API végpontok segítségével kommunikálnak.`
-
-```
-Milyen szoftverfolyamat modellt követve állítja elő a csapat a specifikációnak megfelelő prototípusokat? Miért ezt választja? 
-A csapat milyen architektúrát választ a projekt megvalósításához? Milyen rétegek (logikai, adat, GUI) lesznek?`
-```
+A webalkalmazás az MVC (modell-view-controller) felépítést követi, a szerver és a kliens függetlenek, csupán API végpontok segítségével kommunikálnak.
 
 ### 7.2. Átadandók és határidők
 
@@ -188,54 +154,43 @@ A főbb átadandók és határidők a projekt időtartama alatt a következők:
 
 | Szállítandó |                 Neve                                                        |   Határideje  |
 |:-----------:|:---------------------------------------------------------------------------:|:-------------:|
-|      D1     |      Projektterv és Gantt chart, prezentáció, egyéni jelentés               | `2021-10-04`  |
-|    P1+D2    |      UML, adatbázis- és képernyőtervek, prezentáció, egyéni jelentés        | `2021-10-18`  |
-|    P1+D3    |      Prototípus I. és tesztelési dokumentáció, egyéni jelentés              | `2021-11-08`  |
-|    P2+D4    |      Prototípus II. és frissített tesztelési dokumentáció, egyéni jelentés  | `2021-11-27`  |
+|      D1     |      Projektterv és Gantt chart, prezentáció, egyéni jelentés               | `2024-10-09`  |
+|    P1+D2    |      UML, adatbázis- és képernyőtervek, prezentáció, egyéni jelentés        | `2024-10-23`  |
+|    P1+D3    |      Prototípus I. és tesztelési dokumentáció, egyéni jelentés              | `2024-11-13`  |
+|    P2+D4    |      Prototípus II. és frissített tesztelési dokumentáció, egyéni jelentés  | `2024-12-04`  |
 
-```
-D - dokumentáció, P - prototípus
-```
 
 ## 8. Feladatlista
 
 A következőkben a tervezett feladatok részletes összefoglalása található.
 
-```
-Alapvetően egy feladatnak 1 felelőse lehet, de kivételt képez pl. a 9.1.1. részfeladat, mivel az első mérföldkőben
-2 kötelező feladat van, ezt nem bontjuk részfeladatokra.
-```
-
 ### 8.1. Projektterv (1. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `megvalósításhoz szükséges lépéseket, az erőforrásigényeket, az ütemezést, a felelősöket és a feladatok sorrendjét meghatározzuk, majd vizualizáljuk Gantt diagram segítségével.`
+Ennek a feladatnak az a célja, hogy megvalósításhoz szükséges lépéseket, az erőforrásigényeket, az ütemezést, a felelősöket és a feladatok sorrendjét meghatározzuk, majd vizualizáljuk Gantt diagram segítségével.
 
 Részfeladatai a következők:
 
 #### 8.1.1. Projektterv kitöltése
 
-Felelős: `Mindenki`
+Felelős: Mindenki
 
-Tartam:  `4 nap`
+Tartam:  5 nap
 
-Erőforrásigény:  `1 személynap/fő`
+Erőforrásigény:  1 személynap/fő
 
 
 #### 8.1.2. Bemutató elkészítése
 
-Felelős: `Teszt Elek`
+Felelős: Sánta Krisztina
 
-Tartam:  `2 nap`
+Tartam:  2 nap
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  0.5 személynap
 
-```
-A mérföldkőhöz tartozó feladatok bemutatása PPT keretében, pl. téma, tervezett funkciók, tagok, Gantt diagram.`
-```
 
 ### 8.2. UML és adatbázis- és képernyőtervek (2. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `a rendszerarchitektúrát, az adatbázist és webalkalmazás kinézetét megtervezzük.`
+Ennek a feladatnak az a célja, hogy a rendszerarchitektúrát, az adatbázist és webalkalmazás kinézetét megtervezzük.
 
 Részfeladatai a következők:
 
@@ -295,13 +250,10 @@ Tartam:  `1 nap`
 
 Erőforrásigény:  `0.5 személynap`
 
-```
-A mérföldkőhöz tartozó feladatok bemutatása PPT keretében (elkészült diagramok és képernyőtervek)`
-```
 
 ### 8.3. Prototípus I. (3. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `egy működő prototípust hozzunk létre, ahol a vállalt funkcionális követelmények nagy része már prezentálható állapotban van.` 
+Ennek a feladatnak az a célja, hogy egy működő prototípust hozzunk létre, ahol a vállalt funkcionális követelmények nagy része már prezentálható állapotban van. 
 
 Részfeladatai a következők:
 
@@ -449,9 +401,6 @@ Tartam:  `7 nap`
 
 Erőforrásigény:  `1 személynap/fő`
 
-```
-Itt csak a könnyebb áttekinthetőség végett szerepel mindenki felelősként, azonban ezt a feladatot is részfeladatokra kell bontani.
-```
 
 #### `8.3.19. A prototípus kitelepítése éles környezetbe` 
 
@@ -461,15 +410,10 @@ Tartam:  `1 nap`
 
 Erőforrásigény:  `1 személynap`
 
-```
-A feladatokat a 2.2-es és a 2.3-as pont alapján kell meghatározni és lehető legrészletesebben definiálni.
-Lehetőség szerint az összetett feladatokat bontsuk fel részfeladatokra. 
-A bemutató során a prototípus aktuális állását kell prezentálni.
-```
 
 ### 8.4. Prototípus II. (4. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `az előző mérföldkő hiányzó funkcióit pótoljuk, illetve a hibásan működő funkciókat és az esetlegesen felmerülő új funkciókat megvalósítsuk. Továbbá az alkalmazás alapos tesztelése is a mérföldkőben történik az előző mérföldkőben összeállított tesztesetek alapján.`
+Ennek a feladatnak az a célja, hogy az előző mérföldkő hiányzó funkcióit pótoljuk, illetve a hibásan működő funkciókat és az esetlegesen felmerülő új funkciókat megvalósítsuk. Továbbá az alkalmazás alapos tesztelése is a mérföldkőben történik az előző mérföldkőben összeállított tesztesetek alapján.
 
 Részfeladatai a következők:
 
@@ -569,10 +513,6 @@ Tartam:  `1 nap`
 
 Erőforrásigény:  `0.5 személynap`
 
-```
-Működő végleges program, a frissített tesztelési dokumentációval. A 3. mérföldkőhöz képest funkiconálisan többet kell tudnia az oldalnak.
-
-```
 ## 9. Részletes időbeosztás
 
 ![image](./MINTA-gantt-diagram.png)
