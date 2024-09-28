@@ -59,7 +59,7 @@ A projekt a következő emberekből áll:
 |----------------|------------------|-------------------------------|
 |Sánta Krisztina | Projektmenedzser | h269825@stud.u-szeged.hu      |
 | Mangó Ákos     | Projekt tag      | `h000000@stud.u-szeged.hu`    |
-| Nacsa Gergő    | Projekt tag      | `h000000@stud.u-szeged.hu`    |
+| Nacsa Gergő    | Projekt tag      | h161989@stud.u-szeged.hu      |
 | Rózsás Péter   | Projekt tag      | `h000000@stud.u-szeged.hu`    |
 | Varga Csanád   | Projekt tag      | `h000000@stud.u-szeged.hu`    | 
 
@@ -74,6 +74,7 @@ A projekt a következő munkaállomásokat fogja használni a munka során:
 
 - Asus Zenbook UX534 I7 8565U, GTX 1650 Mobile Max Design
 - Acer Swift 3 SF314-43 laptop (CPU: AMD Ryzen 5 5500U, RAM: 16 GB, GPU: AMD Radeon, OS: Windows 11)
+- Lenovo IdeaPad 3 15ALC6 (CPU: AMD Ryzen 5 5500U with Radeon Graphics, RAM: 8 GB DDR4, OS: Windows 11)
 
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
 
