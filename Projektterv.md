@@ -85,7 +85,7 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
  - `Maven szoftverprojekt menedzselő szoftver`
  - `Eclipse IDE fejlesztőkörnyezet`
  - Git verziókövető (GitLab)
- 
+ - cPanel (Cweb.hu)
 ```
 Milyen gépet használnak a projekttagok, milyen operációs rendszeren fejlesztenek, milyen szoftverkörnyezetben, stb.
 ```
