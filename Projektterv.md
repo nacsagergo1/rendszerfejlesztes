@@ -155,10 +155,10 @@ A főbb átadandók és határidők a projekt időtartama alatt a következők:
 
 | Szállítandó |                 Neve                                                        |   Határideje  |
 |:-----------:|:---------------------------------------------------------------------------:|:-------------:|
-|      D1     |      Projektterv és Gantt chart, prezentáció, egyéni jelentés               | `2024-10-09`  |
-|    P1+D2    |      UML, adatbázis- és képernyőtervek, prezentáció, egyéni jelentés        | `2024-10-23`  |
-|    P1+D3    |      Prototípus I. és tesztelési dokumentáció, egyéni jelentés              | `2024-11-13`  |
-|    P2+D4    |      Prototípus II. és frissített tesztelési dokumentáció, egyéni jelentés  | `2024-12-04`  |
+|      D1     |      Projektterv és Gantt chart, prezentáció, egyéni jelentés               | 2024-10-09  |
+|    P1+D2    |      UML, adatbázis- és képernyőtervek, prezentáció, egyéni jelentés        | 2024-10-23  |
+|    P1+D3    |      Prototípus I. és tesztelési dokumentáció, egyéni jelentés              | 2024-11-13  |
+|    P2+D4    |      Prototípus II. és frissített tesztelési dokumentáció, egyéni jelentés  | 2024-12-04  |
 
 
 ## 8. Feladatlista
@@ -182,7 +182,7 @@ Erőforrásigény:  1 személynap/fő
 
 #### 8.1.2. Bemutató elkészítése
 
-Felelős: Sánta Krisztina
+Felelős: Sánta Krisztina Csilla
 
 Tartam:  2 nap
 
@@ -197,23 +197,23 @@ Részfeladatai a következők:
 
 #### 8.2.1. Use Case diagram
 
-Felelős: `Teszt Elek`
+Felelős: Rózsás Péter
 
-Tartam:  `3 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 8.2.2. Class diagram
 
-Felelős: `Lev Elek`
+Felelős: Sánta Krisztina Csilla
 
-Tartam:  `4 nap`
+Tartam:  2 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  1 személynap
 
 #### 8.2.3. Sequence diagram
 
-Felelős: `Remek Elek`
+Felelős: Varga Csanád Sándor
 
 Tartam:  `3 nap`
 
@@ -221,7 +221,7 @@ Erőforrásigény:  `2 személynap`
 
 #### 8.2.4. Egyed-kapcsolat diagram adatbázishoz
 
-Felelős: `Remek Elek`
+Felelős: Nacsa Gergő
 
 Tartam:  `4 nap`
 
@@ -229,15 +229,15 @@ Erőforrásigény:  `2 személynap`
 
 #### 8.2.5. Package diagram
 
-Felelős: `Teszt Elek`
+Felelős: Sánta Krisztina Csilla
 
-Tartam:  `3 nap`
+Tartam:  2 nap
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  1 szeméylnap
 
 #### 8.2.6. Képernyőtervek
 
-Felelős: `Teszt Elek`
+Felelős: Mangó Ferenc Ákos
 
 Tartam:  `3 nap`
 
@@ -245,11 +245,11 @@ Erőforrásigény:  `1 személynap`
 
 #### 8.2.7. Bemutató elkészítése
 
-Felelős: `Lev Elek`
+Felelős: Rózsás Péter
 
-Tartam:  `1 nap`
+Tartam:  2 nap
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  1.5 személynap
 
 
 ### 8.3. Prototípus I. (3. mérföldkő)
@@ -258,158 +258,166 @@ Ennek a feladatnak az a célja, hogy egy működő prototípust hozzunk létre, 
 
 Részfeladatai a következők:
 
-#### `8.3.1. Felhasználók kezelése (admin, raktáros, sofőr) (CR)`
+#### 8.3.1. Adatbázis a Felhasználóknak
 
-Felelős: `Teszt Elek`
+Felelős: Varga Csanád
 
 Tartam:  `5 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.2. Felhasználók kezelése (admin, raktáros, sofőr) (UD)`
+#### 8.3.2. Adatbázis az ételeknek és italoknak
 
-Felelős: `Remek Elek`
+Felelős: Varga Csanád Sándor
 
 Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.3. Felhasználók kezeléséhez szükséges adatok létrehozása az adatbázisban`
+#### 8.3.3. Adatbázis a heti menüknek
 
-Felelős: `Lev Elek`
+Felelős: Varga Csanád Sándor
 
 Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.3.4. Felhasználói munkamenet megvalósítása több jogosultsági szinttel`
+#### 8.3.4. Adatbázis a foglalásoknak és asztaloknak
 
-Felelős: `Teszt Elek `
+Felelős: Varga Csanád Sándor
 
 Tartam:  `10 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.5. Raktárak kezelése (CRUD)`
+#### 8.3.5. Adatbázis a véleményeknek
 
-Felelős: `Teszt Elek`
-
-Tartam:  `3 nap`
-
-Erőforrásigény:  `1 személynap`
-
-#### `8.3.6. Raktárkezeléshez szükséges adatok létrehozása az adatbázisban`
-
-Felelős: `Remek Elek`
-
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.7. Árukészletek kezelése (C)`
-
-Felelős: `Remek Elek `
-
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.8. Árukészletek kezelése (R)`
-
-Felelős: `Lev Elek`
+Felelős: Varga Csanád Sándor
 
 Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.3.9. Árukészletek kezelése (UD)`
+#### 8.3.6. Regisztrációs oldal létrehozása
 
-Felelős: `Lev Elek`
-
-Tartam:  `5 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.10. Árukészletek kezeléséhez szükséges adatok létrehozása az adatbázisban`
-
-Felelős: `Lev Elek`
-
-Tartam:  `5 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.11. Járművek kezelése (CRUD) és a szükséges adatok létrehozása az adatbázisban`
-
-Felelős: `Lev Elek`
-
-Tartam:  `3 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.12. Fuvarok/szállítmányok kezelése (CR)`
-
-Felelős: `Teszt Elek`
+Felelős: Nacsa Gergő
 
 Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.13. Fuvarok/szállítmányok kezelése (UD)`
+#### 8.3.7. Bejelentkezési oldal létrehozása
 
-Felelős: `Teszt Elek `
+Felelős: `Nacsa Gergő
 
-Tartam:  `5 nap`
+Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.14. Fuvarok/szállítmányok szükséges adatok létrehozása az adatbázisban`
+#### 8.3.8. Profil oldal létrehozása
 
-Felelős: `Remek Elek `
+Felelős: Nacsa Gergő
 
 Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.3.15. Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
+#### 8.3.9. Főoldal létrehozása
 
-Felelős: `Remek Elek`
+Felelős: Mangó Ferenc Ákos
 
-Tartam:  `4 nap`
+Tartam:  `5 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.16. Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
+#### 8.3.10. Regisztráció háttérlogika kialakítása
 
-Felelős: `Remek Elek`
+Felelős: Sánta Krisztina Csilla
+
+Tartam:  2 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.3.11. Bejelentkezés háttérlogika kialakítása
+
+Felelős: Sánta Krisztina Csilla
+
+Tartam:  2 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.3.12. Profil oldal háttérlogika kialakítása
+
+Felelős: Rózsás Péter
+
+Tartam:  1 nap
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.3.13. Asztalfoglalás háttérlogika kialakítása
+
+Felelős: Rózsás Péter
+
+Tartam:  2 nap
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.3.14. Bejelentkezett felhasználókhoz kötött háttérlogika kialakítása
+
+Felelős: Rózsás Péter
+
+Tartam:  2 nap
+
+Erőforrásigény:  `1 személynap`
+
+#### 8.3.15. Foglalások kezeléséhez háttérlogika kialakítása
+
+Felelős: Rózsás Péter
+
+Tartam:  2 nap
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.3.16. Regisztráció tesztelése
+
+Felelős: Mangó Ferenc Ákos
 
 Tartam:  `5 nap`
 
 Erőforrásigény:  `3 személynap`
 
-#### `8.3.17. Biztonsági mentés automatikus létrehozása`
+#### 8.3.17. Bejelentkezés tesztelése
 
-Felelős: `Lev Elek`
+Felelős: Mangó Ferenc Ákos
 
 Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### 8.3.18. Tesztelési dokumentum az összes funkcióhoz (TP, TC)
+#### 8.3.18. Profil oldal tesztelése
 
-Felelős: `Mindenki`
+Felelős: Sánta Krisztina Csilla
 
-Tartam:  `7 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `1 személynap/fő`
+Erőforrásigény:  1 szeméylnap
 
 
-#### `8.3.19. A prototípus kitelepítése éles környezetbe` 
+#### 8.3.19.  Asztalfoglalás tesztelése
 
-Felelős: `Teszt Elek`
+Felelős: Sánta Krisztina Csilla
 
-Tartam:  `1 nap`
+Tartam:  2 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  2 személynap
+
+#### 8.3.20.  Projekt kitelepítése éles környezetbe
+
+Felelős: 
+
+Tartam: 
+
+Erőforrásigény: 
 
 
 ### 8.4. Prototípus II. (4. mérföldkő)
@@ -418,101 +426,94 @@ Ennek a feladatnak az a célja, hogy az előző mérföldkő hiányzó funkciói
 
 Részfeladatai a következők:
 
-#### 8.4.1. Javított minőségű prototípus új funkciókkal
+#### 8.4.1. Elfelejtett jelszó visszaállítása és profil aktiválás
 
-Felelős: `Teszt Elek`
+Felelős: Varga Csanád Sándor
 
 Tartam:  `5 nap`
 
 Erőforrásigény:  `2.5 személynap`
 
-#### 8.4.2. Javított minőségű prototípus javított funkciókkal
+#### 8.4.2. Étel, ital, menü megjelenítő oldalak
 
-Felelős: `Lev Elek`
+Felelős: Mangó Ferenc Ákos
 
 Tartam:  `5 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### 8.4.3. Javított minőségű prototípus a korábbi hiányzó funkciókkal
+#### 8.4.3. Mobil nézet
 
-Felelős: `Remek Elek`
+Felelős: Nacsa Gergő
 
 Tartam:  `5 nap`
 
 Erőforrásigény:  `1.5 személynap`
 
-#### `8.4.4. Felhasználói munkamenet tesztelése (TR)`
+#### 8.4.4.Mobil nézet
 
-Felelős: `Teszt Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `1 személynap`
-
-#### `8.4.5. Raktárak kezelésének tesztelése (TR)`
-
-Felelős: `Remek Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.5 személynap`
-
-#### `8.4.6. Árukészletek kezelésének tesztelése (TR)`
-
-Felelős: `Teszt Elek`
+Felelős: Mangó Ferenc Ákos
 
 Tartam:  `1 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.4.7. Járművek kezelésének tesztelése (TR)`
+#### 8.4.5. Vélemények kezelésének háttérlogikája
 
-Felelős: `Remek Elek`
+Felelős: Rózsás Péter
+
+Tartam:  2 nap
+
+Erőforrásigény:  `0.5 személynap`
+
+#### 8.4.6. Asztalfoglalás tesztelése
+
+Felelős: Rózsás Péter
+
+Tartam:  1 nap
+
+Erőforrásigény:  `1 személynap`
+
+#### 8.4.7. Véleményírás tesztelése
+
+Felelős: Rózsás Péter
+
+Tartam:  1 nap
+
+Erőforrásigény:  `0.5 személynap`
+
+#### 8.4.8. Jelszó visszaállítás és profil aktiválás tesztelése
+
+Felelős: Mangó Ferenc Ákos
 
 Tartam:  `1 nap`
 
 Erőforrásigény:  `0.5 személynap`
 
-#### `8.4.8. Fuvarok kezelésének tesztelése (TR)`
+#### 8.4.9. Mobil nézet tesztelése
 
-Felelős: `Lev Elek`
+Felelős: Sánta Krisztina Csilla
 
-Tartam:  `1 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  0.5 személynap
 
-#### `8.4.9. Email-es funkciók tesztelése (TR)`
+#### 8.4.10. Foglalások kezelésének tesztelése
 
-Felelős: `Remek Elek`
+Felelős: Sánta Krisztina Csilla
 
-Tartam:  `1 nap`
+Tartam:  2 nap
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  1 személynap
 
-#### `8.4.10. Térképes funkciók tesztelése (TR)`
+#### 8.4.11. A prototípus kitelepítésének frissítése
 
-Felelős: `Lev Elek`
+Felelős: 
 
-Tartam:  `1 nap`
+Tartam:  
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  
 
-#### `8.4.11. Biztonsági mentés tesztelése (TR)`
-
-Felelős: `Lev Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.5 személynap`
-
-#### `8.4.12. A prototípus kitelepítésének frissítése`
-
-Felelős: `Teszt Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.5 személynap`
 
 ## 9. Részletes időbeosztás
 
@@ -558,4 +559,4 @@ minden módosítható oszlopában legalább 1 pontnak szerepelni kell.
 | `Remek Elek`                        | `4`     | `15`     | `35`     |  `16`    | 70        |
 | `Lev Elek`                          | `4`     | `12`     | `30`     |  `24`    | 70        |
 
-Szeged, `2021-10-25`.
+Szeged, 2024-10-05.
