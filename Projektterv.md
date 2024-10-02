@@ -45,7 +45,7 @@ A rendelkezésünkre áll összesen 5 * 70 = 350 pont.
 
 A projekt megrendelője Mihály Pál. Az Étel projektet a projektcsapat fogja végrehajtani, amely jelenleg öt fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is. A tapasztalt projekttagok több éve dolgoznak az iparban, számos sikeres projektten vannak túl.
  - `Mangó Ferenc Ákos (írd ide a tapasztalatodat)`
- - `Nacsa Gergő (írd ide a tapasztalatodat)`
+ - Nacsa Gergő (Negyedéves egyetemista, önfejlesztés céljából előállított egyéni projekt, Adatbázis alapú rendszerek kurzuson 3 fős csapatban szerzett kooperatív munkamegosztással együttjáró tapasztalatszerzés)
  - Rózsás Péter (Harmadéves egyetemista, másfél év szakmai tapasztalat tesztelésben, algoritmus írásban. Nagyedéves tapasztalat csapatvezetőként és témavezetőként)
  - Sánta Krisztina Csilla (3 év egyetemi és magánprojekt tapasztalat)
  - `Varga Csanád Sándor (írd ide a tapasztalatodat)`
@@ -224,9 +224,9 @@ Erőforrásigény:  `2 személynap`
 
 Felelős: Nacsa Gergő
 
-Tartam:  `4 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.2.5. Package diagram
 
@@ -303,25 +303,25 @@ Erőforrásigény:  `1 személynap`
 
 Felelős: Nacsa Gergő
 
-Tartam:  `4 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.3.7. Bejelentkezési oldal létrehozása
 
 Felelős: `Nacsa Gergő
 
-Tartam:  `4 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.3.8. Profil oldal létrehozása
 
 Felelős: Nacsa Gergő
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.3.9. Főoldal létrehozása
 
@@ -447,9 +447,9 @@ Erőforrásigény:  `2 személynap`
 
 Felelős: Nacsa Gergő
 
-Tartam:  `5 nap`
+Tartam:  2 nap
 
-Erőforrásigény:  `1.5 személynap`
+Erőforrásigény:  1.5 személynap
 
 #### 8.4.4.Mobil nézet
 
