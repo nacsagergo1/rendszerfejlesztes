@@ -46,7 +46,7 @@ A rendelkezésünkre áll összesen 5 * 70 = 350 pont.
 A projekt megrendelője Mihály Pál. Az Étel projektet a projektcsapat fogja végrehajtani, amely jelenleg öt fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is. A tapasztalt projekttagok több éve dolgoznak az iparban, számos sikeres projektten vannak túl.
  - `Mangó Ferenc Ákos (írd ide a tapasztalatodat)`
  - `Nacsa Gergő (írd ide a tapasztalatodat)`
- - `Rózsás Péter (írd ide a tapasztalatodat)`
+ - Rózsás Péter (Harmadéves egyetemista, másfél év szakmai tapasztalat, tesztelés, algoritmus írásban. Nagyedéves tapasztalat csapatvezetőként és témavezetőként)
  - Sánta Krisztina Csilla (3 év egyetemi és magánprojekt tapasztalat)
  - `Varga Csanád Sándor (írd ide a tapasztalatodat)`
 
