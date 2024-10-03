@@ -44,7 +44,7 @@ A rendelkezésünkre áll összesen 5 * 70 = 350 pont.
 ## 4. Szervezeti felépítés és felelősségmegosztás
 
 A projekt megrendelője Mihály Pál. Az Étel projektet a projektcsapat fogja végrehajtani, amely jelenleg öt fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is. A tapasztalt projekttagok több éve dolgoznak az iparban, számos sikeres projektten vannak túl.
- - `Mangó Ferenc Ákos (írd ide a tapasztalatodat)`
+ - Mangó Ferenc Ákos (Harmadéves egyetemista, egyszerű, de kiválló design, korábbi webáruházas projekt)
  - Nacsa Gergő (Negyedéves egyetemista, önfejlesztés céljából előállított egyéni projekt, Adatbázis alapú rendszerek kurzuson 3 fős csapatban szerzett kooperatív munkamegosztással együttjáró tapasztalatszerzés)
  - Rózsás Péter (Harmadéves egyetemista, másfél év szakmai tapasztalat tesztelésben, algoritmus írásban. Nagyedéves tapasztalat csapatvezetőként és témavezetőként)
  - Sánta Krisztina Csilla (3 év egyetemi és magánprojekt tapasztalat)
@@ -58,7 +58,7 @@ A projekt a következő emberekből áll:
 | Név            | Pozíció          |   E-mail cím (stud-os)        |
 |----------------|------------------|-------------------------------|
 |Sánta Krisztina | Projektmenedzser | h269825@stud.u-szeged.hu      |
-| Mangó Ákos     | Projekt tag      | `h000000@stud.u-szeged.hu`    |
+| Mangó Ákos     | Projekt tag      | h267428@stud.u-szeged.hu      |
 | Nacsa Gergő    | Projekt tag      | h161989@stud.u-szeged.hu      |
 | Rózsás Péter   | Projekt tag      | h268942@stud.u-szeged.hu      |
 | Varga Csanád   | Projekt tag      | `h000000@stud.u-szeged.hu`    | 
@@ -240,9 +240,9 @@ Erőforrásigény:  1 szeméylnap
 
 Felelős: Mangó Ferenc Ákos
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.2.7. Bemutató elkészítése
 
@@ -327,9 +327,9 @@ Erőforrásigény:  2 személynap
 
 Felelős: Mangó Ferenc Ákos
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  3 személynap
 
 #### 8.3.10. Regisztráció háttérlogika kialakítása
 
@@ -383,17 +383,17 @@ Erőforrásigény:  2 személynap
 
 Felelős: Mangó Ferenc Ákos
 
-Tartam:  `5 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.3.17. Bejelentkezés tesztelése
 
 Felelős: Mangó Ferenc Ákos
 
-Tartam:  `3 nap`
+Tartam:  2 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 8.3.18. Profil oldal tesztelése
 
@@ -439,9 +439,9 @@ Erőforrásigény:  `2.5 személynap`
 
 Felelős: Mangó Ferenc Ákos
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  3 személynap
 
 #### 8.4.3. Mobil nézet
 
@@ -455,9 +455,9 @@ Erőforrásigény:  1.5 személynap
 
 Felelős: Mangó Ferenc Ákos
 
-Tartam:  `1 nap`
+Tartam:  2 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.4.5. Vélemények kezelésének háttérlogikája
 
@@ -487,9 +487,9 @@ Erőforrásigény:  0.5 személynap
 
 Felelős: Mangó Ferenc Ákos
 
-Tartam:  `1 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  0.5 személynap
 
 #### 8.4.9. Mobil nézet tesztelése
 
