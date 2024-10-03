@@ -44,7 +44,7 @@ A rendelkezésünkre áll összesen 5 * 70 = 350 pont.
 ## 4. Szervezeti felépítés és felelősségmegosztás
 
 A projekt megrendelője Mihály Pál. Az Étel projektet a projektcsapat fogja végrehajtani, amely jelenleg öt fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is. A tapasztalt projekttagok több éve dolgoznak az iparban, számos sikeres projektten vannak túl.
- - Mangó Ferenc Ákos (Harmadéves egyetemista, egyszerű, de kiválló design, korábbi webáruházas projekt)
+ - Mangó Ferenc Ákos (Harmadéves egyetemista, egyszerű, kiválló design, korábbi webáruházas projekt)
  - Nacsa Gergő (Negyedéves egyetemista, önfejlesztés céljából előállított egyéni projekt, Adatbázis alapú rendszerek kurzuson 3 fős csapatban szerzett kooperatív munkamegosztással együttjáró tapasztalatszerzés)
  - Rózsás Péter (Harmadéves egyetemista, másfél év szakmai tapasztalat tesztelésben, algoritmus írásban. Nagyedéves tapasztalat csapatvezetőként és témavezetőként)
  - Sánta Krisztina Csilla (3 év egyetemi és magánprojekt tapasztalat)
