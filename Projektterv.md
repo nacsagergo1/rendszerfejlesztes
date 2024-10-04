@@ -48,7 +48,7 @@ A projekt megrendelője Mihály Pál. Az Étel projektet a projektcsapat fogja v
  - Nacsa Gergő (Negyedéves egyetemista, önfejlesztés céljából előállított egyéni projekt, Adatbázis alapú rendszerek kurzuson 3 fős csapatban szerzett kooperatív munkamegosztással együttjáró tapasztalatszerzés)
  - Rózsás Péter (Harmadéves egyetemista, másfél év szakmai tapasztalat tesztelésben, algoritmus írásban. Nagyedéves tapasztalat csapatvezetőként és témavezetőként)
  - Sánta Krisztina Csilla (3 év egyetemi és magánprojekt tapasztalat)
- - `Varga Csanád Sándor (írd ide a tapasztalatodat)`
+ - Varga Csanád Sándor (2 Szemeszter egyetemi, és 3 év néhai freelance munka tapasztalat)
 
 
 ### 4.1 Projektcsapat
@@ -61,7 +61,7 @@ A projekt a következő emberekből áll:
 | Mangó Ákos     | Projekt tag      | h267428@stud.u-szeged.hu      |
 | Nacsa Gergő    | Projekt tag      | h161989@stud.u-szeged.hu      |
 | Rózsás Péter   | Projekt tag      | h268942@stud.u-szeged.hu      |
-| Varga Csanád   | Projekt tag      | `h000000@stud.u-szeged.hu`    | 
+| Varga Csanád   | Projekt tag      | h379029@stud.u-szeged.hu      | 
 
 
 ## 5. A munka feltételei
@@ -76,6 +76,7 @@ A projekt a következő munkaállomásokat fogja használni a munka során:
 - Acer Swift 3 SF314-43 laptop (CPU: AMD Ryzen 5 5500U, RAM: 16 GB, GPU: AMD Radeon, OS: Windows 11)
 - Lenovo IdeaPad 3 15ALC6 (CPU: AMD Ryzen 5 5500U with Radeon Graphics, RAM: 8 GB DDR4, OS: Windows 11)
 - MSI Katana GF76 11UD (CPU: i7-11800H RAM: 16GB GPU: NVIDIA GeForce RTX 3050 Ti Laptop GPU OS: Windows 10 Pro)
+- PC (CPU: i5-10400 GPU: GTX970 RAM: 32 GB DDR5, OS: Windows 11)
 
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
 
@@ -85,8 +86,8 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
  - `Thymeleaf dinamikus tartalom megjelenítés a felhasználói felületen`
  - `Maven szoftverprojekt menedzselő szoftver`
  - `Eclipse IDE fejlesztőkörnyezet`
- - Git verziókövető (GitLab)
- - cPanel (Cweb.hu)
+ - `Git verziókövető (GitLab)`
+ - `cPanel (Cweb.hu)`
 ```
 Milyen gépet használnak a projekttagok, milyen operációs rendszeren fejlesztenek, milyen szoftverkörnyezetben, stb.
 ```
@@ -214,15 +215,15 @@ Erőforrásigény:  1 személynap
 
 #### 8.2.3. Sequence diagram
 
-Felelős: Varga Csanád Sándor
+Felelős: Nacsa Gergő
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.2.4. Egyed-kapcsolat diagram adatbázishoz
 
-Felelős: Nacsa Gergő
+Felelős: Varga Csanád Sándor
 
 Tartam:  3 nap
 
@@ -263,41 +264,41 @@ Részfeladatai a következők:
 
 Felelős: Varga Csanád
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.3.2. Adatbázis az ételeknek és italoknak
 
 Felelős: Varga Csanád Sándor
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.3.3. Adatbázis a heti menüknek
 
 Felelős: Varga Csanád Sándor
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 8.3.4. Adatbázis a foglalásoknak és asztaloknak
 
 Felelős: Varga Csanád Sándor
 
-Tartam:  `10 nap`
+Tartam:  10 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 8.3.5. Adatbázis a véleményeknek
 
 Felelős: Varga Csanád Sándor
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 8.3.6. Regisztrációs oldal létrehozása
 
@@ -431,9 +432,9 @@ Részfeladatai a következők:
 
 Felelős: Varga Csanád Sándor
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
-Erőforrásigény:  `2.5 személynap`
+Erőforrásigény:  2.5 személynap
 
 #### 8.4.2. Étel, ital, menü megjelenítő oldalak
 
