@@ -298,25 +298,25 @@ Erőforrásigény:  1 személynap
 
 Felelős: Nacsa Gergő
 
-Tartam:  3 nap
+Tartam:  4 nap
 
-Erőforrásigény:  2 személynap
+Erőforrásigény:  4 személynap
 
 #### 8.3.7. Bejelentkezési oldal létrehozása
 
 Felelős: Nacsa Gergő
 
-Tartam:  3 nap
+Tartam:  4 nap
 
-Erőforrásigény:  2 személynap
+Erőforrásigény:  4 személynap
 
 #### 8.3.8. Profil oldal létrehozása
 
 Felelős: Nacsa Gergő
 
-Tartam:  3 nap
+Tartam:  4 nap
 
-Erőforrásigény:  2 személynap
+Erőforrásigény:  4 személynap
 
 #### 8.3.9. Főoldal létrehozása
 
@@ -442,9 +442,9 @@ Erőforrásigény:  3 személynap
 
 Felelős: Nacsa Gergő
 
-Tartam:  2 nap
+Tartam:  3 nap
 
-Erőforrásigény:  1.5 személynap
+Erőforrásigény:  2 személynap
 
 #### 8.4.4.Mobil nézet
 
