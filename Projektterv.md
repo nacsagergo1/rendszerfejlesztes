@@ -36,7 +36,7 @@ A rendszernek képesnek kell lennie az étterem asztalai foglaltsági állapotá
 
 ## 3. Költség- és erőforrás-szükségletek
 
-Az erőforrásigényünk összesen `57` személynap, átlagosan `19` személynap/fő.
+Az erőforrásigényünk összesen 61 személynap, átlagosan 12.2 személynap/fő.
 
 A rendelkezésünkre áll összesen 5 * 70 = 350 pont.
 
@@ -527,26 +527,32 @@ Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfelad
 
 | Név          |   M1  |   M2  |   M3 |   M4  | Összesen |
 |--------------|-------|-------|------|-------|----------|
-| Mangó Ákos | `1.5` | `1.5` | `11` | `5`   | `19`     |
-| `Remek Elek` | `1`   | `4`   | `13` | `3`   | `21`     |
-| `Lev Elek`   | `1`   | `2.5` | `10` | `3.5` | `17`     |
+| Mangó Ákos | 1 | 2 | 6 | 5.5   | 14.5     |
+| Nacsa Gergő | 1   | 2   | 6 | 1.5   | 10.5     |
+| Rózsás Péter   | 1   | 2.5 | 5.5. | 2.5 | 11.5     |
+| Sánta Krisztina | 1.5 | 2 | 6 | 1.5 | 11 |
+| Varga Csanád | 1 | 2 | 8 | 2.5 | 13.5 |
 
 
 ### 10.2. Részletes feladatszámok
 
 | Név          |   M1  |   M2  |   M3 |   M4 | Összesen |
 |--------------|-------|-------|------|------|----------|
-| `Teszt Elek` | `2`   | `2`   | `7`  | `4`  | `15`     |
-| `Remek Elek` | `1`   | `2`   | `7`  | `4`  | `14`     |
-| `Lev Elek`   | `1`   | `2`   | `7`  | `4`  | `14`     |
+| Mangó Ákos | 1   | 1   | 3  | 3  | 8     |
+| Nacsa Gergő | 1   | 1   | 3  | 1  | 6     |
+| Rózsás Péter   | 1   | 2   | 4  | 3  | 10     |
+| Sánta Krisztina | 2 | 2 | 4 | 2 | 10 |
+| Varga Csanád | 1 | 1 | 5 | 1 | 8 |
 
 ### 10.3. Részletes költségvetés
 
 | Név                                 | M1      | M2       | M3       | M4       | Összesen  |
 |-------------------------------------|---------|----------|----------|----------|-----------|
 | Maximálisan megszerezhető pontszám  |  (7)    | (20)     | (35)     |  (28)    | 100% (70) |
-| `Teszt Elek`                        | `7`     | `10`     | `28`     |  `25`    | 70        |
-| `Remek Elek`                        | `4`     | `15`     | `35`     |  `16`    | 70        |
-| `Lev Elek`                          | `4`     | `12`     | `30`     |  `24`    | 70        |
+| Mangó Ákos                        | 4     | 15     | 30     |  21    | 70        |
+| Nacsa Gergő                        | 4     | 15     | 28     |  23    | 70        |
+| Rózsás Péter                          | 4     | 17     | 32     |  17    | 70        |
+| Sánta Krisztina    |  6   |  17    |  28   |  19   |  70    |
+| Varga Csanád      |   4  |   15   |    32  |  19   |  70   |
 
 Szeged, 2024-10-05.
