@@ -70,7 +70,6 @@ A projekt a következő emberekből áll:
 
 A projekt a következő munkaállomásokat fogja használni a munka során:
 
-`Minenki írja ide pls`
 
 - Asus Zenbook UX534 I7 8565U, GTX 1650 Mobile Max Design
 - Acer Swift 3 SF314-43 laptop (CPU: AMD Ryzen 5 5500U, RAM: 16 GB, GPU: AMD Radeon, OS: Windows 11)
@@ -80,17 +79,12 @@ A projekt a következő munkaállomásokat fogja használni a munka során:
 
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
 
- - `Heroku platformszolgáltatás a webalkalmazás hosztolásához`
- - `Heroku által biztosított PostgreSQL adatbázisszerver`
- - `Spring Boot keretrendszer`
- - `Thymeleaf dinamikus tartalom megjelenítés a felhasználói felületen`
- - `Maven szoftverprojekt menedzselő szoftver`
- - `Eclipse IDE fejlesztőkörnyezet`
- - `Git verziókövető (GitLab)`
- - `cPanel (Cweb.hu)`
-```
-Milyen gépet használnak a projekttagok, milyen operációs rendszeren fejlesztenek, milyen szoftverkörnyezetben, stb.
-```
+ - Heroku által biztosított PostgreSQL adatbázisszerver
+ - Node.js-re épülő Express keretrendszer
+ - Visual Studio Code
+ - Git verziókövető (GitLab)
+ - cPanel (Cweb.hu)
+
 
 ### 5.2. Rizikómenedzsment
 
@@ -310,7 +304,7 @@ Erőforrásigény:  2 személynap
 
 #### 8.3.7. Bejelentkezési oldal létrehozása
 
-Felelős: `Nacsa Gergő
+Felelős: Nacsa Gergő
 
 Tartam:  3 nap
 
@@ -527,19 +521,13 @@ Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfelad
 
 ## 10. Projekt költségvetés
 
-```
-Az egyes leadások alkalmával rögzített erőforrásigényt, az elvállalt feladatok számát 
-és az adott mérföldkőben végzett munkáért szerezhető pontszámot kell beírni minden emberre külön-külön.
-Figyeljünk arra, hogy mivel mindenkinek minden mérföldkövön dolgoznia kell, ezért a 10.3-as táblázat
-minden módosítható oszlopában legalább 1 pontnak szerepelni kell.
-```
 
 ### 10.1. Részletes erőforrásigény (személynap)
 
 
 | Név          |   M1  |   M2  |   M3 |   M4  | Összesen |
 |--------------|-------|-------|------|-------|----------|
-| `Teszt Elek` | `1.5` | `1.5` | `11` | `5`   | `19`     |
+| Mangó Ákos | `1.5` | `1.5` | `11` | `5`   | `19`     |
 | `Remek Elek` | `1`   | `4`   | `13` | `3`   | `21`     |
 | `Lev Elek`   | `1`   | `2.5` | `10` | `3.5` | `17`     |
 
