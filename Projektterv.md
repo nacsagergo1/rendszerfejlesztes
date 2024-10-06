@@ -213,7 +213,7 @@ Felelős: Nacsa Gergő
 
 Tartam:  3 nap
 
-Erőforrásigény:  2 személynap
+Erőforrásigény:  1 személynap
 
 #### 8.2.4. Egyed-kapcsolat diagram adatbázishoz
 
@@ -308,7 +308,7 @@ Felelős: Nacsa Gergő
 
 Tartam:  4 nap
 
-Erőforrásigény:  4 személynap
+Erőforrásigény:  3 személynap
 
 #### 8.3.8. Profil oldal létrehozása
 
@@ -316,7 +316,7 @@ Felelős: Nacsa Gergő
 
 Tartam:  4 nap
 
-Erőforrásigény:  4 személynap
+Erőforrásigény:  3 személynap
 
 #### 8.3.9. Főoldal létrehozása
 
