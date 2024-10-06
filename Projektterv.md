@@ -409,11 +409,11 @@ Erőforrásigény:  2 személynap
 
 #### 8.3.20.  Projekt kitelepítése éles környezetbe
 
-Felelős: 
+Felelős: Varga Csanád Sándor
 
-Tartam: 
+Tartam: 1 nap
 
-Erőforrásigény: 
+Erőforrásigény: 1/4 személynap
 
 
 ### 8.4. Prototípus II. (4. mérföldkő)
@@ -504,11 +504,11 @@ Erőforrásigény:  1 személynap
 
 #### 8.4.11. A prototípus kitelepítésének frissítése
 
-Felelős: 
+Felelős: Varga Csanád Sándor
 
-Tartam:  
+Tartam:  1 nap
 
-Erőforrásigény:  
+Erőforrásigény:  1/4 személynap
 
 
 ## 9. Részletes időbeosztás
