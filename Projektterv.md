@@ -113,10 +113,16 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Érintett témák: Ismerkedés, projekttéma kiválasztása, projektvezető megválasztása, ötletek felvázolása
 
 2. megbeszélés:
- - Időpont: 2021.09.27.
+ - Időpont: 2024.09.27.
  - Hely: online
  - Résztvevők: Mangó Ferenc, Nacsa Gergő, Sánta Krisztina, Varga Csanád
  - Érintett témák: A projektben használt technológiák rögzítése, a projektterv áttekintése, szerepkörök és vállalások kiosztása
+
+3. megbeszélés:
+- Időpont: 2024.10.06.
+- Hely: online
+- Résztvevők: Mangó Ferenc, Nacsa Gergő, Rózsás Péter,  Sánta Krisztina, Varga Csanád
+- Érintett témák: A feladatok végső elosztásának és a projektterv végső rögzítése
 
 ### 6.3. Minőségbiztosítás
 
@@ -256,7 +262,7 @@ Részfeladatai a következők:
 
 #### 8.3.1. Adatbázis a Felhasználóknak
 
-Felelős: Varga Csanád
+Felelős: Varga Csanád Sándor
 
 Tartam:  5 nap
 
@@ -308,9 +314,25 @@ Felelős: Nacsa Gergő
 
 Tartam:  4 nap
 
-Erőforrásigény:  3 személynap
+Erőforrásigény:  2 személynap
 
-#### 8.3.8. Profil oldal létrehozása
+#### 8.3.8. Asztalfoglalás oldal létrehozása
+
+Felelős: Mangó Ferenc Ákos
+
+Tartam:  3 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.3.9. Főoldal létrehozása
+
+Felelős: Nacsa Gergő
+
+Tartam:  3 nap
+
+Erőforrásigény:  2 személynap
+
+#### 8.3.10. Profil oldal létrehozása
 
 Felelős: Nacsa Gergő
 
@@ -318,7 +340,7 @@ Tartam:  4 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.9. Főoldal létrehozása
+#### 8.3.11. Főoldal létrehozása
 
 Felelős: Mangó Ferenc Ákos
 
@@ -326,7 +348,7 @@ Tartam:  5 nap
 
 Erőforrásigény:  3 személynap
 
-#### 8.3.10. Regisztráció háttérlogika kialakítása
+#### 8.3.12. Regisztráció háttérlogika kialakítása
 
 Felelős: Sánta Krisztina Csilla
 
@@ -334,7 +356,7 @@ Tartam:  2 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.3.11. Bejelentkezés háttérlogika kialakítása
+#### 8.3.13. Bejelentkezés háttérlogika kialakítása
 
 Felelős: Sánta Krisztina Csilla
 
@@ -342,7 +364,7 @@ Tartam:  2 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.3.12. Profil oldal háttérlogika kialakítása
+#### 8.3.14. Profil oldal háttérlogika kialakítása
 
 Felelős: Rózsás Péter
 
@@ -350,7 +372,7 @@ Tartam:  1 nap
 
 Erőforrásigény:  1 személynap
 
-#### 8.3.13. Asztalfoglalás háttérlogika kialakítása
+#### 8.3.15. Asztalfoglalás háttérlogika kialakítása
 
 Felelős: Rózsás Péter
 
@@ -358,7 +380,7 @@ Tartam:  2 nap
 
 Erőforrásigény:  1.5 személynap
 
-#### 8.3.14. Bejelentkezett felhasználókhoz kötött háttérlogika kialakítása
+#### 8.3.16. Bejelentkezett felhasználókhoz kötött háttérlogika kialakítása
 
 Felelős: Rózsás Péter
 
@@ -366,7 +388,7 @@ Tartam:  2 nap
 
 Erőforrásigény:  1 személynap
 
-#### 8.3.15. Foglalások kezeléséhez háttérlogika kialakítása
+#### 8.3.17. Foglalások kezeléséhez háttérlogika kialakítása
 
 Felelős: Rózsás Péter
 
@@ -374,7 +396,7 @@ Tartam:  2 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.3.16. Regisztráció tesztelése
+#### 8.3.18. Regisztráció tesztelése
 
 Felelős: Mangó Ferenc Ákos
 
@@ -382,7 +404,7 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.3.17. Bejelentkezés tesztelése
+#### 8.3.19. Bejelentkezés tesztelése
 
 Felelős: Mangó Ferenc Ákos
 
@@ -390,7 +412,7 @@ Tartam:  2 nap
 
 Erőforrásigény:  1 személynap
 
-#### 8.3.18. Profil oldal tesztelése
+#### 8.3.20. Profil oldal tesztelése
 
 Felelős: Sánta Krisztina Csilla
 
@@ -399,7 +421,7 @@ Tartam:  1 nap
 Erőforrásigény:  1 szeméylnap
 
 
-#### 8.3.19.  Asztalfoglalás tesztelése
+#### 8.3.21.  Asztalfoglalás tesztelése
 
 Felelős: Sánta Krisztina Csilla
 
@@ -407,7 +429,7 @@ Tartam:  2 nap
 
 Erőforrásigény:  2 személynap
 
-#### 8.3.20.  Projekt kitelepítése éles környezetbe
+#### 8.3.22.  Projekt kitelepítése éles környezetbe
 
 Felelős: Varga Csanád Sándor
 
@@ -527,22 +549,22 @@ Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfelad
 
 | Név          |   M1  |   M2  |   M3 |   M4  | Összesen |
 |--------------|-------|-------|------|-------|----------|
-| Mangó Ákos | 1 | 2 | 6 | 5.5   | 14.5     |
-| Nacsa Gergő | 1   | 2   | 6 | 1.5   | 10.5     |
+| Mangó Ákos | 1 | 2 | 8 | 5.5   | 16.5     |
+| Nacsa Gergő | 1   | 2   | 11 | 2   | 16     |
 | Rózsás Péter   | 1   | 2.5 | 5.5. | 2.5 | 11.5     |
 | Sánta Krisztina | 1.5 | 2 | 6 | 1.5 | 11 |
-| Varga Csanád | 1 | 2 | 8 | 2.5 | 13.5 |
+| Varga Csanád | 1 | 2 | 8.25 | 2.75 | 14 |
 
 
 ### 10.2. Részletes feladatszámok
 
 | Név          |   M1  |   M2  |   M3 |   M4 | Összesen |
 |--------------|-------|-------|------|------|----------|
-| Mangó Ákos | 1   | 1   | 3  | 3  | 8     |
-| Nacsa Gergő | 1   | 1   | 3  | 1  | 6     |
+| Mangó Ákos | 1   | 1   | 4  | 3  | 9     |
+| Nacsa Gergő | 1   | 1   | 4  | 1  | 7     |
 | Rózsás Péter   | 1   | 2   | 4  | 3  | 10     |
 | Sánta Krisztina | 2 | 2 | 4 | 2 | 10 |
-| Varga Csanád | 1 | 1 | 5 | 1 | 8 |
+| Varga Csanád | 1 | 1 | 6 | 2 | 10 |
 
 ### 10.3. Részletes költségvetés
 
@@ -555,4 +577,4 @@ Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfelad
 | Sánta Krisztina    |  6   |  17    |  28   |  19   |  70    |
 | Varga Csanád      |   4  |   15   |    32  |  19   |  70   |
 
-Szeged, 2024-10-05.
+Szeged, 2024-10-08.
