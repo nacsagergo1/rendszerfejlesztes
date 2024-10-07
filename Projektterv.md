@@ -36,7 +36,7 @@ A rendszernek képesnek kell lennie az étterem asztalai foglaltsági állapotá
 
 ## 3. Költség- és erőforrás-szükségletek
 
-Az erőforrásigényünk összesen 61 személynap, átlagosan 12.2 személynap/fő.
+Az erőforrásigényünk összesen 69 személynap, átlagosan 13.8 személynap/fő.
 
 A rendelkezésünkre áll összesen 5 * 70 = 350 pont.
 
@@ -79,7 +79,7 @@ A projekt a következő munkaállomásokat fogja használni a munka során:
 
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
 
- - Heroku által biztosított PostgreSQL adatbázisszerver
+ - mySQL adatbázisszerver
  - Node.js-re épülő Express keretrendszer
  - Visual Studio Code
  - Git verziókövető (GitLab)
@@ -535,11 +535,8 @@ Erőforrásigény:  1/4 személynap
 
 ## 9. Részletes időbeosztás
 
-![image](./MINTA-gantt-diagram.png)
+![image](./Gantt_diagram_etel.png)
 
-```
-Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfeladatokat tartalmazza felelős/tartam bontásban.
-```
 
 ## 10. Projekt költségvetés
 
