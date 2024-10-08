@@ -557,8 +557,8 @@ Erőforrásigény:  1/4 személynap
 
 | Név          |   M1  |   M2  |   M3 |   M4 | Összesen |
 |--------------|-------|-------|------|------|----------|
-| Mangó Ákos | 1   | 1   | 4  | 3  | 9     |
-| Nacsa Gergő | 1   | 1   | 4  | 1  | 7     |
+| Mangó Ákos | 1   | 1   | 4  | 3  | 10     |
+| Nacsa Gergő | 1   | 1   | 4  | 1  | 8     |
 | Rózsás Péter   | 1   | 2   | 4  | 3  | 10     |
 | Sánta Krisztina | 2 | 2 | 4 | 2 | 10 |
 | Varga Csanád | 1 | 1 | 6 | 2 | 10 |
