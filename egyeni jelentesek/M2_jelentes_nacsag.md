@@ -1,4 +1,5 @@
 Összefoglaló a 2. mérföldkőben végzett munkáról
+
 Projekt tag: Nacsa Gergő
 
 # Vállalásaim a mérföldkőben:
