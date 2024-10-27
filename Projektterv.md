@@ -124,6 +124,12 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
 - Résztvevők: Mangó Ferenc, Nacsa Gergő, Rózsás Péter,  Sánta Krisztina, Varga Csanád
 - Érintett témák: A feladatok végső elosztásának és a projektterv végső rögzítése
 
+4. megbeszélés:
+ - Időpont: 2024.10.27.
+ - Hely: online
+ - Résztvevők: Mangó Ferenc, Nacsa Gergő, Rózsás Péter,  Sánta Krisztina, Varga Csanád
+ - Érintett témák: A 3. mérföldkó megkezdése, feladatok függőségének megbeszélése, feladatok proritásának megbeszélése.
+
 ### 6.3. Minőségbiztosítás
 
 Az elkészült terveket a terveken nem dolgozó csapattársak közül átnézik, hogy megfelel-e a specifikációnak és az egyes diagramtípusok összhangban vannak-e egymással. A meglévő rendszerünk helyes működését a prototípusok bemutatása előtt a tesztelési dokumentumban leírtak végrehajtása alapján ellenőrizzük és összevetjük a specifikációval, hogy az elvárt eredményt kapjuk-e. További tesztelési lehetőségek: unit tesztek írása az egyes modulokhoz vagy a kód közös átnézése (code review) egy, a vizsgált modul programozásában nem résztvevő csapattaggal. Szoftverünk minőségét a végső leadás előtt javítani kell a rendszerünkre lefuttatott kódelemzés során kapott metrikaértékek és szabálysértések figyelembevételével.
