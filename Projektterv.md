@@ -530,7 +530,16 @@ Tartam:  2 nap
 
 Erőforrásigény:  1 személynap
 
-#### 8.4.11. A prototípus kitelepítésének frissítése
+#### 8.4.11. Admin jogosultsághoz tartozó profil oldal létrehozása
+
+Felelős: Sánta Krisztina Csilla
+
+Tartam:  2 nap
+
+Erőforrásigény:  1 személynap
+
+
+#### 8.4.12. A prototípus kitelepítésének frissítése
 
 Felelős: Varga Csanád Sándor
 
@@ -555,7 +564,7 @@ Erőforrásigény:  1/4 személynap
 | Mangó Ákos | 1 | 2 | 8 | 5.5   | 16.5     |
 | Nacsa Gergő | 1   | 2   | 11 | 2   | 16     |
 | Rózsás Péter   | 1   | 2.5 | 5.5. | 2.5 | 11.5     |
-| Sánta Krisztina | 1.5 | 2 | 6 | 1.5 | 11 |
+| Sánta Krisztina | 1.5 | 2 | 6 | 2.5 | 12 |
 | Varga Csanád | 1 | 2 | 8.25 | 2.75 | 14 |
 
 
@@ -566,7 +575,7 @@ Erőforrásigény:  1/4 személynap
 | Mangó Ákos | 1   | 1   | 4  | 3  | 10     |
 | Nacsa Gergő | 1   | 1   | 4  | 1  | 8     |
 | Rózsás Péter   | 1   | 2   | 4  | 3  | 10     |
-| Sánta Krisztina | 2 | 2 | 4 | 2 | 10 |
+| Sánta Krisztina | 2 | 2 | 4 | 3 | 11 |
 | Varga Csanád | 1 | 1 | 6 | 2 | 10 |
 
 ### 10.3. Részletes költségvetés
