@@ -2,8 +2,6 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Asztalfoglalás</title>
     <link rel="icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css">
@@ -11,32 +9,45 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- FontAwesome (opcionális, ikonokhoz) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <!-- Nézetablak meta tag a reszponzív működéshez -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div id="nav">
-    <ul id="navigation" class="nav">
-        <li class="nav-item">
-            <a href="index.html" id="home" class="nav-link">A nagyi étterme</a>
-        </li>
-        <li class="nav-item">
-            <a href="menu.html" class="nav-link">Menü</a>
-        </li>
-        <li class="nav-item">
-            <a href="reserve.html" class="nav-link">Foglalás</a>
-        </li>
-        <li class="nav-item">
-            <a href="reviews.html" class="nav-link">Vélemények</a>
-        </li>
-        <li class="nav-item">
-            <a href="contact.html" class="nav-link">Kapcsolat</a>
-        </li>
-    </ul>
+<div id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a href="index.html" id="home" class="navbar-brand">A nagyi étterme</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="navigation" class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menü</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reserve.html" class="nav-link">Foglalás</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reviews.html" class="nav-link">Vélemények</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Kapcsolat</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 <div id="reservation-container" class="container mt-5">
-    <h1 class="text-center"></h1>
+    <h1 class="text-center mt-5 pt-5">Asztalfoglalás</h1>
     <form id="reservationForm" class="mt-4">
+        <div class="form-group">
+            <label for="name">Név</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
         <div class="form-group">
             <label for="email">E-mail cím</label>
             <input type="email" id="email" name="email" class="form-control" required>
@@ -57,8 +68,7 @@
             <label for="comments">Megjegyzések</label>
             <textarea id="comments" name="comments" class="form-control"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Foglalás elküldése <i class="fas fa-spinner"></i></button>
-
+        <button type="submit" class="btn btn-primary btn-block">Foglalás elküldése <i class="fas fa-spinner"></i></button>
     </form>
 </div>
 
