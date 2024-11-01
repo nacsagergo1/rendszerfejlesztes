@@ -550,7 +550,7 @@ Erőforrásigény:  1/4 személynap
 
 ## 9. Részletes időbeosztás
 
-![image](./Gantt_diagram_etel.png)
+![image](./Gant_diagram_etel.png)
 
 
 ## 10. Projekt költségvetés
