@@ -5,77 +5,204 @@
     <title>Asztalfoglalás</title>
     <link rel="icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- FontAwesome (opcionális, ikonokhoz) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <!-- Nézetablak meta tag a reszponzív működéshez -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Stílusbeállítások */
+        #calendar-container { max-width: 600px; margin: 20px auto; }
+        #calendar-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        #calendar-table th, #calendar-table td {
+            padding: 10px; text-align: center; border: 1px solid #ddd; width: 14.28%; height: 80px; cursor: pointer;
+        }
+        #calendar-table th { background-color: #f8f9fa; }
+        .free { background-color: #a3e4b3; color: white; }
+        .booked { background-color: #f5a5a5; color: white; }
+        .closed { background-color: #d3d3d3; color: white; }
+    </style>
 </head>
 <body>
-<div id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-        <a href="index.html" id="home" class="navbar-brand">A nagyi étterme</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul id="navigation" class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="menu.html" class="nav-link">Menü</a>
-                </li>
-                <li class="nav-item">
-                    <a href="reserve.html" class="nav-link">Foglalás</a>
-                </li>
-                <li class="nav-item">
-                    <a href="reviews.html" class="nav-link">Vélemények</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Kapcsolat</a>
-                </li>
-            </ul>
+
+<div id="reservation-container" class="container mt-5">
+    <h1 class="text-center mt-5 pt-5">Asztalfoglalás</h1>
+
+    <!-- Vendégek száma input -->
+    <div id="guest-input-container" class="text-center mt-4">
+        <label for="guest-input">Vendégek száma</label>
+        <input type="number" id="guest-input" class="form-control w-25 mx-auto" min="1"
+               placeholder="Kérem, adja meg, hány embernek szeretne foglalni">
+        <button id="confirm-guests" class="btn btn-primary mt-2">Tovább</button>
+    </div>
+
+    <!-- Naptár -->
+    <div id="calendar-container" class="mt-4" style="display:none;">
+        <div id="month-navigation">
+            <button id="prev-month" class="btn btn-outline-secondary">&#9664; Előző hónap</button>
+            <span id="current-month" style="margin: 0 15px; font-weight: bold;"></span>
+            <button id="next-month" class="btn btn-outline-secondary">Következő hónap &#9654;</button>
+        </div>
+
+        <table id="calendar-table" class="table">
+            <thead>
+            <tr>
+                <th>Hétfő</th>
+                <th>Kedd</th>
+                <th>Szerda</th>
+                <th>Csütörtök</th>
+                <th>Péntek</th>
+                <th>Szombat</th>
+                <th>Vasárnap</th>
+            </tr>
+            </thead>
+            <tbody id="calendar-body">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Foglalási Részletek</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Bezár">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="modal-date"></h5>
+                    <p id="modal-message"></p>
+                    <div id="modal-slots">
+                        <h6>Elérhető időpontok:</h6>
+                        <div id="slot-buttons" class="d-flex flex-wrap justify-content-center"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Mégse</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<div id="reservation-container" class="container mt-5">
-    <h1 class="text-center mt-5 pt-5">Asztalfoglalás</h1>
-    <form id="reservationForm" class="mt-4">
-        <div class="form-group">
-            <label for="name">Név</label>
-            <input type="text" id="name" name="name" class="form-control" required>
-        </div>
-        <div class="form-group">
-            <label for="email">E-mail cím</label>
-            <input type="email" id="email" name="email" class="form-control" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Telefonszám</label>
-            <input type="tel" id="phone" name="phone" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="datetime">Dátum és időpont</label>
-            <input type="datetime-local" id="datetime" name="datetime" class="form-control" required>
-        </div>
-        <div class="form-group">
-            <label for="guests">Vendégek száma</label>
-            <input type="number" id="guests" name="guests" class="form-control" min="1" required>
-        </div>
-        <div class="form-group">
-            <label for="comments">Megjegyzések</label>
-            <textarea id="comments" name="comments" class="form-control"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Foglalás elküldése <i class="fas fa-spinner"></i></button>
-    </form>
-</div>
-
-<!-- Bootstrap JS és jQuery (CDN) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="js/reservation.js"></script>
+
+<script>
+    $(document).ready(function() {
+        const calendarBody = $("#calendar-body");
+        const currentMonthDisplay = $("#current-month");
+        const guestInput = $("#guest-input");
+        const calendarContainer = $("#calendar-container");
+        let currentDate = new Date();
+        let guestCount;
+
+        // Placeholder eltávolítása
+        guestInput.on("focus", function() {
+            $(this).attr("placeholder", "");
+        });
+
+        $("#confirm-guests").click(function() {
+            guestCount = parseInt(guestInput.val());
+            if (guestCount && guestCount > 0) {
+                calendarContainer.show();
+                generateCalendar(currentDate);
+            } else {
+                alert("Kérjük, adja meg a vendégek számát!");
+            }
+        });
+
+        function generateCalendar(date) {
+            calendarBody.empty();
+            const month = date.getMonth();
+            const year = date.getFullYear();
+            const firstDayOfMonth = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+            currentMonthDisplay.text(date.toLocaleString('hu-HU', { month: 'long', year: 'numeric' }));
+            let dayCounter = 1;
+            let row = $("<tr></tr>");
+
+            for (let i = 0; i < (firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1); i++) {
+                row.append("<td></td>");
+            }
+
+            for (let i = (firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1); i < 7; i++) {
+                row.append(generateDayCell(dayCounter++, month, year));
+            }
+            calendarBody.append(row);
+
+            while (dayCounter <= daysInMonth) {
+                row = $("<tr></tr>");
+                for (let i = 0; i < 7 && dayCounter <= daysInMonth; i++) {
+                    row.append(generateDayCell(dayCounter++, month, year));
+                }
+                calendarBody.append(row);
+            }
+        }
+
+        function generateDayCell(day, month, year) {
+            const date = new Date(year, month, day);
+            const cell = $("<td></td>").text(day);
+
+            if (date.getDay() === 1) {
+                cell.addClass("closed").click(function() {
+                    alert("Zárva vagyunk hétfőn, kérjük válasszon másik napot.");
+                });
+            } else if (Math.random() > 0.2) {
+                const availableSlots = [];
+                for (let i = 10; i < 20; i += 0.5) {
+                    availableSlots.push({
+                        time: `${Math.floor(i)}:${i % 1 === 0 ? "00" : "30"}`,
+                        slots: Math.floor(Math.random() * 19) + 2
+                    });
+                }
+                cell.addClass("free").attr("data-available-slots", JSON.stringify(availableSlots)).click(() => showBookingModal(date, availableSlots));
+            } else {
+                cell.addClass("booked");
+            }
+            return cell;
+        }
+
+        function showBookingModal(date, availableSlots) {
+            const modalDate = $("#modal-date");
+            const slotButtons = $("#slot-buttons");
+
+            modalDate.text(date.toLocaleDateString("hu-HU"));
+            slotButtons.empty();
+
+            availableSlots.forEach(slot => {
+                const slotButton = $("<button class='btn btn-outline-primary m-1'></button>")
+                    .text(slot.time)
+                    .click(function() {
+                        if (slot.slots >= guestCount) {
+                            alert(`Foglalás sikeres: ${slot.time}-ra, ${guestCount} főre!`);
+                            $("#bookingModal").modal("hide");
+                            setTimeout(() => location.reload(), 500); // Újratöltés
+                        } else {
+                            alert("Nincs elegendő hely a választott időpontra.");
+                        }
+                    });
+
+                if (slot.slots < guestCount) {
+                    slotButton.addClass("disabled").text(`${slot.time} (foglalt)`);
+                }
+                slotButtons.append(slotButton);
+            });
+
+            $("#bookingModal").modal("show");
+        }
+
+        $("#prev-month").click(() => {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            generateCalendar(currentDate);
+        });
+
+        $("#next-month").click(() => {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            generateCalendar(currentDate);
+        });
+    });
+</script>
+
 </body>
 </html>
