@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Kapcsolat</title>
+    <link rel="icon" href="/img/icon.png" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a href="/" id="home" class="navbar-brand">A nagyi étterme</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="navigation" class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="/menu" class="nav-link">Menü</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/reserve" class="nav-link">Foglalás</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/reviews" class="nav-link">Vélemények</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Kapcsolat</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="contact-container" class="container mt-5 pt-5">
+    <h1 class="text-center">Kapcsolatfelvétel</h1>
+    <form class="mt-4">
+        <div class="form-group">
+            <label for="name">Név</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email-cím</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Tárgy</label>
+            <input type="text" id="subject" name="subject" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Az üzenet szövege</label>
+            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Elküldés</button>
+    </form>
+    <div class="text-center mt-5">
+        <p><strong>Cím:</strong> 1234 Étterem Utca</p>
+        <p><strong>Telefonszám:</strong> +36 1 234 5678</p>
+        <p><strong>Email:</strong> info@etterem.hu</p>
+        <p><strong>Nyitvatartási idő:</strong></p>
+        <p>Hétfő - Péntek: 10:00 - 22:00</p>
+        <p>Szombat - Vasárnap: 12:00 - 20:00</p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
