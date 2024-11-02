@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>A nagyi étterme</title>
-    </head>
-    <body>
-        <h1>Welcome to home page of the project</h1>
-        <h2>Coming soon..</h2>
-    </body>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>A nagyi étterme</title>
+    <link rel="icon" href="/img/icon.png" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- Navigációs sáv -->
+<div id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a href="/" id="home" class="navbar-brand">A nagyi étterme</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="navigation" class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="/menu" class="nav-link">Menü</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/reserve" class="nav-link">Foglalás</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/reviews" class="nav-link">Vélemények</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Kapcsolat</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Tartalom - Rólunk szakasz -->
+<div class="container mt-5 pt-5">
+    <div class="row mt-5">
+        <!-- Bal oldali kép -->
+        <div class="col-md-6 text-center">
+            <img src="/img/grandmas-restaurant.jpg" alt="A nagyi étterme" class="img-fluid rounded">
+        </div>
+        <!-- Jobb oldali szöveg -->
+        <div class="col-md-6">
+            <h2>Rólunk</h2>
+            <p>A nagyi étterme egy hagyományos családi étterem, ahol mindig a friss, helyi alapanyagokból készült ételeket kínáljuk. Szenvedéllyel és szeretettel készült fogásaink mindenkinek a nagyi főztjét idézik, legyen szó vasárnapi ebédről vagy különleges alkalmakról. Célunk, hogy minden vendégünk otthon érezze magát, és élményekkel térjen haza.</p>
+            <p>Látogass el hozzánk, és kóstold meg a nagyi legfinomabb receptjeit egy hangulatos, barátságos környezetben!</p>
+        </div>
+    </div>
+
+    <!-- Középre igazított foglalási gomb -->
+    <div class="text-center mt-4">
+        <a href="/reserve" class="btn btn-primary btn-lg">Foglalj most</a>
+    </div>
+</div>
+
+<!-- Bootstrap JS és jQuery (CDN) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
