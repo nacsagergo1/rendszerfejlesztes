@@ -27,25 +27,38 @@ class ReservationDAO{
 
   constructor() {}
 
-  async createReservation(ID, userID, resDate, expPartySize, business){
+  async createReservation(userID, resDate, expPartySize, business, tableID){
 
-    const [existing] = await connection.query('SELECT * FROM reservations WHERE ID = ? and User_ID = ?', [ID, userID]);
+    const [existing] = await connection.query('SELECT * FROM reservations WHERE Reservation_Date = ? and User_ID = ?', [resDate, userID]);
+    const [existing_user] = await connection.query('SELECT * FROM users WHERE ID = ?', [userID]);
 
-    if(existing.length > 0){
-        return false;
-    } else {
-        try{
-            const [result] = await connection.query('INSERT INTO users (ID, User_ID, Reservation_Date, Expected_Party_Size, Business) VALUES (?, ?, ?, ?, ?, ?)', [ID, userID, resDate, expPartySize, business]);
+    if(existing.length > 0 || existing_user.length < 1){
+      console.error("Failed reservation create");
+      return false;
+    }else {
+      try{
+        const [result] = await connection.query('INSERT INTO reservations (User_ID, Reservation_Date, Expected_Party_Size, Business) VALUES (?, ?, ?, ?)', [userID, resDate, expPartySize, business]);
+        const reservation_ID = result.insertId;
+
             
-            if(result && result.affectedRows === 1){
-                return true;
-            } else {
-                return false;
-            }
-        } catch (error){
-            console.log("Failed reservation: ", error);
+        for(let i = 0; i < tableID.length; i++){
+          const [resultConnected] = await connection.query('INSERT INTO reservations_tables (Reservation_ID, Table_ID) VALUES (?, ?)', [reservation_ID ,tableID[i]]);
+          if(result && result.affectedRows === 1){
+            continue;
+          } else {
             return false;
+          }
         }
+
+        if(result && result.affectedRows === 1){
+          return true;
+        } else {
+          return false;
+        }
+      } catch (error){
+        console.log("Failed reservation: ", error);
+        return false;
+      }
     }   
   }
 
