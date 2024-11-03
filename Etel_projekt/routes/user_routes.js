@@ -93,7 +93,14 @@ router.post('/loginUser', async (req, res)=>{
 });
 
 router.post('/logout', async (req, res)=>{
-    //TODO
+    req.session.destroy(error=>{
+        if(error){
+            return res.redirect('/') //ide majd a profil oldal kell
+        }
+
+        res.clearCookie('connect.sid');
+        res.redirect('/login');
+    })
 });
 
 module.exports = router;
