@@ -39,10 +39,6 @@ class ReservationController{
         return`${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
     }
 
-    async calculateTables(numberOfSpaces, unformedDate){
-
-    }
-
     //returns how many spaces free at date DO NOT USE it's the part of getFreeSpaceNumber function
     async getFreeSpaces(unformedDate){
         const formedDate = this.formDate(unformedDate);
