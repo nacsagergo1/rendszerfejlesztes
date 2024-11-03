@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Nov 02, 2024 at 12:39 PM
--- Server version: 10.11.9-MariaDB-cll-lve
--- PHP Version: 8.3.13
+-- Gép: 127.0.0.1:3306
+-- Létrehozás ideje: 2024. Nov 03. 12:59
+-- Kiszolgáló verziója: 8.3.0
+-- PHP verzió: 8.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,29 +18,31 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `projectg_Asztafoglalos3`
+-- Adatbázis: `projectg_asztalfoglalos3`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Food`
+-- Tábla szerkezet ehhez a táblához `food`
 --
 
-CREATE TABLE `Food` (
-  `ID` int(11) NOT NULL,
-  `Name` text NOT NULL,
-  `Description` text NOT NULL,
-  `Category` text NOT NULL,
-  `Price` int(11) NOT NULL,
-  `Image_ID` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+DROP TABLE IF EXISTS `food`;
+CREATE TABLE IF NOT EXISTS `food` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `Name` text COLLATE utf8mb3_unicode_ci NOT NULL,
+  `Description` text COLLATE utf8mb3_unicode_ci NOT NULL,
+  `Category` text COLLATE utf8mb3_unicode_ci NOT NULL,
+  `Price` int NOT NULL,
+  `Image_ID` int NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 --
--- Dumping data for table `Food`
+-- A tábla adatainak kiíratása `food`
 --
 
-INSERT INTO `Food` (`ID`, `Name`, `Description`, `Category`, `Price`, `Image_ID`) VALUES
+INSERT INTO `food` (`ID`, `Name`, `Description`, `Category`, `Price`, `Image_ID`) VALUES
 (1, 'Gulyásleves', 'Hagyományos magyar gulyásleves marhahússal, burgonyával és paprikával, friss kenyérrel tálalva.', 'Leves', 1800, 0),
 (2, 'Halászlé', 'Fűszeres, paprika alapú halászlé frissen fogott harcsával, mely a Tisza part ízeit idézi.', 'Leves', 2300, 1),
 (3, 'Lencseleves', 'Laktató lencseleves füstölt kolbásszal, zöldségekkel és babérlevéllel, melegen tálalva.', 'Leves', 1600, 2),
@@ -146,19 +148,22 @@ INSERT INTO `Food` (`ID`, `Name`, `Description`, `Category`, `Price`, `Image_ID`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Food_Menus`
+-- Tábla szerkezet ehhez a táblához `food_menus`
 --
 
-CREATE TABLE `Food_Menus` (
-  `Food_ID` int(11) NOT NULL,
-  `Menu_ID` int(11) NOT NULL
+DROP TABLE IF EXISTS `food_menus`;
+CREATE TABLE IF NOT EXISTS `food_menus` (
+  `Food_ID` int NOT NULL,
+  `Menu_ID` int NOT NULL,
+  KEY `Food_ID` (`Food_ID`),
+  KEY `Menu_ID` (`Menu_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 --
--- Dumping data for table `Food_Menus`
+-- A tábla adatainak kiíratása `food_menus`
 --
 
-INSERT INTO `Food_Menus` (`Food_ID`, `Menu_ID`) VALUES
+INSERT INTO `food_menus` (`Food_ID`, `Menu_ID`) VALUES
 (1, 1),
 (5, 1),
 (10, 1),
@@ -248,21 +253,23 @@ INSERT INTO `Food_Menus` (`Food_ID`, `Menu_ID`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Menus`
+-- Tábla szerkezet ehhez a táblához `menus`
 --
 
-CREATE TABLE `Menus` (
-  `ID` int(11) NOT NULL,
-  `Name` text NOT NULL,
+DROP TABLE IF EXISTS `menus`;
+CREATE TABLE IF NOT EXISTS `menus` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `Name` text COLLATE utf8mb3_unicode_ci NOT NULL,
   `Active_From` datetime NOT NULL,
-  `Active_Until` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+  `Active_Until` datetime NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 --
--- Dumping data for table `Menus`
+-- A tábla adatainak kiíratása `menus`
 --
 
-INSERT INTO `Menus` (`ID`, `Name`, `Active_From`, `Active_Until`) VALUES
+INSERT INTO `menus` (`ID`, `Name`, `Active_From`, `Active_Until`) VALUES
 (1, 'Heti menü', '2024-10-11 00:00:00', '2024-10-17 23:59:59'),
 (2, 'Heti menü', '2024-10-18 00:00:00', '2024-10-24 23:59:59'),
 (3, 'Heti menü', '2024-10-25 00:00:00', '2024-10-31 23:59:59'),
@@ -284,73 +291,88 @@ INSERT INTO `Menus` (`ID`, `Name`, `Active_From`, `Active_Until`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `One_Time_Codes`
+-- Tábla szerkezet ehhez a táblához `one_time_codes`
 --
 
-CREATE TABLE `One_Time_Codes` (
-  `ID` int(11) NOT NULL,
-  `Code` int(11) NOT NULL,
-  `User_ID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `one_time_codes`;
+CREATE TABLE IF NOT EXISTS `one_time_codes` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `Code` int NOT NULL,
+  `User_ID` int NOT NULL,
   `Date` datetime NOT NULL,
-  `For_Password_Reset` tinyint(1) NOT NULL COMMENT 'TRUE ha elfelejtett jelszó kód, ha false, akkor fiok validitáshoz van.'
+  `For_Password_Reset` tinyint(1) NOT NULL COMMENT 'TRUE ha elfelejtett jelszó kód, ha false, akkor fiok validitáshoz van.',
+  PRIMARY KEY (`ID`),
+  KEY `User_ID` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Reservations`
+-- Tábla szerkezet ehhez a táblához `reservations`
 --
 
-CREATE TABLE `Reservations` (
-  `ID` int(11) NOT NULL,
-  `User_ID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `reservations`;
+CREATE TABLE IF NOT EXISTS `reservations` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `User_ID` int NOT NULL,
   `Reservation_Date` datetime NOT NULL,
-  `Expected_Party_Size` int(11) NOT NULL,
-  `Business` tinyint(1) NOT NULL
+  `Expected_Party_Size` int NOT NULL,
+  `Business` tinyint(1) NOT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `User_ID` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Reservations_Tables`
+-- Tábla szerkezet ehhez a táblához `reservations_tables`
 --
 
-CREATE TABLE `Reservations_Tables` (
-  `Reservation_ID` int(11) NOT NULL,
-  `Table_ID` int(11) NOT NULL
+DROP TABLE IF EXISTS `reservations_tables`;
+CREATE TABLE IF NOT EXISTS `reservations_tables` (
+  `Reservation_ID` int NOT NULL,
+  `Table_ID` int NOT NULL,
+  KEY `Reservation_ID` (`Reservation_ID`),
+  KEY `Table_ID` (`Table_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Reviews`
+-- Tábla szerkezet ehhez a táblához `reviews`
 --
 
-CREATE TABLE `Reviews` (
-  `ID` int(11) NOT NULL,
-  `User_ID` int(11) NOT NULL,
-  `Score` int(11) NOT NULL,
-  `Comment` text NOT NULL,
-  `Reservation_ID` int(11) NOT NULL
+DROP TABLE IF EXISTS `reviews`;
+CREATE TABLE IF NOT EXISTS `reviews` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `User_ID` int NOT NULL,
+  `Score` int NOT NULL,
+  `Comment` text COLLATE utf8mb3_unicode_ci NOT NULL,
+  `Reservation_ID` int NOT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `Reservation_ID` (`Reservation_ID`),
+  KEY `User_ID` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Tables`
+-- Tábla szerkezet ehhez a táblához `tables`
 --
 
-CREATE TABLE `Tables` (
-  `ID` int(11) NOT NULL,
-  `Capacity` int(11) NOT NULL,
-  `Description` text NOT NULL COMMENT 'kinti/benti'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+DROP TABLE IF EXISTS `tables`;
+CREATE TABLE IF NOT EXISTS `tables` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `Capacity` int NOT NULL,
+  `Description` text COLLATE utf8mb3_unicode_ci NOT NULL COMMENT 'kinti/benti',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 --
--- Dumping data for table `Tables`
+-- A tábla adatainak kiíratása `tables`
 --
 
-INSERT INTO `Tables` (`ID`, `Capacity`, `Description`) VALUES
+INSERT INTO `tables` (`ID`, `Capacity`, `Description`) VALUES
 (1, 2, 'kinti'),
 (2, 2, 'kinti'),
 (3, 2, 'kinti'),
@@ -367,190 +389,85 @@ INSERT INTO `Tables` (`ID`, `Capacity`, `Description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Users`
+-- Tábla szerkezet ehhez a táblához `users`
 --
 
-CREATE TABLE `Users` (
-  `ID` int(11) NOT NULL,
-  `Email_Address` text NOT NULL,
-  `Hash` text NOT NULL,
-  `Salt` text NOT NULL,
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `Email_Address` text COLLATE utf8mb3_unicode_ci NOT NULL,
+  `Hash` text COLLATE utf8mb3_unicode_ci NOT NULL,
+  `Salt` text COLLATE utf8mb3_unicode_ci NOT NULL,
   `Validated` tinyint(1) NOT NULL,
   `Registration_Date` datetime NOT NULL,
-  `Admin` tinyint(1) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+  `Admin` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+
+--
+-- A tábla adatainak kiíratása `users`
+--
+
+INSERT INTO `users` (`ID`, `Email_Address`, `Hash`, `Salt`, `Validated`, `Registration_Date`, `Admin`) VALUES
+(4, 'admin@gmail.com', '$2b$10$nzk.WdmBPqMXNKINioqtWuIbIDY1IFvTvRnH76SbJ4yeABze7CFf6', '10', 1, '2024-11-03 13:58:19', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Welcome_Drinks`
+-- Tábla szerkezet ehhez a táblához `welcome_drinks`
 --
 
-CREATE TABLE `Welcome_Drinks` (
-  `Reservation_ID` int(11) NOT NULL,
-  `Food_ID` int(11) NOT NULL
+DROP TABLE IF EXISTS `welcome_drinks`;
+CREATE TABLE IF NOT EXISTS `welcome_drinks` (
+  `Reservation_ID` int NOT NULL,
+  `Food_ID` int NOT NULL,
+  KEY `Reservation_ID` (`Reservation_ID`),
+  KEY `Food_ID` (`Food_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 --
--- Indexes for dumped tables
+-- Megkötések a kiírt táblákhoz
 --
 
 --
--- Indexes for table `Food`
+-- Megkötések a táblához `food_menus`
 --
-ALTER TABLE `Food`
-  ADD PRIMARY KEY (`ID`);
+ALTER TABLE `food_menus`
+  ADD CONSTRAINT `Food_Menus_ibfk_1` FOREIGN KEY (`Food_ID`) REFERENCES `food` (`ID`),
+  ADD CONSTRAINT `Food_Menus_ibfk_2` FOREIGN KEY (`Menu_ID`) REFERENCES `menus` (`ID`);
 
 --
--- Indexes for table `Food_Menus`
+-- Megkötések a táblához `one_time_codes`
 --
-ALTER TABLE `Food_Menus`
-  ADD KEY `Food_ID` (`Food_ID`),
-  ADD KEY `Menu_ID` (`Menu_ID`);
+ALTER TABLE `one_time_codes`
+  ADD CONSTRAINT `One_Time_Codes_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `users` (`ID`);
 
 --
--- Indexes for table `Menus`
+-- Megkötések a táblához `reservations`
 --
-ALTER TABLE `Menus`
-  ADD PRIMARY KEY (`ID`);
+ALTER TABLE `reservations`
+  ADD CONSTRAINT `Reservations_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `users` (`ID`);
 
 --
--- Indexes for table `One_Time_Codes`
+-- Megkötések a táblához `reservations_tables`
 --
-ALTER TABLE `One_Time_Codes`
-  ADD PRIMARY KEY (`ID`),
-  ADD KEY `User_ID` (`User_ID`);
+ALTER TABLE `reservations_tables`
+  ADD CONSTRAINT `Reservations_Tables_ibfk_1` FOREIGN KEY (`Reservation_ID`) REFERENCES `reservations` (`ID`),
+  ADD CONSTRAINT `Reservations_Tables_ibfk_2` FOREIGN KEY (`Table_ID`) REFERENCES `tables` (`ID`);
 
 --
--- Indexes for table `Reservations`
+-- Megkötések a táblához `reviews`
 --
-ALTER TABLE `Reservations`
-  ADD PRIMARY KEY (`ID`),
-  ADD KEY `User_ID` (`User_ID`);
+ALTER TABLE `reviews`
+  ADD CONSTRAINT `Reviews_ibfk_1` FOREIGN KEY (`Reservation_ID`) REFERENCES `reservations` (`ID`),
+  ADD CONSTRAINT `Reviews_ibfk_2` FOREIGN KEY (`User_ID`) REFERENCES `users` (`ID`);
 
 --
--- Indexes for table `Reservations_Tables`
+-- Megkötések a táblához `welcome_drinks`
 --
-ALTER TABLE `Reservations_Tables`
-  ADD KEY `Reservation_ID` (`Reservation_ID`),
-  ADD KEY `Table_ID` (`Table_ID`);
-
---
--- Indexes for table `Reviews`
---
-ALTER TABLE `Reviews`
-  ADD PRIMARY KEY (`ID`),
-  ADD KEY `Reservation_ID` (`Reservation_ID`),
-  ADD KEY `User_ID` (`User_ID`);
-
---
--- Indexes for table `Tables`
---
-ALTER TABLE `Tables`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `Users`
---
-ALTER TABLE `Users`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `Welcome_Drinks`
---
-ALTER TABLE `Welcome_Drinks`
-  ADD KEY `Reservation_ID` (`Reservation_ID`),
-  ADD KEY `Food_ID` (`Food_ID`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `Food`
---
-ALTER TABLE `Food`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
-
---
--- AUTO_INCREMENT for table `Menus`
---
-ALTER TABLE `Menus`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
-
---
--- AUTO_INCREMENT for table `One_Time_Codes`
---
-ALTER TABLE `One_Time_Codes`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `Reservations`
---
-ALTER TABLE `Reservations`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `Reviews`
---
-ALTER TABLE `Reviews`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `Tables`
---
-ALTER TABLE `Tables`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
---
--- AUTO_INCREMENT for table `Users`
---
-ALTER TABLE `Users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `Food_Menus`
---
-ALTER TABLE `Food_Menus`
-  ADD CONSTRAINT `Food_Menus_ibfk_1` FOREIGN KEY (`Food_ID`) REFERENCES `Food` (`ID`),
-  ADD CONSTRAINT `Food_Menus_ibfk_2` FOREIGN KEY (`Menu_ID`) REFERENCES `Menus` (`ID`);
-
---
--- Constraints for table `One_Time_Codes`
---
-ALTER TABLE `One_Time_Codes`
-  ADD CONSTRAINT `One_Time_Codes_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `Users` (`ID`);
-
---
--- Constraints for table `Reservations`
---
-ALTER TABLE `Reservations`
-  ADD CONSTRAINT `Reservations_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `Users` (`ID`);
-
---
--- Constraints for table `Reservations_Tables`
---
-ALTER TABLE `Reservations_Tables`
-  ADD CONSTRAINT `Reservations_Tables_ibfk_1` FOREIGN KEY (`Reservation_ID`) REFERENCES `Reservations` (`ID`),
-  ADD CONSTRAINT `Reservations_Tables_ibfk_2` FOREIGN KEY (`Table_ID`) REFERENCES `Tables` (`ID`);
-
---
--- Constraints for table `Reviews`
---
-ALTER TABLE `Reviews`
-  ADD CONSTRAINT `Reviews_ibfk_1` FOREIGN KEY (`Reservation_ID`) REFERENCES `Reservations` (`ID`),
-  ADD CONSTRAINT `Reviews_ibfk_2` FOREIGN KEY (`User_ID`) REFERENCES `Users` (`ID`);
-
---
--- Constraints for table `Welcome_Drinks`
---
-ALTER TABLE `Welcome_Drinks`
-  ADD CONSTRAINT `Welcome_Drinks_ibfk_1` FOREIGN KEY (`Reservation_ID`) REFERENCES `Reservations` (`ID`),
-  ADD CONSTRAINT `Welcome_Drinks_ibfk_2` FOREIGN KEY (`Food_ID`) REFERENCES `Food` (`ID`);
+ALTER TABLE `welcome_drinks`
+  ADD CONSTRAINT `Welcome_Drinks_ibfk_1` FOREIGN KEY (`Reservation_ID`) REFERENCES `reservations` (`ID`),
+  ADD CONSTRAINT `Welcome_Drinks_ibfk_2` FOREIGN KEY (`Food_ID`) REFERENCES `food` (`ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
