@@ -24,8 +24,19 @@ class UserDAO {
         }   
     }
 
-    async loginUser(email, passwd){
-        //TODO
+    async loginUser(email){
+        try{
+            const [user] = await db.query('SELECT * FROM users WHERE Email_Address = ?', [email]);
+
+            if(user){
+                return user[0];
+            } else {
+                return null;
+            } 
+        } catch (error){
+            console.log("Hiba a bejelentkezéskor: ", error);
+            throw error;
+        }
     }
 
 };
