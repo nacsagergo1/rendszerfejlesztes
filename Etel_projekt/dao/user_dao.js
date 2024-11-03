@@ -2,17 +2,26 @@ const db = require('../config/db');
 
 class UserDAO {
 
-    async createUser(email, passwd, validated, reg_date, salt){
+    async createUser(email, passwd, validated, reg_date, salt, admin){
 
-        let existing = await db.query('SELECT * FROM users WHERE Email_Address = $1', [email]);
+        const [existing] = await db.query('SELECT * FROM users WHERE Email_Address = ?', [email]);
 
-        if(existing.rows.length > 0){
+        if(existing.length > 0){
             return false;
-        }
-
-        await db.query('INSERT INTO users (Email_Address, Hash, Salt, Validated, Registration_Date) VALUES ($1, $2, $3, $4, $5)'
-            , [email, passwd, salt, validated, reg_date]).catch(console.log);
-            return true;
+        } else {
+            try{
+                const [result] = await db.query('INSERT INTO users (Email_Address, Hash, Salt, Validated, Registration_Date, Admin) VALUES (?, ?, ?, ?, ?, ?)', [email, passwd, salt, validated, reg_date, admin]);
+                
+                if(result && result.affectedRows === 1){
+                    return true;
+                } else {
+                    return false;
+                }
+            } catch (error){
+                console.log("Hiba a regisztrációkor: ", error);
+                return false;
+            }
+        }   
     }
 
     async loginUser(email, passwd){

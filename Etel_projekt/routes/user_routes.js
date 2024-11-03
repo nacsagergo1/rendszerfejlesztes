@@ -4,26 +4,27 @@ const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
 const UserDAO = require("../dao/user_dao");
 
-router.post('/registerUser', (req, res)=>{
-    let username = req.body.username;
-    let email = req.body.email;
-    let passwd = req.body.password;
-    let passwd_conf = req.body.confirm-password;
+router.post('/registerUser', async (req, res)=>{
+    let {username} = req.body;
+    let {email} = req.body;
+    let {password} = req.body;
+    let {confirm_password} = req.body;
+    let admin = 0;
 
-    if(email.trim() === "" || username.trim() === "" || passwd.trim() === "" || passwd_conf.trim() === ""){
-        return res.status(400).send("Hiányzó mező!");
+    if(email.trim() === "" || username.trim() === "" || password.trim() === "" || confirm_password.trim() === ""){
+        return res.render('registration', {error: "Hiányzó mező!", username, email});
     }
 
     if(!email.includes("@")){
-        return res.status(400).send("Nem megfelelő email cím formátum");
+        return res.render('registration', {error: "Nem megfelelő e-mail cím formátum!", username, email});
     }
 
-    if(passwd !== passwd_conf){
-        return res(400).send("A jelszó és a megerősítés nem egyezik!");
+    if(password !== confirm_password){
+        return res.render('registration', {error: "A jelszó és a megerősítése nem egyezik!", username, email});
     }
 
     let validated = 0;
-    let salt = "";
+    let salt = "10";
     
 
     let now = new Date();
@@ -36,17 +37,19 @@ router.post('/registerUser', (req, res)=>{
 
     let reg_date = `${year}-${month}-${day} ${hours}:${minutes}:${secs}`;
     
+    try {
+        const hash = await bcrypt.hash(password, 10);
+        
+        const userCreated = await new UserDAO().createUser(email, hash, validated, reg_date, salt, admin);
 
-    let user;
-
-    bcrypt.hash(password, 10).then(async (hash) => {
-        user = await new UserDAO().createUser(email, hash, validated, reg_date, salt)
-    });
-
-    if(!user){
-        return res.status(400).send("Ezzel az e-mail címmel már van fiók!");
-    } else {
-        return res.redirect('/login');
+        if (!userCreated) {
+            return res.render('registration', {error: "Ezzel az e-mail címmel már van fiók regisztrálva!", username, email});
+        } else {
+            return res.redirect('/login');
+        }
+    } catch (error) {
+        console.error("Hiba történt a regisztráció során:", error);
+        return res.render('registration', {error: "Hiba a regisztrálás során!", username, email});
     }
 
 });
