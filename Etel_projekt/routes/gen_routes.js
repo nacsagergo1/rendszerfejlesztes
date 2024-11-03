@@ -19,4 +19,16 @@ router.get('/reserve', (req, res)=>{
     return res.render('reserve');
 });
 
+router.get('/menu', (req, res)=>{
+    return res.render('menu');
+});
+
+router.get('/reviews', (req, res)=>{
+    return res.render('reviews');
+});
+
+router.get('/contact', (req, res)=>{
+    return res.render('contact');
+});
+
 module.exports = router;
