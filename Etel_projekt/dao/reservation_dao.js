@@ -1,4 +1,4 @@
-const connection = require('./connection_dao');
+const connection = require('../config/db');
 
 //TODO: database connection test query: change to reservation CRUD
 /*
