@@ -147,6 +147,7 @@ body::before {
 
 /* Error Message Style */
 #error {
+    text-align: center;
     color: red;
     font-size: 25px;
     margin-top: 10px;
