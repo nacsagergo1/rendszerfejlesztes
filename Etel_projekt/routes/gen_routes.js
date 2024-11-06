@@ -15,8 +15,12 @@ router.get('/register', (req, res)=>{
     return res.render('registration');
 });
 
-router.get('/reserve', (req, res)=>{
-    return res.render('reserve');
+router.get('/reserve', (req, res) => {
+    if (req.session.user) {
+        return res.render('reserve');
+    } else {
+        return res.redirect('/login');
+    }
 });
 
 router.get('/menu', (req, res)=>{
@@ -29,6 +33,10 @@ router.get('/reviews', (req, res)=>{
 
 router.get('/contact', (req, res)=>{
     return res.render('contact');
+});
+
+router.get('*', (req, res) => {
+    return res.redirect('/');
 });
 
 module.exports = router;

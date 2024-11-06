@@ -27,6 +27,23 @@ class ReservationDAO{
 
   constructor() {}
 
+  async getTablesFromReservation(reservationID){
+    try {
+      const [rows] = await connection.query(
+          `SELECT tables.ID, tables.Capacity FROM tables 
+          INNER JOIN reservations_tables ON reservations_tables.Table_ID = tables.ID 
+          WHERE reservations_tables.Reservation_ID = ?
+          ORDER BY tables.Capacity ASC;`,
+          [reservationID]
+      );
+
+      return rows;
+  } catch (error) {
+      console.error('Hiba történt a lekérdezés során:', error);
+      throw error;
+  }
+  }
+
   async createReservation(userID, resDate, expPartySize, business, tableID){
 
     const [existing] = await connection.query('SELECT * FROM reservations WHERE Reservation_Date = ? and User_ID = ?', [resDate, userID]);

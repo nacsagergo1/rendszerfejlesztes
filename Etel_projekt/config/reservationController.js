@@ -130,6 +130,13 @@ class ReservationController{
         const reservationSuccess = await reservationDAO.createReservation(User_ID, formedDate, numberOfSpaces, false, reservationData);
         return reservationSuccess;
     }
+
+    async modifyPerson()
+    {
+        const resTables = await reservationDAO.getTablesFromReservation(formedDate);
+        const totalCapacity = await resTables.reduce((sum, table) => sum + table.Capacity, 0);
+        //A módosításnál asztal elvételről/ hozzáadásról döntés
+    }
 }
 
 module.exports = ReservationController;
