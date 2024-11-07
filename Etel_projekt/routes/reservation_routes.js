@@ -18,6 +18,42 @@ router.get('/free-space', async (req, res) => {
     }
 });
 
+router.get('/list-reservations', async (req, res) => {
+    if (!req.session.user) {
+        return res.redirect('/login');
+    }
+
+    const user = req.session.user; // free-space?date=2024-11-06
+
+    try {
+        const reservations = await resCont.listReservation(user);
+        res.json({ reservations });
+    } catch (error) {
+        res.status(500).send('Error occurred');
+    }
+});
+
+router.post('/deleteReservation', async (req, res) => {
+    if (!req.session.user) {
+        return res.redirect('/login');
+    }
+
+    const reservationID = req.query.resID;
+
+    try {
+        const deleteSuccess = await deleteReservation(reservationID); 
+
+        if (deleteSuccess) {
+            res.json({ success: true });
+        } else {
+            res.json({ success: false, error: 'Cant find reservation' });
+        }
+    } catch (error) {
+        console.error("An error occured during deletion of reservation", error);
+        res.status(500).json({ success: false, error: 'An error occured during deletion of reservation' });
+    }
+});
+
 router.post('/reserve', async (req, res) => {
     if (!req.session.user) {
         return res.redirect('/login');

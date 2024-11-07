@@ -194,6 +194,19 @@ class ReservationController{
         }
         
     }
+
+    async listReservation(user)
+    {
+        const reservationList = await reservationDAO.listReservation(user);
+        return reservationList;
+    }
+
+    async deleteReservation(reservationID)
+    {
+        const deleteSucceed = await reservationDAO.deleteReservation(reservationID);
+        return deleteSucceed;
+    }
+
 }
 
 module.exports = ReservationController;

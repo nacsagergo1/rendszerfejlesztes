@@ -27,6 +27,34 @@ class ReservationDAO{
 
   constructor() {}
 
+  async listReservation(user){
+    if (user.role === 'admin') {
+      try {
+        const [rows] = await connection.query(
+          `SELECT * FROM reservations`,
+          [reservationID]
+        );
+  
+        return rows;
+      }catch (error) {
+        console.error('Hiba történt a lekérdezés során:', error);
+        throw error;
+      }
+    }else{
+      try {
+        const [rows] = await connection.query(
+          `SELECT * FROM reservations WHERE reservations.User_ID = ?;`,
+          [user.id]
+        );
+  
+        return rows;
+      }catch (error) {
+        console.error('Hiba történt a lekérdezés során:', error);
+        throw error;
+      }
+    }
+  }
+
   async updateReservation(reservationID, newResDate, newPartySize) {
     try {
         const [existingReservation] = await connection.query('SELECT * FROM reservations WHERE ID = ?', [reservationID]);
@@ -105,7 +133,7 @@ class ReservationDAO{
   async getReservation(reservationID){
     try {
       const [rows] = await connection.query(
-        `SELECT * FROM reservations WHERE reservations.ID = ?;`,
+        `SELECT * FROM reservations WHERE reservations.ID = ?`,
         [reservationID]
       );
 
@@ -189,8 +217,41 @@ class ReservationDAO{
     }
   }
 
+  async deleteReservation(reservationID) {
+    try {
+        
+        const [existingReservation] = await connection.query('SELECT * FROM reservations WHERE ID = ?', [reservationID]);
+  
+        if (existingReservation.length === 0) {
+            console.error("Reservation not found!");
+            return false;
+        }
+  
+        const [deleteTablesResult] = await connection.query('DELETE FROM reservations_tables WHERE Reservation_ID = ?', [reservationID]);
+  
+        if (deleteTablesResult.affectedRows > 0) {
+            console.log("Tables deleted");
+        } else {
+            console.log("There were no tables");
+        }
+  
+        const [deleteReservationResult] = await connection.query('DELETE FROM reservations WHERE ID = ?', [reservationID]);
+  
+        if (deleteReservationResult.affectedRows > 0) {
+            console.log("Reservation deleted");
+            return true;
+        } else {
+            console.log("Cant find reservation");
+            return false;
+        }
+  
+    } catch (error) {
+        console.error("Error deleting reservation: ", error);
+        return false;
+    }
+  }
+  
 
 }
-
 
 module.exports = ReservationDAO;
