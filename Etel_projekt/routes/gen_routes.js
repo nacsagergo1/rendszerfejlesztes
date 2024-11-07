@@ -36,7 +36,7 @@ router.get('/contact', (req, res)=>{
 });
 
 router.get('*', (req, res) => {
-    return res.redirect('/');
+    return res.render('home');
 });
 
 module.exports = router;
