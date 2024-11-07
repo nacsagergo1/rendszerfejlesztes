@@ -77,6 +77,7 @@ router.post('/loginUser', async (req, res)=>{
 
             if(match){
                 req.session.user = {
+                    id: user.ID,
                     email: user.Email_Address,
                     role: user.Admin ? 'admin' : 'user',
                 };
