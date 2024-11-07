@@ -27,6 +27,95 @@ class ReservationDAO{
 
   constructor() {}
 
+  async updateReservation(reservationID, newResDate, newPartySize) {
+    try {
+        const [existingReservation] = await connection.query('SELECT * FROM reservations WHERE ID = ?', [reservationID]);
+
+        if (existingReservation.length === 0) {
+            console.error("Reservation not found!");
+            return false;
+        }
+
+        const [updateResult] = await connection.query(
+            'UPDATE reservations SET Reservation_Date = ?, Expected_Party_Size = ? WHERE ID = ?',
+            [newResDate, newPartySize, reservationID]
+        );
+
+        if (updateResult.affectedRows > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    } catch (error) {
+        console.error("Error updating reservation: ", error);
+        return false;
+    }
+  }
+
+  async deleteTablesFromReservation(reservation_ID, tableID) {
+    for (let i = 0; i < tableID.length; i++) {
+        const [existingRecord] = await connection.query(
+            'SELECT 1 FROM reservations_tables WHERE Reservation_ID = ? AND Table_ID = ?',
+            [reservation_ID, tableID[i]]
+        );
+
+        if (existingRecord.length === 0) {
+            continue;
+        }
+
+        const [resultDeleted] = await connection.query(
+            'DELETE FROM reservations_tables WHERE Reservation_ID = ? AND Table_ID = ?',
+            [reservation_ID, tableID[i]]
+        );
+
+        if (resultDeleted && resultDeleted.affectedRows === 1) {
+            continue;
+        } else {
+            return false;
+        }
+    }
+    return true;
+  }
+
+  async addTableToReservation(reservation_ID,tableID) {
+    for (let i = 0; i < tableID.length; i++) {
+        const [existingRecord] = await connection.query(
+            'SELECT 1 FROM reservations_tables WHERE Reservation_ID = ? AND Table_ID = ?',
+            [reservation_ID, tableID[i]]
+        );
+
+        if (existingRecord.length > 0) {
+            continue;
+        }
+
+        const [resultConnected] = await connection.query(
+            'INSERT INTO reservations_tables (Reservation_ID, Table_ID) VALUES (?, ?)',
+            [reservation_ID, tableID[i]]
+        );
+
+        if (resultConnected && resultConnected.affectedRows === 1) {
+            continue;
+        } else {
+            return false;
+        }
+    }
+    return true;
+}
+
+  async getReservation(reservationID){
+    try {
+      const [rows] = await connection.query(
+        `SELECT * FROM reservations WHERE reservations.ID = ?;`,
+        [reservationID]
+      );
+
+      return rows;
+    }catch (error) {
+      console.error('Hiba történt a lekérdezés során:', error);
+      throw error;
+    }
+  }
+
   async getTablesFromReservation(reservationID){
     try {
       const [rows] = await connection.query(
@@ -38,10 +127,10 @@ class ReservationDAO{
       );
 
       return rows;
-  } catch (error) {
+    } catch (error) {
       console.error('Hiba történt a lekérdezés során:', error);
       throw error;
-  }
+    }
   }
 
   async createReservation(userID, resDate, expPartySize, business, tableID){
