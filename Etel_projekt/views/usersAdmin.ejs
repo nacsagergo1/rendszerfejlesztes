@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Felhasználók</title>
+    <link rel="icon" href="/img/icon.png" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: '/list-users',
+                method: 'GET',
+                success: function(response) {
+                    if (response.users) {
+                        const users = response.users;
+                        const tbody = $('table tbody');
+                        
+                        tbody.empty();
+                        
+                        users.forEach(user => {
+                            const userRow = `
+                                <tr>
+                                    <td>${user.Username}</td>
+                                    <td>${user.Email_Address}</td>
+                                    <td>${new Date(user.Registration_Date).toLocaleDateString()}</td>
+                                    <td>${user.Validated === 1 ? 'Igen' : 'Nem'}</td>
+                                    <td>${user.Admin === 1 ? 'Igen' : 'Nem'}</td>
+                                    <td><button class="btn btn-sm btn-danger delete-btn" data-id="${user.ID}">Törlés</button></td>
+                                </tr>
+                            `;
+                            tbody.append(userRow);
+                        });
+                    } else {
+                        console.error('Nincs felhasználói adat.');
+                    }
+                },
+                error: function(error) {
+                    console.error('Hiba történt:', error);
+                }
+            });
+        
+        $('table').on('click', '.delete-btn', function() {
+            const userId = $(this).data('id');
+
+            if (confirm('Biztosan törölni szeretnéd a felhasználót?')) {
+                $.ajax({
+                    url: `/delete-user/${userId}`,
+                    method: 'DELETE',
+                    success: function(response) {
+                        alert(response.message);
+                        $(`tr[data-id="${userId}"]`).remove();
+                    },
+                    error: function(error) {
+                        console.error('Hiba történt a törlés során:', error);
+                        alert('Hiba történt a törlés során.');
+                    }
+                });
+            }
+        });
+
+        });
+        </script>
+<div id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a href="/" id="home" class="navbar-brand">A nagyi étterme</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="navigation" class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="/menu" class="nav-link">Menü</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/reserve" class="nav-link">Foglalás</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/reviews" class="nav-link">Vélemények</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Kapcsolat</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/login" class="nav-link">Bejelentkezés</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<h1>Felhasználók kezelése</h1>
+<div>
+    <table>
+        <caption>Felhasználók</caption>
+        <thead>
+            <tr>
+                <th>Felhasználónév</th>
+                <th>E-mail cím</th>
+                <th>Regisztráció dátuma</th>
+                <th>Validált</th>
+                <th>Admin</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
