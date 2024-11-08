@@ -19,7 +19,7 @@ router.get('/reserve', (req, res) => {
     if (req.session.user) {
         return res.render('reserve');
     } else {
-        return res.redirect('/login');
+        return res.render('login');
     }
 });
 

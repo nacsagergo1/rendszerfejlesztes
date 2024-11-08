@@ -104,4 +104,51 @@ router.post('/logout', async (req, res)=>{
     })
 });
 
+
+router.get('/list-users', async (req, res) => {
+    const user = req.user;
+
+    if (!user || user.role !== 'admin') {
+        return res.status(403).json({ message: 'Nincs jogosultság.' });
+    }
+
+    try {
+        const users = await new UserDAO().listUsers(user);
+
+        if (users) {
+            res.json({ users });
+        } else {
+            res.status(500).json({ message: 'Nem sikerült lekérdezni a felhasználókat.' });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Hiba történt.', error });
+    }
+});
+
+router.delete('/delete-user/:userId', async (req, res) => {
+    const user = req.user;
+    const given_user_Id = req.userId;
+    const userId = req.params.userId;
+
+    if (!user || (user.role !== 'admin' && given_user_Id != userId)) {
+        return res.status(403).json({ message: 'Nincs jogosultság.' });
+    }
+
+
+
+    try {
+        await new UserDAO().clearUserReservations(userId);
+        const result = await new UserDAO().deleteUser(userId);
+        await new UserDAO().deleteFutureReservations();
+
+        if (result) {
+            res.json({ message: 'A felhasználó sikeresen törölve.' });
+        } else {
+            res.status(404).json({ message: 'A felhasználó nem található, vagy nem sikerült törölni.' });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Hiba történt a törlés során.', error });
+    }
+});
+
 module.exports = router;
