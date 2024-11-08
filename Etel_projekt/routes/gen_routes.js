@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 router.use((req, res, next) => {
-    const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/', '/usersAdmin'];
+    const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/', '/usersAdmin', '/profile'];
     if (!validRoutes.includes(req.path)) {
         return res.redirect('/');
     }
@@ -43,6 +43,10 @@ router.get('/contact', (req, res) => {
 
 router.get('/usersAdmin', (req, res) => {
     return res.render('usersAdmin');
+});
+
+router.get('/profile', (req, res) => {
+    return res.render('profile');
 });
 
 module.exports = router;
