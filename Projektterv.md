@@ -443,6 +443,14 @@ Tartam: 1 nap
 
 Erőforrásigény: 1/4 személynap
 
+#### 8.3.23.  Admin jogosultsághoz tartozó profil oldal létrehozása
+
+Felelős: Sánta Krisztina Csilla
+
+Tartam: 1 nap
+
+Erőforrásigény: 1 személynap
+
 
 ### 8.4. Prototípus II. (4. mérföldkő)
 
@@ -530,7 +538,7 @@ Tartam:  2 nap
 
 Erőforrásigény:  1 személynap
 
-#### 8.4.11. Admin jogosultsághoz tartozó profil oldal létrehozása
+#### 8.4.11. Ételekhez tartozó háttérlogika kialakítása
 
 Felelős: Sánta Krisztina Csilla
 
