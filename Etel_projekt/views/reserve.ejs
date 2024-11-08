@@ -134,20 +134,13 @@
         const url = `/free-space?date=${selectedDate}`;
 
 
-        // AJAX kérés a kívánt nappal
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                // A freeSpaces tömb a data.freeSpaces-ban található
                 var freeSpaces = data.freeSpaces;
 
-                // Az adatokat most már a freeSpaces tömbben tároljuk
                 console.log(freeSpaces);
 
-                // Itt dolgozhatunk tovább a freeSpaces tömbbel
-                // pl. menthetjük el más változókba, stb.
-            
-                // Előre generált fix adatok minden napra (hétfő kivételével)
                 const weeklyAvailability = {
                     "0": { availableSlots: generateDaySlots(freeSpaces) },
                     "2": { availableSlots: generateDaySlots([0, 7, 6, 10, 8, 5, 4, 0, 0, 3, 8, 2, 10, 0, 5, 6, 0, 4, 10, 5, 6]) },
@@ -176,6 +169,7 @@
                         alert("A vendégek száma csak pozitív szám lehet!");
                     }
                 });
+                //////////////////////
 
                 // Check guest count when any table cell is clicked
                 calendarBody.on("click", "td", function() {
