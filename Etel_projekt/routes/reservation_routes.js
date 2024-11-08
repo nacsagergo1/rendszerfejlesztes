@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const ReservationController = require('../config/reservationController');
 const resCont = new ReservationController();
-const moment = require('moment');
 
 router.get('/free-space', async (req, res) => {
     if (!req.session.user) {
@@ -10,19 +9,24 @@ router.get('/free-space', async (req, res) => {
     }
 
     const selectedDateInput = req.query.date;
-    const selectedDate = moment(selectedDateInput).startOf('day');
-    const start = selectedDate.clone().hour(10); // 10:00
-    const end = selectedDate.clone().hour(20); // 20:00
+    const selectedDate = new Date(selectedDateInput); // Az inputból Date objektumot hozunk létre
+    selectedDate.setHours(0, 0, 0, 0); // A nap kezdetére állítjuk (00:00:00)
+
+    const start = new Date(selectedDate); // 10:00
+    start.setHours(10, 0, 0, 0);
+
+    const end = new Date(selectedDate); // 20:00
+    end.setHours(20, 0, 0, 0);
 
     let freeSpaces = [];
 
     try {
         // Félóránkénti időpontok generálása
-        for (let time = start; time.isBefore(end); time.add(30, 'minutes')) {
-            const unformedDate = time.toDate(); // Átalakítjuk Date objektummá
+        for (let time = new Date(start); time < end; time.setMinutes(time.getMinutes() + 30)) {
+            const unformedDate = new Date(time); // Átalakítjuk Date objektummá
 
             // Továbbadjuk a Date objektumot a getFreeSpaceNumber funkciónak
-            const freeSpace = await resCont.getFreeSpaceNumber(unformedDate); 
+            const freeSpace = await resCont.getFreeSpaceNumber(unformedDate);
             freeSpaces.push(freeSpace);
         }
 
