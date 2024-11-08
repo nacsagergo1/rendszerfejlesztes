@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil</title>
+    <link rel="icon" href="/img/icon.png" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a href="/" id="home" class="navbar-brand">A nagyi étterme</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="navigation" class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="/menu" class="nav-link">Menü</a></li>
+                <li class="nav-item"><a href="/reserve" class="nav-link">Foglalás</a></li>
+                <li class="nav-item"><a href="/reviews" class="nav-link">Vélemények</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Kapcsolat</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="profile-container" class="container mt-5">
+    <h1 class="text-center mt-5 pt-5">Profil adatai</h1>
+    
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <p id="email"><%= user.email %></p>
+    </div>
+
+    
+</div>
+
+</body>
+</html>

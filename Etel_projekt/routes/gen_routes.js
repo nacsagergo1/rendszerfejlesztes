@@ -46,7 +46,12 @@ router.get('/usersAdmin', (req, res) => {
 });
 
 router.get('/profile', (req, res) => {
-    return res.render('profile');
+    if (req.session.user) {
+        return res.render('profile', { user: req.session.user });
+    } else {
+        return res.redirect('/login');
+    }
 });
+
 
 module.exports = router;
