@@ -7,63 +7,11 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
-    <script>
-        $(document).ready(function() {
-            $.ajax({
-                url: '/list-users',
-                method: 'GET',
-                success: function(response) {
-                    if (response.users) {
-                        const users = response.users;
-                        const tbody = $('table tbody');
-                        
-                        tbody.empty();
-                        
-                        users.forEach(user => {
-                            const userRow = `
-                                <tr>
-                                    <td>${user.Username}</td>
-                                    <td>${user.Email_Address}</td>
-                                    <td>${new Date(user.Registration_Date).toLocaleDateString()}</td>
-                                    <td>${user.Validated === 1 ? 'Igen' : 'Nem'}</td>
-                                    <td>${user.Admin === 1 ? 'Igen' : 'Nem'}</td>
-                                    <td><button class="btn btn-sm btn-danger delete-btn" data-id="${user.ID}">Törlés</button></td>
-                                </tr>
-                            `;
-                            tbody.append(userRow);
-                        });
-                    } else {
-                        console.error('Nincs felhasználói adat.');
-                    }
-                },
-                error: function(error) {
-                    console.error('Hiba történt:', error);
-                }
-            });
-        
-        $('table').on('click', '.delete-btn', function() {
-            const userId = $(this).data('id');
-
-            if (confirm('Biztosan törölni szeretnéd a felhasználót?')) {
-                $.ajax({
-                    url: `/delete-user/${userId}`,
-                    method: 'DELETE',
-                    success: function(response) {
-                        alert(response.message);
-                        $(`tr[data-id="${userId}"]`).remove();
-                    },
-                    error: function(error) {
-                        console.error('Hiba történt a törlés során:', error);
-                        alert('Hiba történt a törlés során.');
-                    }
-                });
-            }
-        });
-
-        });
-        </script>
+    
 <div id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
         <a href="/" id="home" class="navbar-brand">A nagyi étterme</a>
@@ -111,7 +59,62 @@
     </table>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            url: '/list-users',
+            method: 'GET',
+            success: function(response) {
+                if (response.users) {
+                    const users = response.users;
+                    const tbody = $('table tbody');
+                    
+                    tbody.empty();
+                    
+                    users.forEach(user => {
+                        const userRow = `
+                            <tr>
+                                <td>${user.Username}</td>
+                                <td>${user.Email_Address}</td>
+                                <td>${new Date(user.Registration_Date).toLocaleDateString()}</td>
+                                <td>${user.Validated === 1 ? 'Igen' : 'Nem'}</td>
+                                <td>${user.Admin === 1 ? 'Igen' : 'Nem'}</td>
+                                <td><button class="btn btn-sm btn-danger delete-btn" data-id="${user.ID}">Törlés</button></td>
+                            </tr>
+                        `;
+                        tbody.append(userRow);
+                    });
+                } else {
+                    console.error('Nincs felhasználói adat.');
+                }
+            },
+            error: function(error) {
+                console.error('Hiba történt:', error);
+            }
+        });
+    
+    $('table').on('click', '.delete-btn', function() {
+        const userId = $(this).data('id');
+
+        if (confirm('Biztosan törölni szeretnéd a felhasználót?')) {
+            $.ajax({
+                url: `/delete-user/${userId}`,
+                method: 'DELETE',
+                success: function(response) {
+                    alert(response.message);
+                    $(`tr[data-id="${userId}"]`).remove();
+                },
+                error: function(error) {
+                    console.error('Hiba történt a törlés során:', error);
+                    alert('Hiba történt a törlés során.');
+                }
+            });
+        }
+    });
+
+    });
+    </script>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>

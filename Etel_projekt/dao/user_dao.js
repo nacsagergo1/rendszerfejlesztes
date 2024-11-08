@@ -46,6 +46,7 @@ class UserDAO {
         
         try {
             const [users] = await db.query('SELECT * FROM users');
+            console.log("Felhasználók lekérdezve:", users);
             return users;
         } catch (error) {
             console.log("Hiba a felhasználók lekérdezésekor: ", error);

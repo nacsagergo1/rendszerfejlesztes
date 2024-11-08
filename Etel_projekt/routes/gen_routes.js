@@ -1,9 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const jwt = require("jsonwebtoken");
 
 router.use((req, res, next) => {
-    const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/'];
+    const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/', '/usersAdmin'];
     if (!validRoutes.includes(req.path)) {
         return res.redirect('/');
     }
@@ -23,11 +22,10 @@ router.get('/register', (req, res) => {
 });
 
 router.get('/reserve', (req, res) => {
-    console.log('Session User:', req.session.user);  // Debug log
     if (req.session.user) {
         return res.render('reserve'); 
     } else {
-        return res.redirect('/login');
+        return res.redirect('/login'); 
     }
 });
 
@@ -41,6 +39,10 @@ router.get('/reviews', (req, res) => {
 
 router.get('/contact', (req, res) => {
     return res.render('contact');
+});
+
+router.get('/usersAdmin', (req, res) => {
+    return res.render('usersAdmin');
 });
 
 module.exports = router;

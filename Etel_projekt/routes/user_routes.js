@@ -101,20 +101,24 @@ router.post('/logout', (req, res) => {
 router.get('/list-users', async (req, res) => {
     const user = req.session.user;
 
+    console.log(user.role);
+
     if (!user || user.role !== 'admin') {
         return res.status(403).json({ message: 'Nincs jogosultság.' });
     }
 
     try {
-        const users = await new UserDAO().listUsers();
+        const users = await new UserDAO().listUsers(user);
 
         if (users) {
             res.json({ users });
         } else {
+            console.log("Adatbázis van, de mégsem működik a users-list");
             res.status(500).json({ message: 'Nem sikerült lekérdezni a felhasználókat.' });
         }
     } catch (error) {
-        res.status(500).json({ message: 'Hiba történt.', error });
+        console.error('Hiba történt a list-users kérésnél:', error);
+        res.status(500).json({ message: 'Hiba történt.', error: error.message || error });
     }
 });
 
