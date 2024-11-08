@@ -5,15 +5,20 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const genRoutes = require('./routes/gen_routes');
 const userRoutes = require('./routes/user_routes');
+const reservationRoutes = require('./routes/reservation_routes');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+// Session és cookie konfigurációk
 app.use(session({
   secret: 'cxyb5OVktj6baDGKpsZzRvpcStrDTsR9',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: false },
+  cookie: {
+    secure: false,  // Ha nem HTTPS-en futsz, akkor állítsd false-ra
+    maxAge: 1000 * 60 * 60,
+  },
 }));
 
 app.use(cookieParser());
@@ -24,10 +29,11 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: false }));
 
-app.use('/', genRoutes);
+
+app.use(reservationRoutes);
 app.use(userRoutes);
+app.use('/', genRoutes);
 
 app.listen(PORT, () => {
     console.log(`App listening at: http://localhost:${PORT}/`);
 });
-

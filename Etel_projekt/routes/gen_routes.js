@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const jwt = require("jsonwebtoken");
 
 router.use((req, res, next) => {
     const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/'];
@@ -22,10 +23,11 @@ router.get('/register', (req, res) => {
 });
 
 router.get('/reserve', (req, res) => {
+    console.log('Session User:', req.session.user);  // Debug log
     if (req.session.user) {
         return res.render('reserve'); 
     } else {
-        return res.redirect('/login'); 
+        return res.redirect('/login');
     }
 });
 

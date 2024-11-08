@@ -4,116 +4,109 @@ const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
 const UserDAO = require("../dao/user_dao");
 
-router.post('/registerUser', async (req, res)=>{
-    let {username} = req.body;
-    let {email} = req.body;
-    let {password} = req.body;
-    let {confirm_password} = req.body;
+// Regisztráció
+router.post('/registerUser', async (req, res) => {
+    let { username, email, password, confirm_password } = req.body;
     let admin = 0;
 
-    if(email.trim() === "" || username.trim() === "" || password.trim() === "" || confirm_password.trim() === ""){
-        return res.render('registration', {error: "Hiányzó mező!"});
+    if (email.trim() === "" || username.trim() === "" || password.trim() === "" || confirm_password.trim() === "") {
+        return res.render('registration', { error: "Hiányzó mező!" });
     }
 
-    if(!email.includes("@")){
-        return res.render('registration', {error: "Nem megfelelő e-mail cím formátum!"});
+    if (!email.includes("@")) {
+        return res.render('registration', { error: "Nem megfelelő e-mail cím formátum!" });
     }
 
-    if(password !== confirm_password){
-        return res.render('registration', {error: "A jelszó és a megerősítése nem egyezik!"});
+    if (password !== confirm_password) {
+        return res.render('registration', { error: "A jelszó és a megerősítése nem egyezik!" });
     }
 
     let validated = 0;
     let salt = "10";
-    
-
     let now = new Date();
-    let year = now.getFullYear();
-    let month = (now.getMonth() + 1).toString().padStart(2, '0');
-    let day = now.getDate().toString().padStart(2, '0');
-    let hours = now.getHours().toString().padStart(2, '0');
-    let minutes = now.getMinutes().toString().padStart(2, '0');
-    let secs = now.getSeconds().toString().padStart(2, '0');
-
-    let reg_date = `${year}-${month}-${day} ${hours}:${minutes}:${secs}`;
+    let reg_date = `${now.getFullYear()}-${(now.getMonth() + 1).toString().padStart(2, '0')}-${now.getDate().toString().padStart(2, '0')} ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
     
     try {
         const hash = await bcrypt.hash(password, 10);
-        
         const userCreated = await new UserDAO().createUser(email, hash, validated, reg_date, salt, admin);
 
         if (!userCreated) {
-            return res.render('registration', {error: "Ezzel az e-mail címmel már van fiók regisztrálva!"});
+            return res.render('registration', { error: "Ezzel az e-mail címmel már van fiók regisztrálva!" });
         } else {
             return res.redirect('/login');
         }
     } catch (error) {
         console.error("Hiba történt a regisztráció során:", error);
-        return res.render('registration', {error: "Hiba a regisztrálás során!"});
+        return res.render('registration', { error: "Hiba a regisztrálás során!" });
     }
-
 });
 
-router.post('/loginUser', async (req, res)=>{
-    let {email} = req.body;
-    let {password} = req.body;
+// Bejelentkezés
+router.post('/loginUser', async (req, res) => {
+    let { email, password } = req.body;
 
-    if(email.trim() === "" || password.trim() === ""){
-        return res.render('login', {error: "Üres mező!"});
+    if (email.trim() === "" || password.trim() === "") {
+        return res.render('login', { error: "Üres mező!" });
     }
 
-    if(!email.includes("@")){
-        return res.render('login', {error: "Nem megfelelő e-mail cím formátum!"});
+    if (!email.includes("@")) {
+        return res.render('login', { error: "Nem megfelelő e-mail cím formátum!" });
     }
 
-    try{
+    console.log("Login attempt with email:", email);  // Debug log
+
+    try {
         const user = await new UserDAO().loginUser(email);
+        console.log("User data from DB:", user);  // Debug log
 
-        if(!user || user === 'undefined'){
-            return res.render('login', {error: "Nincs ilyen felhasználó!"});
-        } else {
-        
-            const match = await bcrypt.compare(password, user.Hash);
-
-            if(match){
-                req.session.user = {
-                    id: user.ID,
-                    email: user.Email_Address,
-                    role: user.Admin ? 'admin' : 'user',
-                };
-
-                res.redirect('/');
-            } else {
-                return res.render('login', {error: "Sikertelen bejelentkezés"});
-            }
+        if (!user) {
+            return res.render('login', { error: "Nincs ilyen felhasználó!" });
         }
-    } catch (error){
-        return res.render('login', {error: "Hiba a bejelentkezés során!" + error.message });
-    }
 
+        const match = await bcrypt.compare(password, user.Hash);
+        console.log("Password match:", match);  // Debug log
+
+        if (match) {
+            req.session.user = {
+                id: user.ID,
+                email: user.Email_Address,
+                role: user.Admin ? 'admin' : 'user',
+            };
+
+            console.log("User successfully logged in:", req.session.user);  // Debug log
+
+            return res.redirect('/');
+        } else {
+            return res.render('login', { error: "Sikertelen bejelentkezés" });
+        }
+    } catch (error) {
+        console.error("Error during login:", error);  // Debug log
+        return res.render('login', { error: "Hiba a bejelentkezés során!" + error.message });
+    }
 });
 
-router.post('/logout', async (req, res)=>{
-    req.session.destroy(error=>{
-        if(error){
-            return res.redirect('/') //ide majd a profil oldal kell
+// Kijelentkezés
+router.post('/logout', (req, res) => {
+    req.session.destroy((error) => {
+        if (error) {
+            return res.redirect('/'); // Ha hiba van, irányítsuk a főoldalra
         }
 
         res.clearCookie('connect.sid');
         res.redirect('/login');
-    })
+    });
 });
 
-
+// Admin felhasználók listázása
 router.get('/list-users', async (req, res) => {
-    const user = req.user;
+    const user = req.session.user;
 
     if (!user || user.role !== 'admin') {
         return res.status(403).json({ message: 'Nincs jogosultság.' });
     }
 
     try {
-        const users = await new UserDAO().listUsers(user);
+        const users = await new UserDAO().listUsers();
 
         if (users) {
             res.json({ users });
@@ -125,21 +118,18 @@ router.get('/list-users', async (req, res) => {
     }
 });
 
+// Felhasználó törlése
 router.delete('/delete-user/:userId', async (req, res) => {
-    const user = req.user;
-    const given_user_Id = req.userId;
+    const user = req.session.user;
     const userId = req.params.userId;
 
-    if (!user || (user.role !== 'admin' && given_user_Id != userId)) {
+    if (!user || (user.role !== 'admin' && user.id !== parseInt(userId))) {
         return res.status(403).json({ message: 'Nincs jogosultság.' });
     }
-
-
 
     try {
         await new UserDAO().clearUserReservations(userId);
         const result = await new UserDAO().deleteUser(userId);
-        await new UserDAO().deleteFutureReservations();
 
         if (result) {
             res.json({ message: 'A felhasználó sikeresen törölve.' });

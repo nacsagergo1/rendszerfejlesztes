@@ -1,20 +1,34 @@
 const express = require("express");
 const router = express.Router();
-const ReservationController = require('./config/reservationController');
+const ReservationController = require('../config/reservationController');
 const resCont = new ReservationController();
+const moment = require('moment');
 
 router.get('/free-space', async (req, res) => {
     if (!req.session.user) {
         return res.redirect('/login');
     }
 
-    const unformedDate = req.query.date; // free-space?date=2024-11-06
+    const selectedDateInput = req.query.date;
+    const selectedDate = moment(selectedDateInput).startOf('day');
+    const start = selectedDate.clone().hour(10); // 10:00
+    const end = selectedDate.clone().hour(20); // 20:00
+
+    let freeSpaces = [];
 
     try {
-        const freeSpaces = await resCont.getFreeSpaceNumber(unformedDate);
-        res.render('free-space', { freeSpaces });
+        // Félóránkénti időpontok generálása
+        for (let time = start; time.isBefore(end); time.add(30, 'minutes')) {
+            const unformedDate = time.toDate(); // Átalakítjuk Date objektummá
+
+            // Továbbadjuk a Date objektumot a getFreeSpaceNumber funkciónak
+            const freeSpace = await resCont.getFreeSpaceNumber(unformedDate); 
+            freeSpaces.push(freeSpace);
+        }
+
+        res.json({ freeSpaces }); // JSON válasz
     } catch (error) {
-        res.status(500).send('Error occurred');
+        res.status(500).json({ error: 'Error occurred' }); // Ha hiba van, JSON válasz hibával
     }
 });
 

@@ -147,7 +147,7 @@ class ReservationController{
 
         if(realPerson > 0){
             const reservationDataAllNew = await this.calculateTables(numberOfPerson, unformedDate);
-            const reservationDataAdd = null;
+            let reservationDataAdd = null;
             if(reservation[0].Reservation_Date === formedDate){
                 reservationDataAdd = await this.calculateTables(realPerson, unformedDate);
             }
