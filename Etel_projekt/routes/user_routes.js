@@ -22,13 +22,12 @@ router.post('/registerUser', async (req, res) => {
     }
 
     let validated = 0;
-    let salt = "10";
     let now = new Date();
     let reg_date = `${now.getFullYear()}-${(now.getMonth() + 1).toString().padStart(2, '0')}-${now.getDate().toString().padStart(2, '0')} ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
     
     try {
         const hash = await bcrypt.hash(password, 10);
-        const userCreated = await new UserDAO().createUser(email, hash, validated, reg_date, salt, admin);
+        const userCreated = await new UserDAO().createUser(email, hash, username, validated, reg_date,  admin);
 
         if (!userCreated) {
             return res.render('registration', { error: "Ezzel az e-mail címmel már van fiók regisztrálva!" });
@@ -86,7 +85,7 @@ router.post('/loginUser', async (req, res) => {
 });
 
 // Kijelentkezés
-router.post('/logout', (req, res) => {
+router.get('/logout', (req, res) => {
     req.session.destroy((error) => {
         if (error) {
             return res.redirect('/'); // Ha hiba van, irányítsuk a főoldalra

@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 router.use((req, res, next) => {
-    const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/', '/usersAdmin', '/profile'];
+    const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/', '/usersAdmin', '/profile', '/logout'];
     if (!validRoutes.includes(req.path)) {
         return res.redirect('/');
     }
@@ -14,11 +14,19 @@ router.get('/', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-    return res.render('login'); 
+    if (req.session.user) {
+        return res.render('profile', { user: req.session.user });
+    } else {
+        return res.render('login');
+    } 
 });
 
 router.get('/register', (req, res) => {
-    return res.render('registration');
+    if (req.session.user) {
+        return res.render('profile', { user: req.session.user });
+    } else {
+        return res.render('registration');
+    }
 });
 
 router.get('/reserve', (req, res) => {
@@ -42,7 +50,12 @@ router.get('/contact', (req, res) => {
 });
 
 router.get('/usersAdmin', (req, res) => {
-    return res.render('usersAdmin');
+    if(req.session.user && req.session.user.role === 'admin'){
+        return res.render('usersAdmin');
+    } else {
+        return res.render('home');
+    }
+    
 });
 
 router.get('/profile', (req, res) => {

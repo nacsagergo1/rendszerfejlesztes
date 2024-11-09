@@ -29,12 +29,25 @@
                 <li class="nav-item">
                     <a href="/contact" class="nav-link">Kapcsolat</a>
                 </li>
-                <li class="nav-item">
-                    <a href="/login" class="nav-link">Bejelentkezés</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/profile" class="nav-link">Profil</a>
-                </li>
+                <% if (typeof user === 'undefined') { %>
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link">Bejelentkezés</a>
+                    </li>
+                    <% } else if (user.role === 'admin'){ %>
+                        <li>
+                            <a href="/usersAdmin" class="nav-link">Felhasználók kezelése</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/logout" class="nav-link">Kijelentkezés</a>
+                        </li>
+                    <%} else { %>
+                    <li class="nav-item">
+                        <a href="/profile" class="nav-link">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/logout" class="nav-link">Kijelentkezés</a>
+                    </li>
+                    <% } %>
             </ul>
         </div>
     </div>

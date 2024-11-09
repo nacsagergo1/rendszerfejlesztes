@@ -2,7 +2,7 @@ const db = require('../config/db');
 
 class UserDAO {
 
-    async createUser(email, passwd, validated, reg_date, salt, admin){
+    async createUser(email, passwd, username, validated, reg_date, admin){
 
         const [existing] = await db.query('SELECT * FROM users WHERE Email_Address = ?', [email]);
 
@@ -10,7 +10,7 @@ class UserDAO {
             return false;
         } else {
             try{
-                const [result] = await db.query('INSERT INTO users (Email_Address, Hash, Salt, Validated, Registration_Date, Admin) VALUES (?, ?, ?, ?, ?, ?)', [email, passwd, salt, validated, reg_date, admin]);
+                const [result] = await db.query('INSERT INTO users (Email_Address, Hash, Username, Validated, Registration_Date, Admin) VALUES (?, ?, ?, ?, ?, ?)', [email, passwd, username, validated, reg_date, admin]);
                 
                 if(result && result.affectedRows === 1){
                     return true;
@@ -26,7 +26,7 @@ class UserDAO {
 
     async deleteUser(userId) {
         try {
-            const [result] = await db.query('DELETE FROM users WHERE User_ID = ?', [userId]);
+            const [result] = await db.query('DELETE FROM users WHERE ID = ?', [userId]);
 
             if(result && result.affectedRows === 1) {
                 return true;
