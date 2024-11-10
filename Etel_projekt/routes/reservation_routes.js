@@ -41,11 +41,25 @@ router.get('/list-reservations', async (req, res) => {
         return res.redirect('/login');
     }
 
-    const user = req.session.user; // free-space?date=2024-11-06
+    const user = req.session.user;
 
     try {
         const reservations = await resCont.listReservation(user);
-        res.json({ reservations });
+
+        // A pontos jelenlegi dátum és idő meghatározása
+        const now = Date.now();
+
+        // Jövőbeli foglalások szűrése
+        const futureReservations = reservations.filter(reservation => new Date(reservation.Reservation_Date).getTime() >= now);
+        const pastReservations = reservations.filter(reservation => new Date(reservation.Reservation_Date).getTime() < now);
+
+        // A jövőbeli foglalások hozzárendelése a user objektum bookings mezőjéhez
+        user.bookings = futureReservations;
+        user.pastBookings = pastReservations;
+
+
+        // Válasz küldése JSON formában
+        res.json({ user });
     } catch (error) {
         res.status(500).send('Error occurred');
     }
