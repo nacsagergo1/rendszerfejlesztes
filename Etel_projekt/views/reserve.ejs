@@ -119,7 +119,7 @@
         function createCalendar(year, month) {
             calendarBody.empty();
 
-            const firstDay = (new Date(year, month)).getDay() - 1;
+            const firstDay = (new Date(year, month, 1).getDay() + 6) % 7;
             const daysInMonth = 32 - new Date(year, month, 32).getDate();
             let date = 1;
             let rows = [];
@@ -134,9 +134,18 @@
                     if (i === 0 && j < firstDay || date > daysInMonth) {
                         cell.text('');
                     } else {
+                        const currentDay = new Date(year, month, date);
                         cell.text(date);
-                        const dateString = `${year}-${(month + 1).toString().padStart(2, '0')}-${date.toString().padStart(2, '0')}`;
-                        cell.click(() => showTimeslots(dateString));
+
+                        // Most már hétfőt nem jelöli pihenőnapként
+                        if (currentDay.getDay() === 1) { // Hétfő (Monday)
+                            cell.text("Pihenőnap");
+                            cell.addClass("disabled");
+                        } else {
+                            const dateString = `${year}-${(month + 1).toString().padStart(2, '0')}-${date.toString().padStart(2, '0')}`;
+                            cell.click(() => showTimeslots(dateString));
+                        }
+
                         date++;
                         hasValidDate = true;
                     }
@@ -155,46 +164,52 @@
             updateButtonState(year, month);
         }
 
-
         function updateButtonState(year, month) {
-            // Disable prev button if current date is at or before minDate
             $("#prev-month").prop("disabled", year < minDate.getFullYear() || (year === minDate.getFullYear() && month <= minDate.getMonth()));
-            // Disable next button if current date is at or after maxDate
             $("#next-month").prop("disabled", year > maxDate.getFullYear() || (year === maxDate.getFullYear() && month >= maxDate.getMonth()));
         }
 
         function showTimeslots(date) {
+            if (guestCount === 0) {
+                alert("Kérjük, adja meg hány fő szeretne jönni!");
+                return;
+            }
+
             const tbody = $("#timeslots-table tbody");
             tbody.empty();
 
-            const now = new Date();
             const selectedDate = new Date(date);
 
-            // !backend! Fetch available timeslots from the backend for the selected date
             fetch(`/free-space?date=${date}`)
                 .then(response => response.json())
                 .then(data => {
                     const freeSpaces = data.freeSpaces || [];
                     let time = new Date(date);
-                    time.setHours(10, 0, 0, 0); // Induló időpont, pl. 10:00
+                    time.setHours(10, 0, 0, 0); // Kezdő időpont pl. 10:00
 
                     freeSpaces.forEach(freeSpace => {
                         const row = $("<tr></tr>");
-                        const timeCell = $("<td></td>").text(time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+                        const formattedTime = time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                        const timeCell = $("<td></td>")
+                            .text(formattedTime)
+                            .attr("data-time", time.toISOString())
+                            .addClass("available");
+
                         const freeSpaceCell = $("<td></td>").text(freeSpace);
 
-                        // Disable row if selected date is in the past or if it's today and the time is earlier than now
-                        if (selectedDate < now.setHours(0, 0, 0, 0) || (selectedDate.getTime() === now.setHours(0, 0, 0, 0) && time < now)) {
+                        if (selectedDate < now.setHours(0, 0, 0, 0) ||
+                            (selectedDate.getTime() === now.setHours(0, 0, 0, 0) && time < now)) {
+                            timeCell.text("Múltbeli időpont, nem foglalható").addClass("text-danger");
                             row.addClass("disabled");
                         } else if (freeSpace >= guestCount) {
-                            timeCell.addClass("available").click(() => confirmReservation(time, guestCount));
+                            timeCell.click(() => confirmReservation(date, formattedTime, guestCount));
                         } else {
                             row.addClass("disabled");
                         }
 
                         row.append(timeCell).append(freeSpaceCell);
                         tbody.append(row);
-                        time.setMinutes(time.getMinutes() + 30); // Következő időpont
+                        time.setMinutes(time.getMinutes() + 30);
                     });
 
                     $("#timeslotModal").modal("show");
@@ -205,19 +220,17 @@
                 });
         }
 
-
-        function confirmReservation(time, count) {
-            alert(`Sikeres foglalás ${count} fő részére a következő időpontra: ${time.toLocaleString()}`);
+        function confirmReservation(date, timeString, count) {
+            //backend: Az adatbázis műveletek elvégzéséhez szükséges üzenet
+            alert(`Sikeres foglalás a ${date} ${timeString} dátumra ${count} fő részére.`);
             $("#timeslotModal").modal("hide");
         }
 
-        // Handle click on the reservation search button
         $("#submit-reservation").click(function() {
             guestCount = parseInt($("#guest-count").val());
             if (isNaN(guestCount) || guestCount < 1) {
                 alert("Kérjük, adjon meg érvényes létszámot.");
             } else {
-                // !backend! Trigger a search for available reservations with the specified guest count
                 alert(`Foglalás keresése ${guestCount} fő számára.`);
             }
         });
@@ -235,5 +248,6 @@
         createCalendar(currentDate.getFullYear(), currentDate.getMonth());
     });
 </script>
+
 </body>
 </html>
