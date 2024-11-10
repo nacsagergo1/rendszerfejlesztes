@@ -67,7 +67,7 @@
             </thead>
             <tbody id="future-reservations-body">
                 <tr>
-                    <td colspan="6" class="text-center">Adatok betöltése...</td>
+                    <td colspan="6" class="text-center">Nincsenek jövőbeli foglalások.</td>
                 </tr>
             </tbody>
         </table>
@@ -88,7 +88,7 @@
             </thead>
             <tbody id="past-reservations-body">
                 <tr>
-                    <td colspan="5" class="text-center">Adatok betöltése...</td>
+                    <td colspan="5" class="text-center">Nincsenek múltbeli foglalások.</td>
                 </tr>
             </tbody>
         </table>
@@ -115,7 +115,6 @@
                         <td>${booking.Business}</td>
                         <td>
                             <button class="btn btn-warning btn-sm modify-btn" data-id="${booking.ID}">Módosítás</button>
-                            <button class="btn btn-danger btn-sm delete-btn" data-id="${booking.ID}">Törlés</button>
                         </td>
                     `;
                     futureBody.appendChild(row);
@@ -152,18 +151,105 @@
 </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 <script>
+    let reservationsData = {};
+
+    async function fetchReservations() {
+        try {
+            const response = await fetch('/list-reservations');
+            reservationsData = await response.json();
+
+            const futureBody = document.getElementById('future-reservations-body');
+            futureBody.innerHTML = '';
+            if (reservationsData.user.bookings && reservationsData.user.bookings.length > 0) {
+                reservationsData.user.bookings.forEach(booking => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${booking.ID}</td>
+                        <td>${booking.User_ID}</td>
+                        <td>${new Date(booking.Reservation_Date).toLocaleDateString()}</td>
+                        <td>${booking.Expected_Party_Size}</td>
+                        <td>${booking.Business}</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm modify-btn" data-id="${booking.ID}">Módosítás</button>
+                        </td>
+                    `;
+                    futureBody.appendChild(row);
+                });
+            } else {
+                futureBody.innerHTML = `<tr><td colspan="6" class="text-center">Nincsenek jövőbeli foglalások.</td></tr>`;
+            }
+
+            const pastBody = document.getElementById('past-reservations-body');
+            pastBody.innerHTML = '';
+            if (reservationsData.user.pastBookings && reservationsData.user.pastBookings.length > 0) {
+                reservationsData.user.pastBookings.forEach(booking => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${booking.ID}</td>
+                        <td>${booking.User_ID}</td>
+                        <td>${new Date(booking.Reservation_Date).toLocaleDateString()}</td>
+                        <td>${booking.Expected_Party_Size}</td>
+                        <td>${booking.Business}</td>
+                    `;
+                    pastBody.appendChild(row);
+                });
+            } else {
+                pastBody.innerHTML = `<tr><td colspan="5" class="text-center">Nincsenek múltbeli foglalások.</td></tr>`;
+            }
+        } catch (error) {
+            console.error('Error loading reservations:', error);
+        }
+    }
     $(document).on('click', '.modify-btn', function() {
         const bookingId = $(this).data('id');
-        alert(`Módosítás: ${bookingId}`);
-    });
-    $(document).on('click', '.delete-btn', function() {
-        const bookingId = $(this).data('id');
-        if (confirm('Biztosan törölni szeretnéd ezt a foglalást?')) {
-            alert(`Törlés: ${bookingId}`);
+
+        // Kiválasztott foglalás megtalálása a globális változóban
+        const booking = reservationsData.user.bookings.find(b => b.ID === bookingId);
+        
+        if (booking) {
+            // Alapértelmezett értékek kitöltése a modális mezőkben
+            $('#reservationDate').val(new Date(booking.Reservation_Date).toISOString().substring(0, 10)); // Dátum formázása
+            $('#expectedPartySize').val(booking.Expected_Party_Size);
+            $('#business').val(booking.Business);
         }
+        $('#modifyModal').modal('show');
     });
+    document.addEventListener('DOMContentLoaded', fetchReservations);
 </script>
+
+
+<!-- Modális ablak -->
+<div class="modal fade" id="modifyModal" tabindex="-1" role="dialog" aria-labelledby="modifyModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modifyModalLabel">Foglalás módosítása</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Bezárás">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="modify-form">
+                    <div class="form-group">
+                        <label for="reservationDate">Foglalás dátuma:</label>
+                        <input type="date" class="form-control" id="reservationDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="expectedPartySize">Várható létszám:</label>
+                        <input type="number" class="form-control" id="expectedPartySize" min="1">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="deleteReservationBtn">Foglalás törlése</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezárás</button>
+                <button type="button" class="btn btn-primary" id="saveChangesBtn">Mentés</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
