@@ -89,22 +89,23 @@ router.post('/deleteReservation', async (req, res) => {
 
 router.post('/reserve', async (req, res) => {
     if (!req.session.user) {
-        return res.redirect('/login');
+        return res.status(401).json({ success: false, message: 'Bejelentkezés szükséges.' });
     }
 
-    const { numberOfSpaces, unformedDate } = req.body;
+    let { numberOfSpaces, unformedDate } = req.body;
+    unformedDate = new Date(unformedDate);
 
     try {
         const reservationSuccess = await resCont.reserveTables(numberOfSpaces, unformedDate, req.session.user);
         
         if (reservationSuccess) {
-            res.render('reservation-success'); //TODO: a hiba jelzését visszaküldeni, módját meghatározni: jelenleg ez oldalra irányít
+            return res.json({ success: true });
         } else {
-            res.render('reservation-failed', { error: 'Nincs elérhető asztal a kívánt időpontban!' });
+            return res.json({ success: false, error: 'Nincs elérhető asztal a kívánt időpontban!' });
         }
     } catch (error) {
         console.error("Hiba történt a foglalás során:", error);
-        res.status(500).send('Hiba történt a foglalás során');
+        res.status(500).json({ success: false, error: 'Hiba történt a foglalás során' });
     }
 });
 

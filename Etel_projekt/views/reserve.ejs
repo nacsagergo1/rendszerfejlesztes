@@ -221,9 +221,29 @@
         }
 
         function confirmReservation(date, timeString, count) {
-            //backend: Az adatbázis műveletek elvégzéséhez szükséges üzenet
-            alert(`Sikeres foglalás a ${date} ${timeString} dátumra ${count} fő részére.`);
-            $("#timeslotModal").modal("hide");
+            const [year, month, day] = date.split('-').map(Number);
+            const [hour, minute] = timeString.split(':').map(Number);
+
+            const unformedDate = new Date(year, month - 1, day, hour, minute, 0); 
+
+            $.ajax({
+                url: '/reserve',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ numberOfSpaces: count, unformedDate: unformedDate }),
+                success: function(response) {
+                    if (response.success) {
+                        alert(`Sikeres foglalás a ${date} ${timeString} dátumra ${count} fő részére.`);
+                        $("#timeslotModal").modal("hide");
+                    } else {
+                        alert("Nincs elérhető asztal a kívánt időpontban!");
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("Foglalási hiba:", error);
+                    alert("Hiba történt a foglalás során. Próbálja újra.");
+                }
+            });
         }
 
         $("#submit-reservation").click(function() {
