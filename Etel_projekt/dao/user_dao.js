@@ -2,6 +2,26 @@ const db = require('../config/db');
 
 class UserDAO {
 
+    async updateUsername(userId, newUsername) {
+        try {
+            const [result] = await db.query(
+                'UPDATE users SET Username = ? WHERE ID = ?',
+                [newUsername, userId]
+            );
+    
+            if (result.affectedRows === 1) {
+                console.log('Username successfully updated.');
+                return true;
+            } else {
+                console.log('No user found with the specified ID.');
+                return false;
+            }
+        } catch (error) {
+            console.error('Error updating username:', error);
+            return false;
+        }
+    }
+
     async createUser(email, passwd, username, validated, reg_date, admin){
 
         const [existing] = await db.query('SELECT * FROM users WHERE Email_Address = ?', [email]);

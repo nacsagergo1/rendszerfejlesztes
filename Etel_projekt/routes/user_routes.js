@@ -103,7 +103,7 @@ router.get('/list-users', async (req, res) => {
     console.log(user.role);
 
     if (!user || user.role !== 'admin') {
-        return res.status(403).json({ message: 'Nincs jogosultság.' });
+        return res.status(403).json({ message: 'No permission!' });
     }
 
     try {
@@ -117,6 +117,37 @@ router.get('/list-users', async (req, res) => {
         }
     } catch (error) {
         console.error('Hiba történt a list-users kérésnél:', error);
+        res.status(500).json({ message: 'Hiba történt.', error: error.message || error });
+    }
+});
+
+router.post('/modifyUser', async (req, res) => {
+    const user = req.session.user;
+
+    // Jogosultság ellenőrzése
+    if (!user) {
+        return res.status(403).json({ message: 'Nincs jogosultság.' });
+    }
+
+    const userId = req.query.userId;
+    const newUsername = req.query.newUsername;
+
+    // Paraméterek meglétének ellenőrzése
+    if (!userId || !newUsername) {
+        return res.status(400).json({ message: 'Hiányzó userId vagy newUsername paraméter.' });
+    }
+
+    try {
+        // Username módosítása
+        const updateSuccess = await updateUsername(userId, newUsername);
+
+        if (updateSuccess) {
+            res.json({ message: 'Felhasználónév sikeresen módosítva.' });
+        } else {
+            res.status(500).json({ message: 'Nem sikerült módosítani a felhasználónevet.' });
+        }
+    } catch (error) {
+        console.error('Hiba történt a felhasználónév módosításakor:', error);
         res.status(500).json({ message: 'Hiba történt.', error: error.message || error });
     }
 });
