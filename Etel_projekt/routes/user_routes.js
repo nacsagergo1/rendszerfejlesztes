@@ -52,18 +52,14 @@ router.post('/loginUser', async (req, res) => {
         return res.render('login', { error: "Nem megfelelő e-mail cím formátum!" });
     }
 
-    console.log("Login attempt with email:", email);  // Debug log
-
     try {
         const user = await new UserDAO().loginUser(email);
-        console.log("User data from DB:", user);  // Debug log
 
         if (!user) {
             return res.render('login', { error: "Nincs ilyen felhasználó!" });
         }
 
         const match = await bcrypt.compare(password, user.Hash);
-        console.log("Password match:", match);  // Debug log
 
         if (match) {
             req.session.user = {
@@ -72,14 +68,11 @@ router.post('/loginUser', async (req, res) => {
                 role: user.Admin ? 'admin' : 'user',
             };
 
-            console.log("User successfully logged in:", req.session.user);  // Debug log
-
             return res.redirect('/');
         } else {
             return res.render('login', { error: "Sikertelen bejelentkezés" });
         }
     } catch (error) {
-        console.error("Error during login:", error);  // Debug log
         return res.render('login', { error: "Hiba a bejelentkezés során!" + error.message });
     }
 });
@@ -99,8 +92,6 @@ router.get('/logout', (req, res) => {
 // Admin felhasználók listázása
 router.get('/list-users', async (req, res) => {
     const user = req.session.user;
-
-    console.log(user.role);
 
     if (!user || user.role !== 'admin') {
         return res.status(403).json({ message: 'No permission!' });

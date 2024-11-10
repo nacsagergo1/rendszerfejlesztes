@@ -73,7 +73,6 @@ router.post('/deleteReservation', async (req, res) => {
     const reservationID = req.body.resID;
 
     try {
-        console.log("ID:" + reservationID);
         const deleteSuccess = await resCont.deleteReservation(reservationID); 
 
         if (deleteSuccess) {

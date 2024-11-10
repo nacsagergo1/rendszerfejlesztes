@@ -52,7 +52,6 @@ class ReservationController{
     async getFreeSpaceNumber(unformedDate) {
         try {
             const totalCapacity = await this.getFreeSpaces(unformedDate);
-            console.log(totalCapacity);
             return totalCapacity;
         } catch (error) {
             console.error('Hiba történt:', error);
@@ -119,8 +118,6 @@ class ReservationController{
         const formedDate = this.formDate(unformedDate);
         const reservationData = await this.calculateTables(numberOfSpaces, unformedDate);
         const User_ID = user.id;
-
-        console.log(reservationData);
     
         if (!reservationData || reservationData.length === 0) {
             console.error("No available tables for reservation");
@@ -134,7 +131,6 @@ class ReservationController{
     async modifyReservation(numberOfPerson, unformedDate, reservationID)
     {
         const resTables = await reservationDAO.getTablesFromReservation(reservationID);
-        console.log("First stage: " + resTables)
 
         const reservation = await reservationDAO.getFreeTables(reservationID);
         const formedDate = this.formDate(unformedDate);

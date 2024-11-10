@@ -31,8 +31,7 @@ class ReservationDAO{
     if (user.role === 'admin') {
       try {
         const [rows] = await connection.query(
-          `SELECT * FROM reservations`,
-          [reservationID]
+          `SELECT * FROM reservations`
         );
   
         return rows;
