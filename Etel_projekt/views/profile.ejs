@@ -43,15 +43,101 @@
 </div>
 
 <div id="profile-container" class="container mt-5">
-    <h1 class="text-center mt-5 pt-5">Profil adatai</h1>
+    <h1 class="text-center mt-5 pt-5" style="margin-top: 120px !important;">Profil adatai</h1>
     
     <div class="form-group">
         <label for="email">Email:</label>
         <p id="email"><%= user.email %></p>
     </div>
 
-    
+    <!-- Jövőbeli foglalások -->
+    <div class="form-group">
+        <h2 class="text-center">Jövőbeli foglalások</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Felhasználó ID</th>
+                    <th>Foglalás dátuma</th>
+                    <th>Várható létszám</th>
+                    <th>Üzlet</th>
+                    <th>Műveletek</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if (user.bookings && user.bookings.length > 0) { %>
+                    <% user.bookings.forEach(booking => { %>
+                        <% if (new Date(booking.Reservation_Date) > new Date()) { %>
+                            <tr>
+                                <td><%= booking.ID %></td>
+                                <td><%= booking.User_ID %></td>
+                                <td><%= new Date(booking.Reservation_Date).toLocaleDateString() %></td>
+                                <td><%= booking.Expected_Party_Size %></td>
+                                <td><%= booking.Business %></td>
+                                <td>
+                                    <button class="btn btn-warning btn-sm modify-btn" data-id="<%= booking.ID %>">Módosítás</button>
+                                    <button class="btn btn-danger btn-sm delete-btn" data-id="<%= booking.ID %>">Törlés</button>
+                                </td>
+                            </tr>
+                        <% } %>
+                    <% }); %>
+                <% } else { %>
+                    <tr>
+                        <td colspan="6" class="text-center">Nincsenek jövőbeli foglalások.</td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Múltbeli foglalások -->
+    <div class="form-group">
+        <h2 class="text-center" style="margin-top: 120px !important;">Múltbeli foglalások</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Felhasználó ID</th>
+                    <th>Foglalás dátuma</th>
+                    <th>Várható létszám</th>
+                    <th>Üzlet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if (user.bookings && user.bookings.length > 0) { %>
+                    <% user.bookings.forEach(booking => { %>
+                        <% if (new Date(booking.Reservation_Date) <= new Date()) { %>
+                            <tr>
+                                <td><%= booking.ID %></td>
+                                <td><%= booking.User_ID %></td>
+                                <td><%= new Date(booking.Reservation_Date).toLocaleDateString() %></td>
+                                <td><%= booking.Expected_Party_Size %></td>
+                                <td><%= booking.Business %></td>
+                            </tr>
+                        <% } %>
+                    <% }); %>
+                <% } else { %>
+                    <tr>
+                        <td colspan="5" class="text-center">Nincsenek múltbeli foglalások.</td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
 </div>
+
+<script>
+    $(document).on('click', '.modify-btn', function() {
+        const bookingId = $(this).data('id');
+        alert(`Módosítás: ${bookingId}`);
+    });
+    $(document).on('click', '.delete-btn', function() {
+        const bookingId = $(this).data('id');
+        if (confirm('Biztosan törölni szeretnéd ezt a foglalást?')) {
+            alert(`Törlés: ${bookingId}`);
+        }
+    });
+</script>
 
 </body>
 </html>
