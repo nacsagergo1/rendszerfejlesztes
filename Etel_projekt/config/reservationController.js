@@ -63,12 +63,12 @@ class ReservationController{
         const numberOfFreeSpaces = await this.getFreeSpaceNumber(unformedDate);
         if (numberOfFreeSpaces < numberOfSpaces) {
             console.log("Returned with -1");
-            return { Tables: [] };
+            return -1;
         }
     
         if (!this.freeTables || this.freeTables.length === 0) {
             console.error("Nincsenek szabad asztalok.");
-            return { Tables: [] };
+            return -1;
         }
     
         const result = [[]];
@@ -134,9 +134,7 @@ class ReservationController{
     async modifyReservation(numberOfPerson, unformedDate, reservationID)
     {
         const resTables = await reservationDAO.getTablesFromReservation(reservationID);
-        const totalCapacity = await resTables.reduce((sum, table) => sum + table.Capacity, 0);
-
-        const realPerson = numberOfPerson - totalCapacity;
+        console.log("First stage: " + resTables)
 
         const reservation = await reservationDAO.getFreeTables(reservationID);
         const formedDate = this.formDate(unformedDate);
@@ -145,47 +143,25 @@ class ReservationController{
             return false;
         }
 
-        if(realPerson > 0){
-            const reservationDataAllNew = await this.calculateTables(numberOfPerson, unformedDate);
-            let reservationDataAdd = null;
-            if(reservation[0].Reservation_Date === formedDate){
-                reservationDataAdd = await this.calculateTables(realPerson, unformedDate);
-            }
+        const succeedDelete = await reservationDAO.deleteTablesFromReservation(reservationID, resTables);
+        if(!succeedDelete){
+            return false;
+        }
 
-            if(reservation[0].Reservation_Date === formedDate && reservationDataAdd.length < reservationDataAllNew){
-                const succeedAddTables = await reservationDAO.addTableToReservation(reservationID,reservationDataAdd);
-                if(!succeedAddTables){
-                    return false;
-                }
-            }else{
-                const succeedDelete = await reservationDAO.deleteTablesFromReservation(reservationID, resTables);
-                if(!succeedDelete){
-                    return false;
-                }
-                const succeedAddTables = await reservationDAO.addTableToReservation(reservationID,reservationDataAllNew);
-                if(!succeedAddTables){
-                    return false;
-                }
-            }
-        }else if(realPerson > 0){
-            const sortedTables = resTables.sort((a, b) => a.Capacity - b.Capacity);
-            let remainingPlaces = totalCapacity - numberOfPerson;
-            const tablesToRemove = [];
+        const reservationDataAllNew = await this.calculateTables(numberOfPerson, unformedDate);
+        if(reservationDataAllNew == -1){
+            const tableIds = resTables.map(table => table.ID);
 
-            for (let table of sortedTables) {
-                if(remainingPlaces <= table.Capacity && remainingPlaces > 0){
-                    tablesToRemove.push(table.ID);
-                    remainingPlaces -= table.Capacity;
-                }
-
-                if (remainingPlaces <= 0) {
-                    break;
-                }
-            }
-            const succeedDelete = await reservationDAO.deleteTablesFromReservation(reservationID, tablesToRemove);
-            if(!succeedDelete){
+            const succeedAddTables = await reservationDAO.addTableToReservation(reservationID, tableIds);
+            if(!succeedAddTables){
                 return false;
             }
+            return false;
+        }
+
+        const succeedAddTables = await reservationDAO.addTableToReservation(reservationID,reservationDataAllNew);
+        if(!succeedAddTables){
+            return false;
         }
 
         const succeedUpdate = await reservationDAO.updateReservation(reservationID, formedDate, numberOfPerson);

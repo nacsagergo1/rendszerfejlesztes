@@ -204,18 +204,87 @@
     }
     $(document).on('click', '.modify-btn', function() {
         const bookingId = $(this).data('id');
-
-        // Kiválasztott foglalás megtalálása a globális változóban
+        
         const booking = reservationsData.user.bookings.find(b => b.ID === bookingId);
         
         if (booking) {
-            // Alapértelmezett értékek kitöltése a modális mezőkben
-            $('#reservationDate').val(new Date(booking.Reservation_Date).toISOString().substring(0, 10)); // Dátum formázása
+            $('#reservationDate').val(new Date(booking.Reservation_Date).toISOString().substring(0, 10));
             $('#expectedPartySize').val(booking.Expected_Party_Size);
             $('#business').val(booking.Business);
         }
+
         $('#modifyModal').modal('show');
+
+        window.currentBookingId = bookingId;    
     });
+
+    $(document).on('click', '#deleteReservationBtn', function() {
+        const bookingId = window.currentBookingId;
+        
+        if (bookingId) {
+            console.log("Foglalás ID:", bookingId);
+
+            $.ajax({
+                url: '/deleteReservation',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ resID: bookingId }),
+                success: function(response) {
+                    if (response.success) {
+                        alert('Foglalás sikeresen törölve.');
+                    } else {
+                        alert('Hiba történt a foglalás törlésekor: ' + response.error);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error occurred:', error);
+                    alert('Hiba történt a foglalás törlésekor.');
+                }
+            });
+        } else {
+            console.log("Nincs foglalás ID.");
+        }
+    });
+
+    $(document).on('click', '#saveChangesBtn', function() {
+        const bookingId = window.currentBookingId;
+        const numberOfPerson = $('#expectedPartySize').val(); 
+        const unformedDate = $('#reservationDate').val();
+
+        if (bookingId && numberOfPerson && unformedDate) {
+            //TODO percre pontosan
+            const formattedDate = new Date(unformedDate + 'T00:00:00');
+
+            formattedDate.setHours(19, 0, 0); 
+            //TODO vege
+
+            console.log("Foglalás ID:", bookingId);
+            console.log("Létszám:", numberOfPerson);
+            console.log("Dátum:", formattedDate.toString());
+
+            $.ajax({
+                url: '/modify-reservation',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    reservationID: bookingId, 
+                    numberOfPerson: numberOfPerson, 
+                    unformedDate: formattedDate.toISOString()
+                }),
+                success: function(response) {
+                    alert('Foglalás módosítva.');
+                    $('#modifyModal').modal('hide');
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error occurred:', error);
+                    alert('Hiba történt a foglalás módosítása során.');
+                }
+            });
+        } else {
+            alert('Kérjük, adja meg a módosított adatokat!');
+        }
+    });
+
     document.addEventListener('DOMContentLoaded', fetchReservations);
 </script>
 

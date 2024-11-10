@@ -84,7 +84,7 @@ class ReservationDAO{
     for (let i = 0; i < tableID.length; i++) {
         const [existingRecord] = await connection.query(
             'SELECT 1 FROM reservations_tables WHERE Reservation_ID = ? AND Table_ID = ?',
-            [reservation_ID, tableID[i]]
+            [reservation_ID, tableID[i].ID]
         );
 
         if (existingRecord.length === 0) {
@@ -93,7 +93,7 @@ class ReservationDAO{
 
         const [resultDeleted] = await connection.query(
             'DELETE FROM reservations_tables WHERE Reservation_ID = ? AND Table_ID = ?',
-            [reservation_ID, tableID[i]]
+            [reservation_ID, tableID[i].ID]
         );
 
         if (resultDeleted && resultDeleted.affectedRows === 1) {

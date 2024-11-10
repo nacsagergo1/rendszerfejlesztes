@@ -70,10 +70,11 @@ router.post('/deleteReservation', async (req, res) => {
         return res.redirect('/login');
     }
 
-    const reservationID = req.query.resID;
+    const reservationID = req.body.resID;
 
     try {
-        const deleteSuccess = await deleteReservation(reservationID); 
+        console.log("ID:" + reservationID);
+        const deleteSuccess = await resCont.deleteReservation(reservationID); 
 
         if (deleteSuccess) {
             res.json({ success: true });
@@ -81,8 +82,8 @@ router.post('/deleteReservation', async (req, res) => {
             res.json({ success: false, error: 'Cant find reservation' });
         }
     } catch (error) {
-        console.error("An error occured during deletion of reservation", error);
-        res.status(500).json({ success: false, error: 'An error occured during deletion of reservation' });
+        console.error("An error occurred during deletion of reservation", error);
+        res.status(500).json({ success: false, error: 'An error occurred during deletion of reservation' });
     }
 });
 
@@ -109,18 +110,21 @@ router.post('/reserve', async (req, res) => {
 
 router.post('/modify-reservation', async (req, res) => {
     if (!req.session.user) {
-        return res.redirect('/login'); 
+        return res.redirect('/login');
     }
 
     const { numberOfPerson, unformedDate, reservationID } = req.body;
+    
+    const reservationDate = new Date(unformedDate); 
+    console.log('Modosított dátum:', reservationDate);
 
     try {
-        const modificationSuccess = await resCont.modifyReservation(numberOfPerson, unformedDate, reservationID);
+        const modificationSuccess = await resCont.modifyReservation(numberOfPerson, reservationDate, reservationID);
 
         if (modificationSuccess) {
-            res.render('reservation-success');
+            res.json({ success: true }); // Sikeres módosítás
         } else {
-            res.render('reservation-failed', { error: 'Nem sikerült a foglalás módosítása. Kérjük, próbálja meg újra!' });
+            res.json({ success: false, error: 'Nem sikerült a foglalás módosítása. Kérjük, próbálja meg újra!' });
         }
     } catch (error) {
         console.error("Hiba történt a foglalás módosítása során:", error);
