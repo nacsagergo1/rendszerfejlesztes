@@ -130,6 +130,18 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Résztvevők: Mangó Ferenc, Nacsa Gergő, Rózsás Péter,  Sánta Krisztina, Varga Csanád
  - Érintett témák: A 3. mérföldkó megkezdése, feladatok függőségének megbeszélése, feladatok proritásának megbeszélése.
 
+ 5. megbeszélés:
+ - Időpont: 2024.10.08.
+ - Hely: online
+ - Résztvevők: Mangó Ferenc, Nacsa Gergő, Rózsás Péter,  Sánta Krisztina
+ - Érintett témák: Profil oldallal, illetve Asztalfoglalás oldallal kapcsolatos feladatok átbeszélése, elődolgozása, technikai problémák megoldása, git ütközések, pipeline feloldása.
+
+ 6. megbeszélés:
+ - Időpont: 2024.10.10.
+ - Hely: online
+ - Résztvevők: Mangó Ferenc, Nacsa Gergő, Rózsás Péter
+ - Érintett témák: A profil oldal illetve az asztalfoglalás oldal összekötése a háttérlogikával.
+
 ### 6.3. Minőségbiztosítás
 
 Az elkészült terveket a terveken nem dolgozó csapattársak közül átnézik, hogy megfelel-e a specifikációnak és az egyes diagramtípusok összhangban vannak-e egymással. A meglévő rendszerünk helyes működését a prototípusok bemutatása előtt a tesztelési dokumentumban leírtak végrehajtása alapján ellenőrizzük és összevetjük a specifikációval, hogy az elvárt eredményt kapjuk-e. További tesztelési lehetőségek: unit tesztek írása az egyes modulokhoz vagy a kód közös átnézése (code review) egy, a vizsgált modul programozásában nem résztvevő csapattaggal. Szoftverünk minőségét a végső leadás előtt javítani kell a rendszerünkre lefuttatott kódelemzés során kapott metrikaértékek és szabálysértések figyelembevételével.
@@ -326,9 +338,9 @@ Erőforrásigény:  2 személynap
 
 Felelős: Mangó Ferenc Ákos
 
-Tartam:  3 nap
+Tartam:  6 nap
 
-Erőforrásigény:  2 személynap
+Erőforrásigény:  5 személynap
 
 #### 8.3.9. Főoldal létrehozása
 
@@ -376,7 +388,7 @@ Felelős: Rózsás Péter
 
 Tartam:  1 nap
 
-Erőforrásigény:  1 személynap
+Erőforrásigény:  2 személynap
 
 #### 8.3.15. Asztalfoglalás háttérlogika kialakítása
 
@@ -384,7 +396,7 @@ Felelős: Rózsás Péter
 
 Tartam:  2 nap
 
-Erőforrásigény:  1.5 személynap
+Erőforrásigény:  3 személynap
 
 #### 8.3.16. Bejelentkezett felhasználókhoz kötött háttérlogika kialakítása
 
@@ -392,7 +404,7 @@ Felelős: Rózsás Péter
 
 Tartam:  2 nap
 
-Erőforrásigény:  1 személynap
+Erőforrásigény:  1.5 személynap
 
 #### 8.3.17. Foglalások kezeléséhez háttérlogika kialakítása
 
@@ -400,19 +412,19 @@ Felelős: Rózsás Péter
 
 Tartam:  2 nap
 
-Erőforrásigény:  2 személynap
+Erőforrásigény:  3.5 személynap
 
 #### 8.3.18. Regisztráció tesztelése
 
-Felelős: Mangó Ferenc Ákos
+Felelős: Varga Csanád Sándor
 
 Tartam:  4 nap
 
-Erőforrásigény:  2 személynap
+Erőforrásigény:  1 személynap
 
 #### 8.3.19. Bejelentkezés tesztelése
 
-Felelős: Mangó Ferenc Ákos
+Felelős: Varga Csanád Sándor
 
 Tartam:  2 nap
 
@@ -424,7 +436,7 @@ Felelős: Sánta Krisztina Csilla
 
 Tartam:  1 nap
 
-Erőforrásigény:  1 szeméylnap
+Erőforrásigény:  1 személynap
 
 
 #### 8.3.21.  Asztalfoglalás tesztelése
@@ -449,7 +461,7 @@ Felelős: Sánta Krisztina Csilla
 
 Tartam: 1 nap
 
-Erőforrásigény: 1 személynap
+Erőforrásigény: 2 személynap
 
 
 ### 8.4. Prototípus II. (4. mérföldkő)
@@ -480,7 +492,7 @@ Felelős: Nacsa Gergő
 
 Tartam:  3 nap
 
-Erőforrásigény:  2 személynap
+Erőforrásigény:  3 személynap
 
 #### 8.4.4.Mobil nézet
 
@@ -496,11 +508,11 @@ Felelős: Rózsás Péter
 
 Tartam:  2 nap
 
-Erőforrásigény:  1.5 személynap
+Erőforrásigény:  3 személynap
 
 #### 8.4.6. Asztalfoglalás tesztelése
 
-Felelős: Rózsás Péter
+Felelős: Sánta Krisztina Csilla
 
 Tartam:  1 nap
 
@@ -508,7 +520,7 @@ Erőforrásigény:  0.5 személynap
 
 #### 8.4.7. Véleményírás tesztelése
 
-Felelős: Rózsás Péter
+Felelős: Sánta Krisztina Csilla
 
 Tartam:  1 nap
 
@@ -544,7 +556,7 @@ Felelős: Sánta Krisztina Csilla
 
 Tartam:  2 nap
 
-Erőforrásigény:  1 személynap
+Erőforrásigény:  2 személynap
 
 
 #### 8.4.12. A prototípus kitelepítésének frissítése
@@ -570,9 +582,9 @@ Erőforrásigény:  1/4 személynap
 | Név          |   M1  |   M2  |   M3 |   M4  | Összesen |
 |--------------|-------|-------|------|-------|----------|
 | Mangó Ákos | 1 | 2 | 8 | 5.5   | 16.5     |
-| Nacsa Gergő | 1   | 2   | 11 | 2   | 16     |
-| Rózsás Péter   | 1   | 2.5 | 5.5. | 2.5 | 11.5     |
-| Sánta Krisztina | 1.5 | 2 | 6 | 2.5 | 12 |
+| Nacsa Gergő | 1   | 1   | 11 | 3   | 16     |
+| Rózsás Péter   | 1   | 2.5 | 10 | 3 | 16.5     |
+| Sánta Krisztina | 1.5 | 2 | 9 | 4.5 | 17 |
 | Varga Csanád | 1 | 2 | 8.25 | 2.75 | 14 |
 
 
@@ -580,10 +592,10 @@ Erőforrásigény:  1/4 személynap
 
 | Név          |   M1  |   M2  |   M3 |   M4 | Összesen |
 |--------------|-------|-------|------|------|----------|
-| Mangó Ákos | 1   | 1   | 4  | 3  | 10     |
-| Nacsa Gergő | 1   | 1   | 4  | 1  | 8     |
-| Rózsás Péter   | 1   | 2   | 4  | 3  | 10     |
-| Sánta Krisztina | 2 | 2 | 4 | 3 | 11 |
+| Mangó Ákos | 1   | 1   | 2  | 3  | 7     |
+| Nacsa Gergő | 1   | 1   | 4  | 1  | 7    |
+| Rózsás Péter   | 1   | 2   | 4  | 1  | 8     |
+| Sánta Krisztina | 2 | 2 | 5 | 5 | 14 |
 | Varga Csanád | 1 | 1 | 6 | 2 | 10 |
 
 ### 10.3. Részletes költségvetés
