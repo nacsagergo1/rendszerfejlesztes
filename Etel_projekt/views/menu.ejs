@@ -33,6 +33,9 @@
                             <a href="/login" class="nav-link">Bejelentkezés</a>
                         </li>
                         <% } else if (user.role === 'admin'){ %>
+                            <li class="nav-item">
+                                <a href="/profile" class="nav-link">Profil</a>
+                            </li>
                             <li>
                                 <a href="/usersAdmin" class="nav-link">Felhasználók kezelése</a>
                             </li>
