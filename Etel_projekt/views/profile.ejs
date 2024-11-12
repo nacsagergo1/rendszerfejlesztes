@@ -113,7 +113,7 @@
                     row.innerHTML = `
                         <td>${booking.ID}</td>
                         <td>${booking.User_ID}</td>
-                        <td>${new Date(booking.Reservation_Date).toLocaleDateString()}</td>
+                        <td>${new Date(booking.Reservation_Date).toLocaleString()}</td>
                         <td>${booking.Expected_Party_Size}</td>
                         <td>${booking.Business}</td>
                         <td>
@@ -135,7 +135,7 @@
                     row.innerHTML = `
                         <td>${booking.ID}</td>
                         <td>${booking.User_ID}</td>
-                        <td>${new Date(booking.Reservation_Date).toLocaleDateString()}</td>
+                        <td>${new Date(booking.Reservation_Date).toLocaleString()}</td>
                         <td>${booking.Expected_Party_Size}</td>
                         <td>${booking.Business}</td>
                     `;
@@ -171,7 +171,7 @@
                     row.innerHTML = `
                         <td>${booking.ID}</td>
                         <td>${booking.User_ID}</td>
-                        <td>${new Date(booking.Reservation_Date).toLocaleDateString()}</td>
+                        <td>${new Date(booking.Reservation_Date).toLocaleString()}</td>
                         <td>${booking.Expected_Party_Size}</td>
                         <td>${booking.Business}</td>
                         <td>
@@ -192,7 +192,7 @@
                     row.innerHTML = `
                         <td>${booking.ID}</td>
                         <td>${booking.User_ID}</td>
-                        <td>${new Date(booking.Reservation_Date).toLocaleDateString()}</td>
+                        <td>${new Date(booking.Reservation_Date).toLocaleString()}</td>
                         <td>${booking.Expected_Party_Size}</td>
                         <td>${booking.Business}</td>
                     `;
@@ -214,6 +214,10 @@
             $('#reservationDate').val(new Date(booking.Reservation_Date).toISOString().substring(0, 10));
             $('#expectedPartySize').val(booking.Expected_Party_Size);
             $('#business').val(booking.Business);
+
+            const reservationDate = new Date(booking.Reservation_Date);
+            $('#reservationHour').val(reservationDate.getHours());
+            $('#reservationMinute').val(reservationDate.getMinutes());
         }
 
         $('#modifyModal').modal('show');
@@ -251,15 +255,15 @@
 
     $(document).on('click', '#saveChangesBtn', function() {
         const bookingId = window.currentBookingId;
-        const numberOfPerson = $('#expectedPartySize').val(); 
+        const numberOfPerson = $('#expectedPartySize').val();
         const unformedDate = $('#reservationDate').val();
+        const hour = $('#reservationHour').val();
+        const minute = $('#reservationMinute').val();
 
-        if (bookingId && numberOfPerson && unformedDate) {
-            //TODO percre pontosan
-            const formattedDate = new Date(unformedDate + 'T00:00:00');
-
-            formattedDate.setHours(19, 0, 0); 
-            //TODO vege
+        if (bookingId && numberOfPerson && unformedDate && hour !== "" && minute !== "") {
+            // Állítsd be a foglalási dátumot az óra és perc figyelembevételével
+            const formattedDate = new Date(unformedDate);
+            formattedDate.setHours(hour, minute, 0);
 
             console.log("Foglalás ID:", bookingId);
             console.log("Létszám:", numberOfPerson);
@@ -284,9 +288,10 @@
                 }
             });
         } else {
-            alert('Kérjük, adja meg a módosított adatokat!');
+            alert('Kérjük, adja meg a módosított adatokat, beleértve az órát és percet!');
         }
     });
+
 
     document.addEventListener('DOMContentLoaded', fetchReservations);
 </script>
@@ -303,21 +308,30 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="modify-form">
-                    <div class="form-group">
-                        <label for="reservationDate">Foglalás dátuma:</label>
-                        <input type="date" class="form-control" id="reservationDate">
-                    </div>
-                    <div class="form-group">
-                        <label for="expectedPartySize">Várható létszám:</label>
-                        <input type="number" class="form-control" id="expectedPartySize" min="1">
-                    </div>
-                </form>
+                <div class="form-group">
+                    <label for="reservationDate">Foglalás dátuma</label>
+                    <input type="date" id="reservationDate" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="reservationHour">Óra</label>
+                    <input type="number" id="reservationHour" class="form-control" min="0" max="23" placeholder="Óra">
+                </div>
+                <div class="form-group">
+                    <label for="reservationMinute">Perc</label>
+                    <input type="number" id="reservationMinute" class="form-control" min="0" max="59" placeholder="Perc">
+                </div>
+                <div class="form-group">
+                    <label for="expectedPartySize">Várható létszám</label>
+                    <input type="number" id="expectedPartySize" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="business">Üzlet</label>
+                    <input type="text" id="business" class="form-control">
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" id="deleteReservationBtn">Foglalás törlése</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezárás</button>
-                <button type="button" class="btn btn-primary" id="saveChangesBtn">Mentés</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Mégse</button>
+                <button type="button" id="saveChangesBtn" class="btn btn-primary">Mentés</button>
             </div>
         </div>
     </div>
