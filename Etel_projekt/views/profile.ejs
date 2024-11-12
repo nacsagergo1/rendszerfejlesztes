@@ -261,7 +261,6 @@
         const minute = $('#reservationMinute').val();
 
         if (bookingId && numberOfPerson && unformedDate && hour !== "" && minute !== "") {
-            // Állítsd be a foglalási dátumot az óra és perc figyelembevételével
             const formattedDate = new Date(unformedDate);
             formattedDate.setHours(hour, minute, 0);
 
