@@ -176,7 +176,7 @@ Tesztjegyzőkönyv- Regisztrálás/Bejelentkezés
 					írjuk be az adatokat, regisztráljunk; majd a belépésnél is írjuk be az adatokat, és lépjünk be
 				elvárt kimenet: regisztrálni lehet, de belépni nem
 				
-3. Tesztriportok(TR)
+	3. Tesztriportok(TR)
 					3.1 regisztrálás és belépésnél
 						3.1 TR-1(TC-1)
 							1. regisztrálás sikeres
