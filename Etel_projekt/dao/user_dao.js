@@ -21,6 +21,40 @@ class UserDAO {
             return false;
         }
     }
+    
+    async getUserByEmail(address) {
+        let query = "SELECT ID FROM users WHERE Email_Address = ?";
+        
+        try {
+            const [rows] =await db.query(query, [address]);
+            if (rows.length > 0) {
+                return rows[0].ID; 
+            } else {
+                console.error( Error("Nincs ilyen User"));
+                return false;
+            }
+        } catch (error) {
+            throw error;
+        }
+        
+    }
+    
+    async validateUser(userId) {
+      const query = "UPDATE users SET Validated = ? WHERE id = ?";
+    
+      try {
+        const result = await db.query(query, [true, userId]); 
+        if (result.affectedRows === 0) {
+          throw new Error('User not found or already validated');
+        }
+        return true; 
+      } catch (error) {
+        console.error('Error in validating user:', error);
+        throw error;
+      }
+    }
+
+
 
     async createUser(email, passwd, username, validated, reg_date, admin){
 

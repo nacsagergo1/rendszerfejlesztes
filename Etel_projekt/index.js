@@ -6,6 +6,8 @@ const cookieParser = require("cookie-parser");
 const genRoutes = require('./routes/gen_routes');
 const userRoutes = require('./routes/user_routes');
 const reservationRoutes = require('./routes/reservation_routes');
+const authRoutes = require('./routes/auth_routes');
+
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -34,9 +36,11 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: false }));
 
 
-app.use(reservationRoutes);
-app.use(userRoutes);
+
+app.use(reservationRoutes);  
+app.use(userRoutes);  
 app.use('/', genRoutes);
+app.use(authRoutes);
 
 app.listen(PORT, () => {
     console.log(`App listening at: http://localhost:${PORT}/`);

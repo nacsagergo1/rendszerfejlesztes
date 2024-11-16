@@ -3,6 +3,11 @@ const router = express.Router();
 const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
 const UserDAO = require("../dao/user_dao");
+const { sendValidationEmail, sendPasswordResetEmail } = require('../services/authService');
+
+
+
+
 
 // Regisztráció
 router.post('/registerUser', async (req, res) => {
@@ -28,10 +33,17 @@ router.post('/registerUser', async (req, res) => {
     try {
         const hash = await bcrypt.hash(password, 10);
         const userCreated = await new UserDAO().createUser(email, hash, username, validated, reg_date,  admin);
-
+        
+        
+        
         if (!userCreated) {
             return res.render('registration', { error: "Ezzel az e-mail címmel már van fiók regisztrálva!" });
         } else {
+            
+            try{
+            await sendValidationEmail(email);
+        }catch(error){throw error;}
+            
             return res.redirect('/login');
         }
     } catch (error) {
@@ -87,6 +99,28 @@ router.get('/logout', (req, res) => {
         res.clearCookie('connect.sid');
         res.redirect('/login');
     });
+});
+
+//elfelejtet jelszó
+router.post('/password-reset', async (req, res) => {
+    const { email } = req.body; 
+    
+    try {
+        
+        const user = await new UserDAO().getUserByEmail(email); 
+                
+        if (!user) {
+            return res.status(400).send('User not found.');
+        }
+
+        
+        await sendPasswordResetEmail(email); 
+
+        res.status(200).send('Password reset email sent.');
+    } catch (error) {
+        console.error('Password reset failed:', error);
+        res.status(500).send('Error during password reset.');
+    }
 });
 
 // Admin felhasználók listázása

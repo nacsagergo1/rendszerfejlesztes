@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 router.use((req, res, next) => {
-    const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/', '/usersAdmin', '/profile', '/logout'];
+    const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/', '/usersAdmin', '/profile', '/logout','/validate','/password-reset'];
     if (!validRoutes.includes(req.path)) {
         return res.redirect('/');
     }

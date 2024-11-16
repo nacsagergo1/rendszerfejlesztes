@@ -1,0 +1,3333 @@
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+internal/modules/cjs/loader.js:807
+  return process.dlopen(module, path.toNamespacedPath(filename));
+                 ^
+
+Error: /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node: invalid ELF header
+    at Object.Module._extensions..node (internal/modules/cjs/loader.js:807:18)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/node_modules/bcrypt/bcrypt.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'body-parser'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:3:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'body-parser'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:3:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'body-parser'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:3:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'body-parser'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:3:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'body-parser'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:3:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'body-parser'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:3:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'body-parser'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:3:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'body-parser'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:3:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'body-parser'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:3:20)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/reservationController.js:27
+    freeTables = null;
+               ^
+
+SyntaxError: Unexpected token =
+    at Module._compile (internal/modules/cjs/loader.js:723:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/reservation_routes.js:3:31)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:43
+pp.use((req, res, next) => {
+^
+
+ReferenceError: pp is not defined
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:43:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.17.0
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:43
+pp.use((req, res, next) => {
+^
+
+ReferenceError: pp is not defined
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:43:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.17.0
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:43
+pp.use((req, res, next) => {
+^
+
+ReferenceError: pp is not defined
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:43:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.17.0
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:43
+pp.use((req, res, next) => {
+^
+
+ReferenceError: pp is not defined
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:43:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.17.0
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:43
+pp.use((req, res, next) => {
+^
+
+ReferenceError: pp is not defined
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js:43:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+
+Node.js v20.17.0
+Hiba történt a regisztráció során: Error: Access denied for user 'root'@'localhost' (using password: NO)
+    at PromisePool.query (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/mysql2/promise.js:356:22)
+    at UserDAO.createUser (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/dao/user_dao.js:27:37)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:30:49 {
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sql: undefined,
+  sqlState: '28000',
+  sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)"
+}
+Hiba történt a regisztráció során: Error: Access denied for user 'root'@'localhost' (using password: NO)
+    at PromisePool.query (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/mysql2/promise.js:356:22)
+    at UserDAO.createUser (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/dao/user_dao.js:27:37)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:30:49 {
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sql: undefined,
+  sqlState: '28000',
+  sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)"
+}
+Hiba történt a regisztráció során: Error: Access denied for user 'root'@'localhost' (using password: NO)
+    at PromisePool.query (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/mysql2/promise.js:356:22)
+    at UserDAO.createUser (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/dao/user_dao.js:27:37)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:30:49 {
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sql: undefined,
+  sqlState: '28000',
+  sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)"
+}
+Hiba történt a regisztráció során: Error: Access denied for user 'projectg_root'@'localhost' (using password: YES)
+    at PromisePool.query (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/mysql2/promise.js:356:22)
+    at UserDAO.createUser (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/dao/user_dao.js:27:37)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:30:49 {
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sql: undefined,
+  sqlState: '28000',
+  sqlMessage: "Access denied for user 'projectg_root'@'localhost' (using password: YES)"
+}
+Failed reservation create
+Failed reservation create
+Failed reservation create
+Failed reservation create
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module 'nodemailer'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:1:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+Hiba történt a regisztráció során: ReferenceError: SendValidationEmail is not defined
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:32:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Hiba történt a regisztráció során: TypeError: SendValidationEmail is not a function
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:32:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:24
+      throw error;
+      ^
+
+Error: Invalid login: 535 Incorrect authentication data
+    at SMTPConnection._formatError (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:807:19)
+    at SMTPConnection._actionAUTHComplete (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:1586:34)
+    at SMTPConnection.<anonymous> (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:554:26)
+    at SMTPConnection._processResponse (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:991:20)
+    at SMTPConnection._onData (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:772:14)
+    at SMTPConnection._onSocketData (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+    at TLSSocket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5) {
+  code: 'EAUTH',
+  response: '535 Incorrect authentication data',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+
+Node.js v20.17.0
+Hiba történt a regisztráció során: gugla9@gmail.com
+Hiba történt a regisztráció során: gugla9@gmail.com
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:26
+      throw error;
+      ^
+
+Error: Invalid login: 535 Incorrect authentication data
+    at SMTPConnection._formatError (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:807:19)
+    at SMTPConnection._actionAUTHComplete (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:1586:34)
+    at SMTPConnection.<anonymous> (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:554:26)
+    at SMTPConnection._processResponse (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:991:20)
+    at SMTPConnection._onData (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:772:14)
+    at SMTPConnection._onSocketData (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+    at TLSSocket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5) {
+  code: 'EAUTH',
+  response: '535 Incorrect authentication data',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+
+Node.js v20.17.0
+/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/config/mail.js:26
+      throw error;
+      ^
+
+Error: Invalid login: 535 Incorrect authentication data
+    at SMTPConnection._formatError (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:807:19)
+    at SMTPConnection._actionAUTHComplete (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:1586:34)
+    at SMTPConnection.<anonymous> (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:554:26)
+    at SMTPConnection._processResponse (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:991:20)
+    at SMTPConnection._onData (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:772:14)
+    at SMTPConnection._onSocketData (/home/projectg/nodevenv/public_html/2024_ib153l-15_etel/Etel_projekt/20/lib/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+    at TLSSocket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5) {
+  code: 'EAUTH',
+  response: '535 Incorrect authentication data',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+
+Node.js v20.17.0
+Hiba történt a regisztráció során: ReferenceError: SendValidationEmail is not defined
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:40:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Hiba történt a regisztráció során: ReferenceError: SendValidationEmail is not defined
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:40:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error in sending validation email: TypeError: (intermediate value).getUserByEmail is not a function
+    at sendValidationEmail (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/services/authService.js:8:40)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:40:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Hiba történt a regisztráció során: TypeError: (intermediate value).getUserByEmail is not a function
+    at sendValidationEmail (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/services/authService.js:8:40)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:40:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error in sending validation email: TypeError: (intermediate value).getUserByEmail is not a function
+    at sendValidationEmail (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/services/authService.js:8:40)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:40:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Hiba történt a regisztráció során: TypeError: (intermediate value).getUserByEmail is not a function
+    at sendValidationEmail (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/services/authService.js:8:40)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/user_routes.js:40:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module '../dao/code_dao'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js:5:31)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module '../dao/code_dao'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js:5:31)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module '../dao/code_dao'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js:5:31)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module '../dao/code_dao'
+Require stack:
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js
+- /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js:5:31)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js',
+    '/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.17.0
+Error in validating user: ReferenceError: pool is not defined
+    at UserDAO.validateUser (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/dao/user_dao.js:46:24)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js:48:30
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Validation error: ReferenceError: pool is not defined
+    at UserDAO.validateUser (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/dao/user_dao.js:46:24)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js:48:30
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Error in validating user: ReferenceError: pool is not defined
+    at UserDAO.validateUser (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/dao/user_dao.js:46:24)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js:48:30
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Validation error: ReferenceError: pool is not defined
+    at UserDAO.validateUser (/home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/dao/user_dao.js:46:24)
+    at /home/projectg/public_html/2024_ib153l-15_etel/Etel_projekt/routes/auth_routes.js:48:30
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
