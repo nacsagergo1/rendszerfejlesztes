@@ -22,6 +22,26 @@ class UserDAO {
         }
     }
     
+    async updatePassword(userId, newPass) {
+        try {
+            const [result] = await db.query(
+                'UPDATE users SET Hash = ? WHERE ID = ?',
+                [newPass, userId]
+            );
+    
+            if (result.affectedRows === 1) {
+                console.log('Password updated');
+                return true;
+            } else {
+                console.log('No user found with the specified ID.');
+                return false;
+            }
+        } catch (error) {
+            console.error('Error updating password:', error);
+            return false;
+        }
+    }
+    
     async getUserByEmail(address) {
         let query = "SELECT ID FROM users WHERE Email_Address = ?";
         

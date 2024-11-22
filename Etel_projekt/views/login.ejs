@@ -51,9 +51,17 @@
             <input type="password" id="password" name="password" class="form-control" required>
         </div>
         <button type="submit" class="action-button">Bejelentkezés <img src="img/spin.png" alt="spin" class="spin-image"></button>
-        <a href="/password-reset" class="register-button action-button">Elfelejtett jelszó visszaállítása <img src="img/spin.png" alt="spin" class="spin-image"></a>
+        
         <h2 class="text-center mt-4">Amennyiben nincs még fiókja, regisztráljon itt:</h2>
         <a href="/register" class="register-button action-button">Regisztráció <img src="img/spin.png" alt="spin" class="spin-image"></a>
+    </form>
+    <h2 class="text-center mt-4">Ha elfelejtette jelszavát, itt tudja helyreállítni:</h2>
+    <form class="mt-4" method="POST" action="/password-reset">
+        <div class="form-group">
+            <label for="email">E-mail cím</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <button type="submit" class="action-button">Elfelejtett jeslzó <img src="img/spin.png" alt="spin" class="spin-image"></button>
     </form>
 </div>
 
@@ -67,3 +75,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+

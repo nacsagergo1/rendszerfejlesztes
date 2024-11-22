@@ -1,4 +1,5 @@
 const express = require('express');
+const bcrypt = require('bcrypt');
 const router = express.Router();
 const { sendValidationEmail, sendPasswordResetEmail } = require('../services/authService'); 
 const UserDAO = require('../dao/user_dao');
@@ -30,7 +31,7 @@ router.get('/validate', async (req, res) => {
     }
 });
 
-router.get('/password-reset', async (req, res) => {
+router.get('/reset-password', async (req, res) => {
   const code = req.query.code; 
 
   if (!code) {
@@ -46,9 +47,10 @@ router.get('/password-reset', async (req, res) => {
 
     
     const newPassword = Math.random().toString(36).slice(-8);
-
     
-    await  new UserDAO().updatePassword(record.User_ID, newPassword); 
+    let hash = await bcrypt.hash(newPassword, 10);
+    
+    await new UserDAO().updatePassword(record.User_ID, hash); 
 
     
     res.render('reset_success', { message: `Az új jelszó: ${newPassword}` });
