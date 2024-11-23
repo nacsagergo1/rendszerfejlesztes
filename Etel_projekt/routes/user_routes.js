@@ -18,13 +18,8 @@ router.post('/registerUser', async (req, res) => {
         return res.render('registration', { error: "Hiányzó mező!" });
     }
 
-    if (
-        !email.includes("@") || 
-        !email.includes(".") || 
-        email.indexOf("@") > email.lastIndexOf(".") || 
-        email.indexOf(".") === email.indexOf("@") + 1 || 
-        email.lastIndexOf(".") >= email.length - 1
-    ){
+    const emailRegex = /^[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)){
         return res.render('registration', { error: "Nem megfelelő e-mail cím formátum!" });
     }
 
