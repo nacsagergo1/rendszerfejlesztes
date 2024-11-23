@@ -242,6 +242,7 @@
                 success: function(response) {
                     if (response.success) {
                         alert('Foglalás sikeresen törölve.');
+                        fetchReservations();
                     } else {
                         alert('Hiba történt a foglalás törlésekor: ' + response.error);
                     }
@@ -283,6 +284,7 @@
                 success: function(response) {
                     alert('Foglalás módosítva.');
                     $('#modifyModal').modal('hide');
+                    fetchReservations();
                 },
                 error: function(xhr, status, error) {
                     console.error('Error occurred:', error);
