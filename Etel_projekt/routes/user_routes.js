@@ -18,7 +18,7 @@ router.post('/registerUser', async (req, res) => {
         return res.render('registration', { error: "Hiányzó mező!" });
     }
 
-    if (!email.includes("@")) {
+    if (!email.includes("@") || !email.includes(".") || email.indexOf(".") < email.indexOf("@")) {
         return res.render('registration', { error: "Nem megfelelő e-mail cím formátum!" });
     }
 
