@@ -7,6 +7,7 @@ const genRoutes = require('./routes/gen_routes');
 const userRoutes = require('./routes/user_routes');
 const reservationRoutes = require('./routes/reservation_routes');
 const authRoutes = require('./routes/auth_routes');
+const foodRoutes = require('./routes/food_routes');
 
 
 const app = express();
@@ -41,6 +42,7 @@ app.use(reservationRoutes);
 app.use(userRoutes);  
 app.use('/', genRoutes);
 app.use(authRoutes);
+app.use(foodRoutes);
 
 app.listen(PORT, () => {
     console.log(`App listening at: http://localhost:${PORT}/`);
