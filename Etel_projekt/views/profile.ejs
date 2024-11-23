@@ -272,6 +272,12 @@
             console.log("Létszám:", numberOfPerson);
             console.log("Dátum:", formattedDate.toString());
 
+            const currentDate = new Date();
+            if(formattedDate < currentDate) {
+                alert("Nem lehet múltbéli dátumra módosítani a foglalást!");
+                return;
+            }
+
             $.ajax({
                 url: '/modify-reservation',
                 type: 'POST',
