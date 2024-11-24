@@ -1,6 +1,33 @@
 const express = require("express");
 const FoodDAO = require("../dao/food_dao");
 const { errorMonitor } = require("nodemailer/lib/xoauth2");
+const path = require('path');
+const multer = require('multer');
+const sharp = require('sharp');
+const { error } = require("console");
+const storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+      cb(null, path.join(__dirname, '../public/img/Food_pics'));
+    },
+    filename: function (req, file, cb) {
+        cb(null, Date.now() + path.extname(file.originalname));
+    }
+  });
+  
+const upload = multer({ 
+    storage: storage,
+    fileFilter: (req, file, cb) =>{
+        const filetypes = /jpeg|jpg|png/;
+        const mimetype = filetypes.test(file.mimetype);
+        const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+        if (mimetype && extname) {
+            return cb(null, true);
+        } else {
+            cb('Hiba: Képformátum nem megfelelő');
+        }
+    }
+});
+
 const router = express.Router();
 
 router.get('/getFoods', async (req, res) => {
@@ -55,27 +82,39 @@ router.delete('/deleteFood/:foodId', async (req, res) => {
     }
 });
 
-router.post('/addFood', async (req, res) => {
+router.post('/addFood', upload.single('image_path'), async (req, res) => {
     const user = req.session.user;
-    let { name, description, category, price, image_path} = req.body;
+    let { name, description, category, price} = req.body;
 
     if(!user || user.role != 'admin'){
-
+        return res.status(403).json({ success: false, error: 'Nincs jogosultság!'});
     }
 
-    if(name.trim() == "" || category.trim == "" || description.trim() == "" || price.trim() == 0 || image_path.trim() == ''){
-        return res.render('profile', {error: 'Hiányzó adat.'});
+    if(name.trim() == "" || category.trim() == "" || description.trim() == "" || price.trim() == 0){
+        return res.status(404).json({ success: false, error: 'Hiányzó mező!'});
     }
+
+    if(!req.file){
+        return res.status(404).json({ success: false, error: 'Hiányzó kép.'});
+    }
+
+    const image_path = `img/Food_pics/${req.file.filename}`;
+
+    console.log("addFood: Eljut az adatok leelenőrzéséig");
+
 
     try {
-        const foodCreated = await new FoodDAO.createFood(name, description, category, price, image_path);
+        const foodCreated = await FoodDAO.createFood(name, description, category, price, image_path);
 
         if(!foodCreated){
+            console.log("addFood: Nem hozta létre a db a kaját.");
             return res.json({success: false, error: "Hiba az étel mentése során"});
         } else {
-            return res.json({ success: true});
+            console.log("addFood: Db létre hozta a kaját");
+            return res.redirect('menu');
         }
     } catch (error){
+        console.log("addFood: DB error, nem hozta létre a kaját: ", error);
         return res.status(500).json({success: false, error: "Hiba az étel mentése során"});
     }
 });

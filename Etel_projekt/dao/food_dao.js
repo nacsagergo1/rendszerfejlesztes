@@ -54,24 +54,22 @@ class FoodDAO{
     }
 
     async createFood(name, description, category, price, image_path){
-        const [existing] = await db.query('SELECT * FROM food WHERE ID = ?', [foodID]);
-
-        if(existing.length > 0){
-            return false;
-        } else {
             try{
+                console.log('foodDao: eljut az insertig az új kaja');
                 const [result] = await db.query('INSERT INTO food (Name, Description, Category, Price, Image_path) VALUES (?,?,?,?,?)', [name, description, category, price, image_path]);
-
+                console.log('Insert food result:', result);
                 if(result && result.affectedRows === 1){
+                    console.log('foodDao: létre hozta a kaját');
                     return true;
                 } else {
+                    console.log('foodDao: nem hozta létre a kaját');
                     return false;
                 }
             } catch (error){
+                console.log('foodDao: hiba az étel hozzáadásakor');
                 console.log("Hiba az étel mentésekor: ", error);
                 return false;
             }
-        }
     }
 
     async getMenus(){
@@ -127,4 +125,4 @@ class FoodDAO{
 
 };
 
-module.exports = FoodDAO;
+module.exports = new FoodDAO();

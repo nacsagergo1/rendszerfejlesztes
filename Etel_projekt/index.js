@@ -1,8 +1,10 @@
 const express = require("express");
 const session = require('express-session');
 const bodyParser = require('body-parser');
-const path = require("path");
 const cookieParser = require("cookie-parser");
+const path = require("path");
+
+
 const genRoutes = require('./routes/gen_routes');
 const userRoutes = require('./routes/user_routes');
 const reservationRoutes = require('./routes/reservation_routes');
