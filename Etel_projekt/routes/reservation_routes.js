@@ -136,7 +136,7 @@ router.post('/create-review', async (req, res) => {
     const user = req.session.user;
     const { message, score, userId, reservationId } = req.body;
 
-    if (!user || user.id !== parseInt(userId)) {
+    if (!user) {
         return res.status(403).json({ message: 'Nincs jogosultság vélemény hozzáadására.' });
     }
 
@@ -166,7 +166,7 @@ router.delete('/delete-review/:reservationId', async (req, res) => {
     const user = req.session.user;
     const { reservationId } = req.params;
 
-    if (!user || user.role !== 'admin') {
+    if (!user) {
         return res.status(403).json({ message: 'Nincs jogosultság vélemény törlésére.' });
     }
 
