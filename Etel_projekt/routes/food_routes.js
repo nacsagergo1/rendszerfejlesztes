@@ -102,7 +102,7 @@ router.post('/addFood', upload.single('image_path'), async (req, res) => {
             return res.json({success: false, error: "Hiba az étel mentése során"});
         } else {
             console.log("addFood: Db létre hozta a kaját");
-            return res.redirect('menu');
+            return res.json({success: true, error: "Az étel hozzáadása sikeres volt"});
         }
     } catch (error){
         console.log("addFood: DB error, nem hozta létre a kaját: ", error);

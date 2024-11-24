@@ -128,7 +128,7 @@
         <input type="file" id="image_path" name="image_path" required><br>
 
         <input type="reset" name="reset_btn" value="Alapértelmezett"><br>
-        <input type="submit" name="saveFood" value="Mentés"><br>
+        <button type="button" id="submitFood">Mentés</button>
         
     </form>
 </div>
@@ -332,6 +332,38 @@
         } else {
             alert('Kérjük, adja meg a módosított adatokat, beleértve az órát és percet!');
         }
+    });
+
+    $(document).on('click', '#submitFood', function(e) {
+        e.preventDefault();
+
+        var formData = new FormData();
+        formData.append('name', $('#name').val());
+        formData.append('description', $('#description').val() );
+        formData.append('category',$('#category').val());
+        formData.append('price', $('#price').val());
+        formData.append('image_path', $('#image_path')[0].files[0]);
+
+        $.ajax({
+            url: 'addFood',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(response){
+                if (response.success) {
+                    alert('Étel sikeresen hozzáadva!');
+                    $('form')[0].reset();
+                } else {
+                    alert('Hiba: ' + response.error);
+                }
+            },
+            error: function(xhr, status, error){
+                alert('Hiba történt az étel mentése közben!');
+                console.log('Hiba:', error);
+                return;
+            }
+        })
     });
 
     document.addEventListener('DOMContentLoaded', fetchReservations);
