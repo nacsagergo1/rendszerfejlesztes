@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .menu-item {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .menu-item h5 {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 <div id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -29,27 +46,27 @@
                 <li class="nav-item">
                     <a href="/contact" class="nav-link">Kapcsolat</a>
                     <% if (typeof user === 'undefined') { %>
-                        <li class="nav-item">
-                            <a href="/login" class="nav-link">Bejelentkezés</a>
-                        </li>
-                        <% } else if (user.role === 'admin'){ %>
-                            <li class="nav-item">
-                                <a href="/profile" class="nav-link">Profil</a>
-                            </li>
-                            <li>
-                                <a href="/usersAdmin" class="nav-link">Felhasználók kezelése</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/logout" class="nav-link">Kijelentkezés</a>
-                            </li>
-                        <%} else { %>
-                        <li class="nav-item">
-                            <a href="/profile" class="nav-link">Profil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/logout" class="nav-link">Kijelentkezés</a>
-                        </li>
-                        <% } %>
+                <li class="nav-item">
+                    <a href="/login" class="nav-link">Bejelentkezés</a>
+                </li>
+                <% } else if (user.role === 'admin'){ %>
+                    <li class="nav-item">
+                        <a href="/profile" class="nav-link">Profil</a>
+                    </li>
+                    <li>
+                        <a href="/usersAdmin" class="nav-link">Felhasználók kezelése</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/logout" class="nav-link">Kijelentkezés</a>
+                    </li>
+                <%} else { %>
+                    <li class="nav-item">
+                        <a href="/profile" class="nav-link">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/logout" class="nav-link">Kijelentkezés</a>
+                    </li>
+                <% } %>
             </ul>
         </div>
     </div>
@@ -61,31 +78,39 @@
         <!-- Előételek -->
         <div class="col-md-6">
             <h3 class="mt-4">Előételek</h3>
-            <ul class="list-unstyled">
-                <li class="mb-3">
+            <div class="menu-item">
+                <img src="/img/bruschetta.jpg" alt="Bruschetta">
+                <div>
                     <h5>Bruschetta</h5>
                     <p>Pirított kenyér paradicsommal, bazsalikommal és olívaolajjal</p>
-                </li>
-                <li class="mb-3">
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/img/caprese_salata.jpg" alt="Caprese saláta">
+                <div>
                     <h5>Caprese saláta</h5>
                     <p>Friss mozzarella, paradicsom és bazsalikom, balzsamecetes öntettel</p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
 
         <!-- Főételek -->
         <div class="col-md-6">
             <h3 class="mt-4">Főételek</h3>
-            <ul class="list-unstyled">
-                <li class="mb-3">
+            <div class="menu-item">
+                <img src="/img/marhaporkolt.jpg" alt="Marhapörkölt galuskával">
+                <div>
                     <h5>Marhapörkölt galuskával</h5>
                     <p>Hagyományos magyar étel friss galuskával</p>
-                </li>
-                <li class="mb-3">
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/img/roston_sult_lazac.jpg" alt="Roston sült lazac">
+                <div>
                     <h5>Roston sült lazac</h5>
                     <p>Friss lazacfilé grillezve, citromos vajmártással és sült zöldségekkel</p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -93,31 +118,39 @@
         <!-- Desszertek -->
         <div class="col-md-6">
             <h3 class="mt-4">Desszertek</h3>
-            <ul class="list-unstyled">
-                <li class="mb-3">
+            <div class="menu-item">
+                <img src="/img/almas_retes.jpg" alt="Házi almás rétes">
+                <div>
                     <h5>Házi almás rétes</h5>
                     <p>Friss, házi készítésű rétes fahéjas almával töltve</p>
-                </li>
-                <li class="mb-3">
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/img/csokolade_mousse.jpg" alt="Csokoládé mousse">
+                <div>
                     <h5>Csokoládé mousse</h5>
                     <p>Könnyű csokoládés desszert, friss eperrel díszítve</p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
 
         <!-- Italok -->
         <div class="col-md-6">
             <h3 class="mt-4">Italok</h3>
-            <ul class="list-unstyled">
-                <li class="mb-3">
+            <div class="menu-item">
+                <img src="/img/haz_bora.jpg" alt="Ház bora">
+                <div>
                     <h5>Ház bora</h5>
                     <p>Választható fehér vagy vörös, helyi borászatból</p>
-                </li>
-                <li class="mb-3">
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/img/narancsle.jpg" alt="Frissen facsart narancslé">
+                <div>
                     <h5>Frissen facsart narancslé</h5>
                     <p>100% friss, természetes narancslé</p>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
