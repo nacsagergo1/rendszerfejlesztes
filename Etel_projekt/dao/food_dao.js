@@ -2,19 +2,10 @@ const db = require('../config/db');
 
 class FoodDAO{
 
-    async getFoods(){
-        try{
-            const [foods] = await db.query('SELECT * FROM food');
-            return foods;
-        } catch (error){
-            console.log("Hiba az ételek lekérdezésekor.", error);
-            return null;
-        }
-    }
-
     async getFoodsByCategory(category) {
         try{
             const [categoryFoods] = await db.query('SELECT * FROM food WHERE Category = ?', [category]);
+            console.log(categoryFoods);
             return categoryFoods;
         } catch (error) {
             console.log("Hiba az ételek kategória szerinti lekérdezésekor.", error);
@@ -23,28 +14,43 @@ class FoodDAO{
         
     }
 
+    async getImagePath(foodId){
+        try{
+            const [result] = await db.query('SELECT Image_path FROM food WHERE ID = ?', [foodId]);
+            return result[0].Image_path;
+        } catch (error){
+            console.log("Hiba a kép keresése során: ", error);
+        }
+    }
+
     async deleteFood(foodId){
         try{
-            const [result] = await db.query('DELETE FROM food WHERE ID = ?', [foodID]);
+            console.log("deleteFoodDao: eléri a dao-t");
+            const [result] = await db.query('DELETE FROM food WHERE ID = ?', [foodId]);
 
             if(result && result.affectedRows === 1){
+                console.log("deleteFoodDao: sikeres törlés");
                 return true;
             } else {
+                console.log("deleteFoodDao: nem törölte");
                 return false;
             }
         } catch (error){
-            console.log("Hiba az étel törlésekor: ", error);
+            console.log("deleteFoodDao: Hiba az étel törlésekor: ", error);
             return false;
         }
     }
 
     async deleteFoodFromMenu(foodID) {
         try{
+            console.log("deleteFoodMenuDao: eléri a dao-t");
             const [result] = await db.query('DELETE FROM food_menus WHERE Food_ID = ?', [foodID]);
 
             if(result){
+                console.log("deleteFoodMenuDao: sikeres törlés");
                 return true;
             } else {
+                console.log("deleteFoodMenuDao: nem törölte");
                 return false;
             }
         } catch (error){

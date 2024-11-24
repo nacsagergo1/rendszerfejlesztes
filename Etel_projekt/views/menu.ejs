@@ -85,50 +85,42 @@
         <div class="col-md-6">
             <h3 class="mt-4">Levesek</h3>
             <%
-            const levesek = [
-                { name: 'Halászlé', description: 'Hagyományos magyar halleves', imagePath: '/img/Food_pics/1.jpg' },
-                { name: 'Lencseleves', description: 'Ízletes lencseleves', imagePath: '/img/Food_pics/2.jpg' },
-                { name: 'Bableves', description: 'Hagyományos magyar bableves', imagePath: '/img/Food_pics/3.jpg' },
-                { name: 'Újházi tyúkhúsleves', description: 'Gazdag tyúkhúsleves', imagePath: '/img/Food_pics/4.jpg' }
-            ];
-            levesek.forEach(item => {
+            soups.forEach(function(item) {
             %>
                 <div class="menu-item">
-                    <img src="<%= item.imagePath %>" alt="<%= item.name %>">
+                    <img src="<%= item.Image_path %>" alt="<%= item.Name %>">
                     <div>
-                        <h5><%= item.name %></h5>
-                        <p><%= item.description %></p>
+                        <h5><%= item.Name %></h5>
+                        <p><%= item.Description %></p>
+                        <p><%= item.Price %> Ft</p>
                     </div>
                     <% if (user && user.role === 'admin') { %>
                         <!-- Backend: Implement delete functionality here -->
-                        <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                        <span class="delete-btn" data-id="<%= item.ID %>" onclick="removeItem(this)">Törlés</span>
                     <% } %>
                 </div>
-            <% }) %>
+            <% }); %>
         </div>
 
         <!-- Főételek -->
         <div class="col-md-6">
             <h3 class="mt-4">Főételek</h3>
             <%
-            const foeletek = [
-                { name: 'Marhapörkölt galuskával', description: 'Hagyományos magyar étel friss galuskával', imagePath: '/img/Food_pics/0.jpg' },
-                { name: 'Csirkepörkölt nokedlivel', description: 'Ízletes csirkepörkölt házi nokedlivel', imagePath: '/img/Food_pics/10.jpg' }
-            ];
-            foeletek.forEach(item => {
+            mainDishes.forEach(function(item) {
             %>
                 <div class="menu-item">
-                    <img src="<%= item.imagePath %>" alt="<%= item.name %>">
+                    <img src="<%= item.Image_path %>" alt="<%= item.Name %>">
                     <div>
-                        <h5><%= item.name %></h5>
-                        <p><%= item.description %></p>
+                        <h5><%= item.Name %></h5>
+                        <p><%= item.Description %></p>
+                        <p><%= item.Price %> Ft</p>
                     </div>
                     <% if (user && user.role === 'admin') { %>
                         <!-- Backend: Implement delete functionality here -->
-                        <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                        <span class="delete-btn" data-id="<%= item.ID %>" onclick="removeItem(this)">Törlés</span>
                     <% } %>
                 </div>
-            <% }) %>
+            <% }); %>
         </div>
     </div>
 
@@ -137,87 +129,163 @@
         <div class="col-md-6">
             <h3 class="mt-4">Tészták</h3>
             <%
-            const tesztak = [
-                { name: 'Túrós csusza pörccel', description: 'Klasszikus magyar tésztaétel túróval és pörccel', imagePath: '/img/Food_pics/5.jpg' },
-                { name: 'Rakott tészta', description: 'Ízletes rakott tészta', imagePath: '/img/Food_pics/6.jpg' },
-                { name: 'Spaghetti Bolognese', description: 'Olasz tészta bolognai mártással', imagePath: '/img/Food_pics/7.jpg' },
-                { name: 'Rakott tészta kettő', description: 'Másik változat rakott tésztából', imagePath: '/img/Food_pics/8.jpg' },
-                { name: 'Diós tészta', description: 'Édes tészta darált dióval', imagePath: '/img/Food_pics/9.jpg' }
-            ];
-            tesztak.forEach(item => {
+            pastas.forEach(function(item) {
             %>
                 <div class="menu-item">
-                    <img src="<%= item.imagePath %>" alt="<%= item.name %>">
+                    <img src="<%= item.Image_path %>" alt="<%= item.Name %>">
                     <div>
-                        <h5><%= item.name %></h5>
-                        <p><%= item.description %></p>
+                        <h5><%= item.Name %></h5>
+                        <p><%= item.Description %></p>
+                        <p><%= item.Price %> Ft</p>
                     </div>
                     <% if (user && user.role === 'admin') { %>
                         <!-- Backend: Implement delete functionality here -->
-                        <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                        <span class="delete-btn" data-id="<%= item.ID %>" onclick="removeItem(this)">Törlés</span>
                     <% } %>
                 </div>
-            <% }) %>
+            <% }); %>
         </div>
 
         <!-- Italok -->
         <div class="col-md-6">
             <h3 class="mt-4">Italok</h3>
             <%
-            const italok = [
-                { name: 'Szóda', description: 'Frissítő szóda', imagePath: '/img/Food_pics/19.jpg' },
-                { name: 'Unicum', description: 'Hagyományos magyar gyógynövénylikőr', imagePath: '/img/Food_pics/20.jpg' }
-            ];
-            italok.forEach(item => {
+            drinks.forEach(function(item) {
             %>
             <div class="menu-item">
-                <img src="<%= item.imagePath %>" alt="<%= item.name %>">
+                <img src="<%= item.Image_path %>" alt="<%= item.Name %>">
                 <div>
-                    <h5><%= item.name %></h5>
-                    <p><%= item.description %></p>
+                    <h5><%= item.Name %></h5>
+                    <p><%= item.Description %></p>
+                    <p><%= item.Price %> Ft</p>
                 </div>
                 <% if (user && user.role === 'admin') { %>
                 <!-- Backend: Implement delete functionality here -->
-                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                    <span class="delete-btn" data-id="<%= item.ID %>" onclick="removeItem(this)">Törlés</span>
                 <% } %>
             </div>
-            <% }) %>
+            <% }); %>
         </div>
 
-        <!-- Egyéb -->
+        <!-- Szárnyasok -->
         <div class="col-md-6">
-            <h3 class="mt-4">Egyéb</h3>
+            <h3 class="mt-4">Szárnyas ételek</h3>
             <%
-            const egyebek = [
-                { name: 'Narancs', description: 'Friss, édes narancs', imagePath: '/img/Food_pics/26.jpg' },
-                { name: 'Házi almás rétes', description: 'Friss, házi készítésű rétes fahéjas almával töltve', imagePath: '/img/Food_pics/13.jpg' },
-                { name: 'Csokoládé mousse', description: 'Könnyű csokoládés desszert, friss eperrel díszítve', imagePath: '/img/Food_pics/14.jpg' }
-            ];
-            egyebek.forEach(item => {
+            poultry.forEach(function(item) {
             %>
                 <div class="menu-item">
-                    <img src="<%= item.imagePath %>" alt="<%= item.name %>">
+                    <img src="<%= item.Image_path %>" alt="<%= item.Name %>">
                     <div>
-                        <h5><%= item.name %></h5>
-                        <p><%= item.description %></p>
+                        <h5><%= item.Name %></h5>
+                        <p><%= item.Description %></p>
+                        <p><%= item.Price %> Ft</p>
                     </div>
                     <% if (user && user.role === 'admin') { %>
                         <!-- Backend: Implement delete functionality here -->
-                        <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                        <span class="delete-btn" data-id="<%= item.ID %>" onclick="removeItem(this)">Törlés</span>
                     <% } %>
                 </div>
-            <% }) %>
+            <% }); %>
+        </div>
+
+        <!-- Desszertek -->
+        <div class="col-md-6">
+            <h3 class="mt-4">Desszertek</h3>
+            <%
+            desserts.forEach(function(item) {
+            %>
+                <div class="menu-item">
+                    <img src="<%= item.Image_path %>" alt="<%= item.Name %>">
+                    <div>
+                        <h5><%= item.Name %></h5>
+                        <p><%= item.Description %></p>
+                        <p><%= item.Price %> Ft</p>
+                    </div>
+                    <% if (user && user.role === 'admin') { %>
+                        <!-- Backend: Implement delete functionality here -->
+                        <span class="delete-btn" data-id="<%= item.ID %>" onclick="removeItem(this)">Törlés</span>
+                    <% } %>
+                </div>
+            <% }); %>
+        </div>
+
+        <!-- Gyrosok -->
+        <div class="col-md-6">
+            <h3 class="mt-4">Szárnyas ételek</h3>
+            <%
+            gyros.forEach(function(item) {
+            %>
+                <div class="menu-item">
+                    <img src="<%= item.Image_path %>" alt="<%= item.Name %>">
+                    <div>
+                        <h5><%= item.Name %></h5>
+                        <p><%= item.Description %></p>
+                        <p><%= item.Price %> Ft</p>
+                    </div>
+                    <% if (user && user.role === 'admin') { %>
+                        <!-- Backend: Implement delete functionality here -->
+                        <span class="delete-btn" data-id="<%= item.ID %>" onclick="removeItem(this)">Törlés</span>
+                    <% } %>
+                </div>
+            <% }); %>
+        </div>
+
+        <!-- Köretek -->
+        <div class="col-md-6">
+            <h3 class="mt-4">Köretek</h3>
+            <%
+            sides.forEach(function(item) {
+            %>
+                <div class="menu-item">
+                    <img src="<%= item.Image_path %>" alt="<%= item.Name %>">
+                    <div>
+                        <h5><%= item.Name %></h5>
+                        <p><%= item.Description %></p>
+                        <p><%= item.Price %> Ft</p>
+                    </div>
+                    <% if (user && user.role === 'admin') { %>
+                        <!-- Backend: Implement delete functionality here -->
+                        <span class="delete-btn" data-id="<%= item.ID %>" onclick="removeItem(this)">Törlés</span>
+                    <% } %>
+                </div>
+            <% }); %>
         </div>
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
     function removeItem(element) {
-        element.parentElement.remove();
-        // Backend: Add AJAX request here to remove the item from the database
+        const foodID = element.getAttribute('data-id');
+
+        if(!foodID){
+            return;
+        }
+
+        console.log("Törlendő: ", foodID);
+
+        const confirmed = confirm("Biztosan törölni szeretné ezt az ételt? Ez a menükből is el fog tűnni!");
+
+        if(confirmed){
+            $.ajax({
+            url: `/deleteFood`,
+            type: 'POST',
+            contentType: 'application/json',
+                data: JSON.stringify({ foodId: foodID }),
+            success: function(response){
+                $(element).parent().remove();
+                console.log("Sikeres törlés");
+                alert('Étel sikeresen törölve.');
+            },
+            error: function(xhr, status, error){
+                console.error('Hiba: ', error);
+                console.log("Hiba a törlés során");
+                alert('Hiba az étel törlése során.');
+            }
+        });
+        }
     }
 </script>
 </body>
