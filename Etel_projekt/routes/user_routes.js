@@ -189,6 +189,7 @@ router.delete('/delete-user/:userId', async (req, res) => {
 
     try {
         await new UserDAO().clearUserReservations(userId);
+        await new UserDAO().clearUserReviews(userId);
         const result = await new UserDAO().deleteUser(userId);
 
         if (result) {

@@ -143,6 +143,32 @@ class UserDAO {
         }
     }
 
+    async clearUserReviews(userID) {
+        try {
+            const [existingReservations] = await connection.query('SELECT * FROM reviews WHERE User_ID = ?', [userID]);
+    
+            if (existingReservations.length === 0) {
+                console.error("No reviews found for the specified User_ID!");
+                return false;
+            }
+    
+            const [updateResult] = await connection.query(
+                'UPDATE reviews SET User_ID = 0 WHERE User_ID = ?',
+                [userID]
+            );
+    
+            if (updateResult.affectedRows > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (error) {
+            console.error("Error updating reviews for User_ID: ", error);
+            return false;
+        }
+    }
+
+
     async clearUserReservations(userID) {
         try {
             const [existingReservations] = await connection.query('SELECT * FROM reservations WHERE User_ID = ?', [userID]);

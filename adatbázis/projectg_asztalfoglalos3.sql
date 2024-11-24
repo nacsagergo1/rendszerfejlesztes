@@ -704,8 +704,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`ID`, `Email_Address`, `Hash`, `Username`, `Validated`, `Registration_Date`, `Admin`) VALUES
+(0, 'Deleted@deleted.com', '$2b$10$Superinvalidpassword', 'Bin', 1, '2024-11-08 14:11:50', 0),
 (4, 'admin@gmail.com', '$2b$10$nzk.WdmBPqMXNKINioqtWuIbIDY1IFvTvRnH76SbJ4yeABze7CFf6', 'Admin', 1, '2024-11-03 13:58:19', 1),
-(5, 'Deleted@deleted.com', '$2b$10$Superinvalidpassword', 'Bin', 1, '2024-11-08 14:11:50', 0),
 (6, 'eztamugysefogjasenkilatnirajtamkivul@a.com', '$2b$10$XWYmqEXLrEpuPZ647wrqX.cNWQowsrSgpF8Qnw./gbWib.LTDayli', 'Csanád', 0, '2024-11-13 19:04:36', 0),
 (7, 'sfd@sdsa', '$2b$10$5izLSnruudwJOooeS6wbCOItimcRlc.kfz/EvF81fjhErfb5vrlfa', 'dfsdf', 0, '2024-11-13 19:11:03', 0),
 (8, 'stak@gmail.com', '$2b$10$YCq3AJ/k8Hg1deGlrM/uEOp965tqvxXHOwq79LdFOwNQWFMOusZFC', 'stak', 0, '2024-11-13 19:21:10', 0),

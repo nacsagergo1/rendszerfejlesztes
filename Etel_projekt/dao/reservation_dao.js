@@ -249,6 +249,61 @@ class ReservationDAO{
         return false;
     }
   }
+
+  async createReview(userId, score, comment, reservationId) {
+    try {
+        const [existingReview] = await connection.query(
+            `SELECT ID FROM reviews WHERE Reservation_ID = ?`,
+            [reservationId]
+        );
+
+        if (existingReview.length > 0) {
+            return false;
+        }
+
+        const [result] = await connection.query(
+            `INSERT INTO reviews (User_ID, Score, Comment, Reservation_ID)
+             VALUES (?, ?, ?, ?)`,
+            [userId, score, comment, reservationId]
+        );
+
+        return true;
+    } catch (error) {
+        console.error('Hiba történt a vélemény létrehozása során:', error);
+        return false;
+    }
+  }
+
+  async deleteReview(reservationId) {
+    try {
+        const [result] = await connection.query(
+            `DELETE FROM reviews WHERE Reservation_ID = ?`,
+            [reservationId]
+        );
+
+        return result.affectedRows > 0;
+    } catch (error) {
+        console.error('Hiba történt a vélemény törlése során:', error);
+        throw error;
+    }
+  }
+
+  async getTopReviews(limit = 5) {
+    try {
+        const [rows] = await connection.query(
+            `SELECT ID, User_ID, Score, Comment, Reservation_ID 
+             FROM reviews 
+             ORDER BY Score DESC, ID ASC 
+             LIMIT ?`,
+            [limit]
+        );
+
+        return rows;
+    } catch (error) {
+        console.error('Hiba történt a vélemények lekérése során:', error);
+        return [];
+    }
+  }
   
 
 }

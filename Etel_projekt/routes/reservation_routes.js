@@ -132,4 +132,66 @@ router.post('/modify-reservation', async (req, res) => {
     }
 });
 
+router.post('/create-review', async (req, res) => {
+    const user = req.session.user; // A bejelentkezett felhasználó adatai
+    const { message, score, userId, reservationId } = req.body; // Az átadott paraméterek a request body-ból
+
+    // Ellenőrzések
+    if (!user || user.id !== parseInt(userId)) {
+        return res.status(403).json({ message: 'Nincs jogosultság vélemény hozzáadására.' });
+    }
+
+    if (score < 1 || score > 5) {
+        return res.status(400).json({ message: 'Az értékelésnek 1 és 5 között kell lennie.' });
+    }
+
+    try {
+        // Létrehozzuk a véleményt a UserDAO segítségével
+        const review = await await resCont.createReview({
+            userId,
+            score,
+            comment: message,
+            reservationId
+        });
+
+        if (review) {
+            res.json({ message: 'A vélemény sikeresen hozzáadva.', review });
+        } else {
+            res.status(400).json({ message: 'Nem sikerült létrehozni a véleményt.' });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Hiba történt a vélemény létrehozása során.', error });
+    }
+});
+
+router.delete('/delete-review/:reservationId', async (req, res) => {
+    const user = req.session.user;
+    const { reservationId } = req.params;
+
+    if (!user || user.role !== 'admin') {
+        return res.status(403).json({ message: 'Nincs jogosultság vélemény törlésére.' });
+    }
+
+    try {
+        const success = await resCont.deleteReview(reservationId);
+
+        if (success) {
+            res.json({ message: 'A vélemény sikeresen törölve.' });
+        } else {
+            res.status(404).json({ message: 'A vélemény nem található, vagy nem sikerült törölni.' });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Hiba történt a vélemény törlése során.', error });
+    }
+});
+
+router.get('/top-reviews', async (req, res) => {
+    try {
+        const reviews = await resCont.getTopReviews(5); // 5 legjobb vélemény lekérése
+        res.json(reviews); // Csak a vélemények JSON listája kerül visszaadásra
+    } catch (error) {
+        res.status(500).json({ message: 'Hiba történt a vélemények lekérése során.', error });
+    }
+});
+
 module.exports = router;
