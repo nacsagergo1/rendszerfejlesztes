@@ -133,10 +133,9 @@ router.post('/modify-reservation', async (req, res) => {
 });
 
 router.post('/create-review', async (req, res) => {
-    const user = req.session.user; // A bejelentkezett felhasználó adatai
-    const { message, score, userId, reservationId } = req.body; // Az átadott paraméterek a request body-ból
+    const user = req.session.user;
+    const { message, score, userId, reservationId } = req.body;
 
-    // Ellenőrzések
     if (!user || user.id !== parseInt(userId)) {
         return res.status(403).json({ message: 'Nincs jogosultság vélemény hozzáadására.' });
     }
@@ -146,7 +145,6 @@ router.post('/create-review', async (req, res) => {
     }
 
     try {
-        // Létrehozzuk a véleményt a UserDAO segítségével
         const review = await await resCont.createReview({
             userId,
             score,
@@ -187,11 +185,27 @@ router.delete('/delete-review/:reservationId', async (req, res) => {
 
 router.get('/top-reviews', async (req, res) => {
     try {
-        const reviews = await resCont.getTopReviews(5); // 5 legjobb vélemény lekérése
-        res.json(reviews); // Csak a vélemények JSON listája kerül visszaadásra
+        const reviews = await resCont.getTopReviews(5);
+        res.json(reviews);
     } catch (error) {
         res.status(500).json({ message: 'Hiba történt a vélemények lekérése során.', error });
     }
 });
+
+router.get('/get-review-stats', async (req, res) => {
+    try {
+        const { averageScore, totalReviews } = await new resCont.getAverageScoreAndCount();
+
+        if (totalReviews > 0) {
+            res.json({ averageScore, totalReviews });
+        } else {
+            res.status(404).json({ message: 'Nincsenek elérhető vélemények.' });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Hiba történt az adatok lekérése során.', error });
+    }
+});
+
+
 
 module.exports = router;

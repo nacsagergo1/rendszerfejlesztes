@@ -305,6 +305,21 @@ class ReservationDAO{
     }
   }
   
+  async getAverageScoreAndCount() {
+    try {
+        const [rows] = await connection.query(
+            `SELECT ROUND(AVG(Score), 2) AS averageScore, COUNT(*) AS totalReviews FROM reviews`
+        );
+
+        return {
+            averageScore: rows[0].averageScore,
+            totalReviews: rows[0].totalReviews
+        };
+    } catch (error) {
+        console.error('Hiba történt az adatok lekérése során:', error);
+        throw error;
+    }
+  }
 
 }
 
