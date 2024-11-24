@@ -11,6 +11,7 @@
         .menu-item {
             display: flex;
             flex-direction: row;
+            align-items: center;
             margin-bottom: 20px;
         }
         .menu-item img {
@@ -22,6 +23,11 @@
         }
         .menu-item h5 {
             margin: 0;
+        }
+        .delete-btn {
+            margin-left: auto;
+            color: red;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -75,22 +81,52 @@
 <div id="menu-container" class="container mt-5 pt-5">
     <h1 class="text-center mt-5 pt-5">Menü</h1>
     <div class="row">
-        <!-- Előételek -->
+        <!-- Levesek -->
         <div class="col-md-6">
-            <h3 class="mt-4">Előételek</h3>
+            <h3 class="mt-4">Levesek</h3>
             <div class="menu-item">
-                <img src="/img/bruschetta.jpg" alt="Bruschetta">
+                <img src="/img/Food_pics/1.jpg" alt="Halászlé">
                 <div>
-                    <h5>Bruschetta</h5>
-                    <p>Pirított kenyér paradicsommal, bazsalikommal és olívaolajjal</p>
+                    <h5>Halászlé</h5>
+                    <p>Hagyományos magyar halleves</p>
                 </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
             </div>
             <div class="menu-item">
-                <img src="/img/caprese_salata.jpg" alt="Caprese saláta">
+                <img src="/img/Food_pics/2.jpg" alt="Lencseleves">
                 <div>
-                    <h5>Caprese saláta</h5>
-                    <p>Friss mozzarella, paradicsom és bazsalikom, balzsamecetes öntettel</p>
+                    <h5>Lencseleves</h5>
+                    <p>Ízletes lencseleves</p>
                 </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
+            </div>
+            <div class="menu-item">
+                <img src="/img/Food_pics/3.jpg" alt="Bableves">
+                <div>
+                    <h5>Bableves</h5>
+                    <p>Hagyományos magyar bableves</p>
+                </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
+            </div>
+            <div class="menu-item">
+                <img src="/img/Food_pics/4.jpg" alt="Újházi tyúkhúsleves">
+                <div>
+                    <h5>Újházi tyúkhúsleves</h5>
+                    <p>Gazdag tyúkhúsleves</p>
+                </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
             </div>
         </div>
 
@@ -98,39 +134,82 @@
         <div class="col-md-6">
             <h3 class="mt-4">Főételek</h3>
             <div class="menu-item">
-                <img src="/img/marhaporkolt.jpg" alt="Marhapörkölt galuskával">
+                <img src="/img/Food_pics/0.jpg" alt="Marhapörkölt galuskával">
                 <div>
                     <h5>Marhapörkölt galuskával</h5>
                     <p>Hagyományos magyar étel friss galuskával</p>
                 </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
             </div>
             <div class="menu-item">
-                <img src="/img/roston_sult_lazac.jpg" alt="Roston sült lazac">
+                <img src="/img/Food_pics/10.jpg" alt="Csirkepörkölt nokedlivel">
                 <div>
-                    <h5>Roston sült lazac</h5>
-                    <p>Friss lazacfilé grillezve, citromos vajmártással és sült zöldségekkel</p>
+                    <h5>Csirkepörkölt nokedlivel</h5>
+                    <p>Ízletes csirkepörkölt házi nokedlivel</p>
                 </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
             </div>
         </div>
     </div>
 
     <div class="row mt-4">
-        <!-- Desszertek -->
+        <!-- Tészták -->
         <div class="col-md-6">
-            <h3 class="mt-4">Desszertek</h3>
+            <h3 class="mt-4">Tészták</h3>
             <div class="menu-item">
-                <img src="/img/almas_retes.jpg" alt="Házi almás rétes">
+                <img src="/img/Food_pics/5.jpg" alt="Túrós csusza pörccel">
                 <div>
-                    <h5>Házi almás rétes</h5>
-                    <p>Friss, házi készítésű rétes fahéjas almával töltve</p>
+                    <h5>Túrós csusza pörccel</h5>
+                    <p>Klasszikus magyar tésztaétel túróval és pörccel</p>
                 </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
             </div>
             <div class="menu-item">
-                <img src="/img/csokolade_mousse.jpg" alt="Csokoládé mousse">
+                <img src="/img/Food_pics/6.jpg" alt="Rakott tészta">
                 <div>
-                    <h5>Csokoládé mousse</h5>
-                    <p>Könnyű csokoládés desszert, friss eperrel díszítve</p>
+                    <h5>Rakott tészta</h5>
+                    <p>Ízletes rakott tészta</p>
                 </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
+            </div>
+            <div class="menu-item">
+                <img src="/img/Food_pics/7.jpg" alt="Spaghetti Bolognese">
+                <div>
+                    <h5>Spaghetti Bolognese</h5>
+                    <p>Olasz tészta bolognai mártással</p>
+                </div>
+                <img src="/img/Food_pics/8.jpg" alt="Rakott tészta kettő">
+                <div>
+                    <h5>Rakott tészta kettő</h5>
+                    <p>Másik változat rakott tésztából</p>
+                </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
+            </div>
+            <div class="menu-item">
+                <img src="/img/Food_pics/9.jpg" alt="Diós tészta">
+                <div>
+                    <h5>Diós tészta</h5>
+                    <p>Édes tészta darált dióval</p>
+                </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
             </div>
         </div>
 
@@ -138,18 +217,64 @@
         <div class="col-md-6">
             <h3 class="mt-4">Italok</h3>
             <div class="menu-item">
-                <img src="/img/haz_bora.jpg" alt="Ház bora">
+                <img src="/img/Food_pics/19.jpg" alt="Szóda">
                 <div>
-                    <h5>Ház bora</h5>
-                    <p>Választható fehér vagy vörös, helyi borászatból</p>
+                    <h5>Szóda</h5>
+                    <p>Frissítő szóda</p>
                 </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
             </div>
             <div class="menu-item">
-                <img src="/img/narancsle.jpg" alt="Frissen facsart narancslé">
+                <img src="/img/Food_pics/20.jpg" alt="Unicum">
                 <div>
-                    <h5>Frissen facsart narancslé</h5>
-                    <p>100% friss, természetes narancslé</p>
+                    <h5>Unicum</h5>
+                    <p>Hagyományos magyar gyógynövénylikőr</p>
                 </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
+            </div>
+        </div>
+
+        <!-- Egyéb -->
+        <div class="col-md-6">
+            <h3 class="mt-4">Egyéb</h3>
+            <div class="menu-item">
+                <img src="/img/Food_pics/26.jpg" alt="Narancs">
+                <div>
+                    <h5>Narancs</h5>
+                    <p>Friss, édes narancs</p>
+                </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
+            </div>
+            <div class="menu-item">
+                <img src="/img/Food_pics/13.jpg" alt="Házi almás rétes">
+                <div>
+                    <h5>Házi almás rétes</h5>
+                    <p>Friss, házi készítésű rétes fahéjas almával töltve</p>
+                </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
+            </div>
+            <div class="menu-item">
+                <img src="/img/Food_pics/14.jpg" alt="Csokoládé mousse">
+                <div>
+                    <h5>Csokoládé mousse</h5>
+                    <p>Könnyű csokoládés desszert, friss eperrel díszítve</p>
+                </div>
+                <% if (user && user.role === 'admin') { %>
+                    <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
             </div>
         </div>
     </div>
@@ -158,5 +283,11 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function removeItem(element) {
+        element.parentElement.remove();
+        // Backend: Add AJAX request here to remove the item from the database
+    }
+</script>
 </body>
 </html>
