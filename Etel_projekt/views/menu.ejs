@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .menu-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .menu-item h5 {
+            margin: 0;
+        }
+        .delete-btn {
+            margin-left: auto;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 <div id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -29,27 +52,27 @@
                 <li class="nav-item">
                     <a href="/contact" class="nav-link">Kapcsolat</a>
                     <% if (typeof user === 'undefined') { %>
-                        <li class="nav-item">
-                            <a href="/login" class="nav-link">Bejelentkezés</a>
-                        </li>
-                        <% } else if (user.role === 'admin'){ %>
-                            <li class="nav-item">
-                                <a href="/profile" class="nav-link">Profil</a>
-                            </li>
-                            <li>
-                                <a href="/usersAdmin" class="nav-link">Felhasználók kezelése</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/logout" class="nav-link">Kijelentkezés</a>
-                            </li>
-                        <%} else { %>
-                        <li class="nav-item">
-                            <a href="/profile" class="nav-link">Profil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/logout" class="nav-link">Kijelentkezés</a>
-                        </li>
-                        <% } %>
+                <li class="nav-item">
+                    <a href="/login" class="nav-link">Bejelentkezés</a>
+                </li>
+                <% } else if (user.role === 'admin'){ %>
+                    <li class="nav-item">
+                        <a href="/profile" class="nav-link">Profil</a>
+                    </li>
+                    <li>
+                        <a href="/usersAdmin" class="nav-link">Felhasználók kezelése</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/logout" class="nav-link">Kijelentkezés</a>
+                    </li>
+                <%} else { %>
+                    <li class="nav-item">
+                        <a href="/profile" class="nav-link">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/logout" class="nav-link">Kijelentkezés</a>
+                    </li>
+                <% } %>
             </ul>
         </div>
     </div>
@@ -58,66 +81,132 @@
 <div id="menu-container" class="container mt-5 pt-5">
     <h1 class="text-center mt-5 pt-5">Menü</h1>
     <div class="row">
-        <!-- Előételek -->
+        <!-- Levesek -->
         <div class="col-md-6">
-            <h3 class="mt-4">Előételek</h3>
-            <ul class="list-unstyled">
-                <li class="mb-3">
-                    <h5>Bruschetta</h5>
-                    <p>Pirított kenyér paradicsommal, bazsalikommal és olívaolajjal</p>
-                </li>
-                <li class="mb-3">
-                    <h5>Caprese saláta</h5>
-                    <p>Friss mozzarella, paradicsom és bazsalikom, balzsamecetes öntettel</p>
-                </li>
-            </ul>
+            <h3 class="mt-4">Levesek</h3>
+            <%
+            const levesek = [
+                { name: 'Halászlé', description: 'Hagyományos magyar halleves', imagePath: '/img/Food_pics/1.jpg' },
+                { name: 'Lencseleves', description: 'Ízletes lencseleves', imagePath: '/img/Food_pics/2.jpg' },
+                { name: 'Bableves', description: 'Hagyományos magyar bableves', imagePath: '/img/Food_pics/3.jpg' },
+                { name: 'Újházi tyúkhúsleves', description: 'Gazdag tyúkhúsleves', imagePath: '/img/Food_pics/4.jpg' }
+            ];
+            levesek.forEach(item => {
+            %>
+                <div class="menu-item">
+                    <img src="<%= item.imagePath %>" alt="<%= item.name %>">
+                    <div>
+                        <h5><%= item.name %></h5>
+                        <p><%= item.description %></p>
+                    </div>
+                    <% if (user && user.role === 'admin') { %>
+                        <!-- Backend: Implement delete functionality here -->
+                        <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                    <% } %>
+                </div>
+            <% }) %>
         </div>
 
         <!-- Főételek -->
         <div class="col-md-6">
             <h3 class="mt-4">Főételek</h3>
-            <ul class="list-unstyled">
-                <li class="mb-3">
-                    <h5>Marhapörkölt galuskával</h5>
-                    <p>Hagyományos magyar étel friss galuskával</p>
-                </li>
-                <li class="mb-3">
-                    <h5>Roston sült lazac</h5>
-                    <p>Friss lazacfilé grillezve, citromos vajmártással és sült zöldségekkel</p>
-                </li>
-            </ul>
+            <%
+            const foeletek = [
+                { name: 'Marhapörkölt galuskával', description: 'Hagyományos magyar étel friss galuskával', imagePath: '/img/Food_pics/0.jpg' },
+                { name: 'Csirkepörkölt nokedlivel', description: 'Ízletes csirkepörkölt házi nokedlivel', imagePath: '/img/Food_pics/10.jpg' }
+            ];
+            foeletek.forEach(item => {
+            %>
+                <div class="menu-item">
+                    <img src="<%= item.imagePath %>" alt="<%= item.name %>">
+                    <div>
+                        <h5><%= item.name %></h5>
+                        <p><%= item.description %></p>
+                    </div>
+                    <% if (user && user.role === 'admin') { %>
+                        <!-- Backend: Implement delete functionality here -->
+                        <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                    <% } %>
+                </div>
+            <% }) %>
         </div>
     </div>
 
     <div class="row mt-4">
-        <!-- Desszertek -->
+        <!-- Tészták -->
         <div class="col-md-6">
-            <h3 class="mt-4">Desszertek</h3>
-            <ul class="list-unstyled">
-                <li class="mb-3">
-                    <h5>Házi almás rétes</h5>
-                    <p>Friss, házi készítésű rétes fahéjas almával töltve</p>
-                </li>
-                <li class="mb-3">
-                    <h5>Csokoládé mousse</h5>
-                    <p>Könnyű csokoládés desszert, friss eperrel díszítve</p>
-                </li>
-            </ul>
+            <h3 class="mt-4">Tészták</h3>
+            <%
+            const tesztak = [
+                { name: 'Túrós csusza pörccel', description: 'Klasszikus magyar tésztaétel túróval és pörccel', imagePath: '/img/Food_pics/5.jpg' },
+                { name: 'Rakott tészta', description: 'Ízletes rakott tészta', imagePath: '/img/Food_pics/6.jpg' },
+                { name: 'Spaghetti Bolognese', description: 'Olasz tészta bolognai mártással', imagePath: '/img/Food_pics/7.jpg' },
+                { name: 'Rakott tészta kettő', description: 'Másik változat rakott tésztából', imagePath: '/img/Food_pics/8.jpg' },
+                { name: 'Diós tészta', description: 'Édes tészta darált dióval', imagePath: '/img/Food_pics/9.jpg' }
+            ];
+            tesztak.forEach(item => {
+            %>
+                <div class="menu-item">
+                    <img src="<%= item.imagePath %>" alt="<%= item.name %>">
+                    <div>
+                        <h5><%= item.name %></h5>
+                        <p><%= item.description %></p>
+                    </div>
+                    <% if (user && user.role === 'admin') { %>
+                        <!-- Backend: Implement delete functionality here -->
+                        <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                    <% } %>
+                </div>
+            <% }) %>
         </div>
 
         <!-- Italok -->
         <div class="col-md-6">
             <h3 class="mt-4">Italok</h3>
-            <ul class="list-unstyled">
-                <li class="mb-3">
-                    <h5>Ház bora</h5>
-                    <p>Választható fehér vagy vörös, helyi borászatból</p>
-                </li>
-                <li class="mb-3">
-                    <h5>Frissen facsart narancslé</h5>
-                    <p>100% friss, természetes narancslé</p>
-                </li>
-            </ul>
+            <%
+            const italok = [
+                { name: 'Szóda', description: 'Frissítő szóda', imagePath: '/img/Food_pics/19.jpg' },
+                { name: 'Unicum', description: 'Hagyományos magyar gyógynövénylikőr', imagePath: '/img/Food_pics/20.jpg' }
+            ];
+            italok.forEach(item => {
+            %>
+            <div class="menu-item">
+                <img src="<%= item.imagePath %>" alt="<%= item.name %>">
+                <div>
+                    <h5><%= item.name %></h5>
+                    <p><%= item.description %></p>
+                </div>
+                <% if (user && user.role === 'admin') { %>
+                <!-- Backend: Implement delete functionality here -->
+                    <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                <% } %>
+            </div>
+            <% }) %>
+        </div>
+
+        <!-- Egyéb -->
+        <div class="col-md-6">
+            <h3 class="mt-4">Egyéb</h3>
+            <%
+            const egyebek = [
+                { name: 'Narancs', description: 'Friss, édes narancs', imagePath: '/img/Food_pics/26.jpg' },
+                { name: 'Házi almás rétes', description: 'Friss, házi készítésű rétes fahéjas almával töltve', imagePath: '/img/Food_pics/13.jpg' },
+                { name: 'Csokoládé mousse', description: 'Könnyű csokoládés desszert, friss eperrel díszítve', imagePath: '/img/Food_pics/14.jpg' }
+            ];
+            egyebek.forEach(item => {
+            %>
+                <div class="menu-item">
+                    <img src="<%= item.imagePath %>" alt="<%= item.name %>">
+                    <div>
+                        <h5><%= item.name %></h5>
+                        <p><%= item.description %></p>
+                    </div>
+                    <% if (user && user.role === 'admin') { %>
+                        <!-- Backend: Implement delete functionality here -->
+                        <span class="delete-btn" onclick="removeItem(this)">Törlés</span>
+                    <% } %>
+                </div>
+            <% }) %>
         </div>
     </div>
 </div>
@@ -125,5 +214,11 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function removeItem(element) {
+        element.parentElement.remove();
+        // Backend: Add AJAX request here to remove the item from the database
+    }
+</script>
 </body>
 </html>
