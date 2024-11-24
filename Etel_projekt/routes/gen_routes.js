@@ -49,11 +49,27 @@ router.get('/menu', async (req, res) => {
         const gyros = await FoodDAO.getFoodsByCategory("Gyrosok");
         const poultry = await FoodDAO.getFoodsByCategory("Szárnyas ételek");
         const sides = await FoodDAO.getFoodsByCategory("Köretek");
+        const menus = await FoodDAO.getMenus();
 
-        if(soups && mainDishes && pastas && drinks && desserts && gyros && poultry && sides){
-            return res.render('menu', {soups, mainDishes, pastas, drinks, desserts, gyros, poultry, sides} );
+        if(soups && mainDishes && pastas && drinks && desserts && gyros && poultry && sides && menus){
+            return res.render('menu', {
+                menus: menus,
+                soups: soups,
+                mainDishes: mainDishes,
+                pastas: pastas,
+                drinks: drinks,
+                desserts: desserts,
+                gyros: gyros,
+                poultry: poultry,
+                sides: sides,
+                formatDate: (date) => {
+                    const d = new Date(date);
+                    const year = d.getFullYear();
+                    const month = String(d.getMonth() + 1).padStart(2, '0'); // hónapok 0-tól kezdődnek
+                    const day = String(d.getDate()).padStart(2, '0'); // napot kétjegyűvé tesszük
+                    return `${year}.${month}.${day}`;} });
         } else {
-            return res.status(500).json({ success: false, message: "Hiba az ételek lekérdezése során"});
+            return res.status(500).json({ success: false, message: "Hiba az ételek lekérdezése során, a menus null"});
         }
     } catch (error){
         return res.status(500).json({ success: false, message: "Hiba az ételek lekérdezése során"});

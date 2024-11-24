@@ -5,7 +5,6 @@ class FoodDAO{
     async getFoodsByCategory(category) {
         try{
             const [categoryFoods] = await db.query('SELECT * FROM food WHERE Category = ?', [category]);
-            console.log(categoryFoods);
             return categoryFoods;
         } catch (error) {
             console.log("Hiba az ételek kategória szerinti lekérdezésekor.", error);
@@ -79,15 +78,17 @@ class FoodDAO{
     }
 
     async getMenus(){
-        const query = `SELECT m.ID AS menu_id, m.Name AS menu_name, m.Active_From AS menu_from, m.Active_Until AS menu_until, 
-                        f.ID AS food_id, f.Name AS food_name, f.Description AS food_description, f.Category AS food_category, f.Price AS food_price, f.Imge_path AS food_image
-                        FROM menus m
-                        LEFT JOIN food_menus fm ON m.ID = fm.Menu_ID
-                        LEFT JOIN food f ON fm.Food_ID = f.ID
-                        ORDER BY m.ID, f.ID;`;
+
+        console.log('Eljut a getMenus-be');
         
         try{
-            const [rows] = await db.query(query);
+            const [rows] = await db.query(`SELECT m.ID AS menu_id, m.Name AS menu_name, m.Active_From AS menu_from, m.Active_Until AS menu_until, f.ID AS food_id, f.Name AS food_name
+                                            FROM menus m
+                                            LEFT JOIN food_menus fm ON m.ID = fm.Menu_ID
+                                            LEFT JOIN food f ON fm.Food_ID = f.ID
+                                            ORDER BY m.ID, f.ID;`);
+
+            console.log("Menu lekérdezés eredmény: ", rows);
 
             if(rows){
                 const menus = {};
@@ -109,14 +110,10 @@ class FoodDAO{
                         menus[menuID].foods.push({
                             food_id: row.food_id,
                             name: row.food_name,
-                            description: row.food_description,
-                            category: row.food_category,
-                            price: row.food_price,
-                            image: row.food_image
                         });
                     }
                 });
-
+                console.log("Menük lekérdezése sikeres");
                 return Object.values(menus);
 
             } else {

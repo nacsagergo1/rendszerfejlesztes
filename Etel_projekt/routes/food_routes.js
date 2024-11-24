@@ -110,18 +110,4 @@ router.post('/addFood', upload.single('image_path'), async (req, res) => {
     }
 });
 
-router.get('/getMenus', async (req, res) => {
-    try{
-        const menus = await new FoodDAO().getMenus();
-
-        if(menus){
-            res.json({ menus });
-        } else {
-            res.status(404).json({ success: false, error: 'Hiba a menük lekérdezése közben'});
-        }
-    } catch (error){
-        return res.status(500).json({success: false, error: "Hiba a menük betöltése során."});
-    }
-});
-
 module.exports = router;
