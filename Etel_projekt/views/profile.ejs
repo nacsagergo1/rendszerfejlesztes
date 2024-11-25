@@ -91,6 +91,7 @@
                     <th>Foglalás dátuma</th>
                     <th>Várható létszám</th>
                     <th>Üzlet</th>
+                    <th>Műveletek</th>
                 </tr>
             </thead>
             <tbody id="past-reservations-body">
@@ -104,14 +105,16 @@
 
 <!-- Új ételeket felvevő űrlap -->
 <% if (user.role === 'admin'){ %>
-<div>
-    <h2>Új étel felvitele</h2>
+<div id="add-food-container">
+    <h2 class="text-center">Új étel felvitele</h2>
     <form method="POST" action="/addFood" enctype="multipart/form-data">
-        <label for="name">Név</label><br>
-        <input type="text" id="name" name="name" required placeholder="Étel neve"><br>
-        <label for="description">Leírás</label><br>
-        <textarea id="description" name="description" maxlength="200" rows="3" cols="50" required placeholder="Étel leírása (max. 200 karakter)"></textarea><br>
-        <label for="category">Kategória</label><br>
+        <label for="name">Név</label>
+        <input type="text" id="name" name="name" required placeholder="Étel neve">
+
+        <label for="description">Leírás</label>
+        <textarea id="description" name="description" maxlength="200" rows="3" cols="50" required placeholder="Étel leírása (max. 200 karakter)"></textarea>
+
+        <label for="category">Kategória</label>
         <select id="category" name="category" required>
             <option value="Leves">Leves</option>
             <option value="Tészta">Tészta</option>
@@ -121,17 +124,19 @@
             <option value="Szárnyas ételek">Szárnyas ételek</option>
             <option value="Gyrosok">Gyrosok</option>
             <option value="Köretek">Köretek</option>
-        </select><br>
-        <label for="price">Ár</label><br>
-        <input type="text" id="price" name="price" required placeholder="2000"><br>
-        <label for="image_path">Kép</label><br>
-        <input type="file" id="image_path" name="image_path" required><br>
+        </select>
 
-        <input type="reset" name="reset_btn" value="Alapértelmezett"><br>
-        <button type="button" id="submitFood">Mentés</button>
-        
+        <label for="price">Ár</label>
+        <input type="text" id="price" name="price" required placeholder="2000">
+
+        <label for="image_path">Kép</label>
+        <input type="file" id="image_path" name="image_path" required>
+
+        <input type="reset" name="reset_btn" value="Alapértelmezett">
+        <button type="submit" id="submitFood">Mentés</button>
     </form>
 </div>
+
 <% } %>
 <script>
     async function fetchReservations() {
@@ -173,6 +178,9 @@
                         <td>${new Date(booking.Reservation_Date).toLocaleString()}</td>
                         <td>${booking.Expected_Party_Size}</td>
                         <td>${booking.Business}</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm modify-btn" data-id="${booking.ID}">Véleményezés</button>
+                        </td>
                     `;
                     pastBody.appendChild(row);
                 });
@@ -230,6 +238,9 @@
                         <td>${new Date(booking.Reservation_Date).toLocaleString()}</td>
                         <td>${booking.Expected_Party_Size}</td>
                         <td>${booking.Business}</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm review-btn" data-id="${booking.ID}">Véleményezés</button>
+                        </td>
                     `;
                     pastBody.appendChild(row);
                 });
@@ -256,6 +267,25 @@
         }
 
         $('#modifyModal').modal('show');
+
+        window.currentBookingId = bookingId;    
+    });
+    $(document).on('click', '.review-btn', function() {
+        const bookingId = $(this).data('id');
+        
+        const booking = reservationsData.user.bookings.find(b => b.ID === bookingId);
+        
+        if (booking) {
+            $('#reservationDate').val(new Date(booking.Reservation_Date).toISOString().substring(0, 10));
+            $('#expectedPartySize').val(booking.Expected_Party_Size);
+            $('#business').val(booking.Business);
+
+            const reservationDate = new Date(booking.Reservation_Date);
+            $('#reservationHour').val(reservationDate.getHours());
+            $('#reservationMinute').val(reservationDate.getMinutes());
+        }
+
+        $('#reviewModal').modal('show');
 
         window.currentBookingId = bookingId;    
     });
@@ -411,5 +441,50 @@
     </div>
 </div>
 
+<!-- Modális ablak -->
+<div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="modifyModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modifyModalLabel">Véleményezés</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Bezárás">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="rating">Értékelje éttermünket:</label>
+                    <div id="rating" class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5" class="star">&#9733;</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4" class="star">&#9733;</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3" class="star">&#9733;</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2" class="star">&#9733;</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1" class="star">&#9733;</label>
+                    </div>
+                    <div id="ratingValue" class="mt-2">Kiválasztott értékelés: 0 csillag</div>
+                </div>
+                <div class="form-group">
+                    <label for="textReview">Ossza meg tapasztalatait:</label>
+                    <textarea id="textReview" class="form-control" rows="3" placeholder="Írjon egy véleményt..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Mégse</button>
+                <button type="button" id="submitReviewBtn" class="btn btn-primary">Elküld</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const stars = document.querySelectorAll('input[name="rating"]');
+    const ratingValue = document.getElementById('ratingValue');
+
+    stars.forEach(star => {
+        star.addEventListener('change', function() {
+            const rating = this.value;
+            ratingValue.textContent = `Kiválasztott értékelés: ${rating} csillag`;
+        });
+    });
+</script>
 </body>
 </html>

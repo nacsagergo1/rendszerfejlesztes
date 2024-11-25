@@ -213,6 +213,106 @@ tr:hover {
     transform: rotate(0deg);
 }
 
+ /* Csillagok */
+ .star-rating {
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+}
+
+.star-rating input {
+    display: none;
+}
+.star-rating label {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.star-rating input:checked ~ label {
+    color: #f39c12;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f39c12;
+}
+.star-rating label:active {
+    color: #f39c12;
+}
+#ratingValue {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Új étel felvitele konténer */
+#add-food-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#add-food-container h2 {
+    font-size: 28px;
+    color: darkred;
+    margin-bottom: 20px;
+}
+
+#add-food-container label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#add-food-container input[type="text"],
+#add-food-container select,
+#add-food-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#add-food-container input[type="file"] {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#add-food-container button,
+#add-food-container input[type="reset"] {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#add-food-container button:hover,
+#add-food-container input[type="reset"]:hover {
+    background-color: darkred;
+}
+
+#add-food-container input[type="reset"] {
+    background-color: lightgray;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#add-food-container input[type="reset"]:hover {
+    background-color: darkgray;
+}
+
+
 /* Mobile View */
 @media (max-width: 768px) {
     /* Navigation Bar Adjustments for Mobile */
