@@ -3,7 +3,7 @@ const router = express.Router();
 const FoodDAO = require("../dao/food_dao");
 
 router.use((req, res, next) => {
-    const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/', '/usersAdmin', '/profile', '/logout','/validate','/password-reset','/reset-password', '/upload', '/addFood', '/deleteFood'];
+    const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/', '/usersAdmin', '/profile', '/logout','/validate','/reset-password', '/upload', '/addFood', '/deleteFood'];
     if (!validRoutes.includes(req.path)) {
         return res.redirect('/');
     }
