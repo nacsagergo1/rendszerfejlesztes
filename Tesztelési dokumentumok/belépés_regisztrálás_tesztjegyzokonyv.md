@@ -6,7 +6,7 @@ Tesztjegyzőkönyv- Regisztrálás/Bejelentkezés
 	1.Teszteljárások (TP)
 		1.1 új fiok  és bejelntkezés vele
 			azonosító: TP-01
-			Tesztesetek: TC-1, TC-2, TC-3, TC-4, TC-5, TC-6, TC-7, TC-8, TC-9
+			Tesztesetek: TC-1, TC-2, TC-3, TC-4, TC-5, TC-6, TC-7, TC-8, TC-9, TC-10
 			leírás: regisztrálunk egy fiokot, és megprobálunk bejelentkezni vele.
 				0. lépés töltsük ki a regisztrációs mezőket az adott adatokkal
 				1. lépés probáljunk regisztrálni a gomb segítségével
@@ -70,7 +70,7 @@ Tesztjegyzőkönyv- Regisztrálás/Bejelentkezés
 			
 			2.1 TC-4
 				TP: TP-01
-				leírás: email, tesztelés, nincs .
+				leírás: email, tesztelés, nincs pont
 				bemenet:
 					Regisztrálás:
 					felhasználónév: NEV
@@ -176,6 +176,24 @@ Tesztjegyzőkönyv- Regisztrálás/Bejelentkezés
 					írjuk be az adatokat, regisztráljunk; majd a belépésnél is írjuk be az adatokat, és lépjünk be
 				elvárt kimenet: regisztrálni lehet, de belépni nem
 				
+			2.1 TC-10
+				TP: TP-01
+				leírás: regisztrálás úgy hogy minden elem benn van az emailben, de rossz sorrendben
+				bemenet:
+					Regisztrálás:
+					felhasználónév: NEV
+					Email: pelda.gmail@com
+					Jelszo: abc123
+					Jelszo ujra: abc123
+					
+					
+					Belépés:
+					Email: peldagmail.com
+					Jelszo: adminjelszo999					
+				művelet:
+					írjuk be az adatokat, regisztráljunk; majd a belépésnél is írjuk be az adatokat, és lépjünk be
+				elvárt kimenet: A regisztráció nem lehetséges
+				
 	3. Tesztriportok(TR)
 					3.1 regisztrálás és belépésnél
 						3.1 TR-1(TC-1)
@@ -199,6 +217,9 @@ Tesztjegyzőkönyv- Regisztrálás/Bejelentkezés
 						3.1 TR-1(TC-9)
 							1. regisztrálás sikeres
 							2. várt módon nem lehet bejelentkezni
+						3.1 TR-1(TC-10)
+							1. regisztrálás sikeresen sikertelen
+							
 					
 						
 				
