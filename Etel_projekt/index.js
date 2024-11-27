@@ -21,7 +21,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
   cookie: {
-    secure: false,  // Ha nem HTTPS-en futsz, akkor állítsd false-ra
+    secure: process.env.secure || false,  // Ha nem HTTPS-en futsz, akkor állítsd false-ra
     maxAge: 1000 * 60 * 60,
   },
 }));
