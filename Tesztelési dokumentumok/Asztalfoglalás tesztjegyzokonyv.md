@@ -101,7 +101,7 @@ Elvárt kimenet: Hibaüzenet jelenik meg, hogy adjunk meg érvényes létszámot
 3. Tesztriportok (TR)
 3.1 Foglalás funkció eredmények
 
-    TR-01 (TC-01): A foglalás sikeresen megtörtént.
+    TR-01 (TC-01): A foglalás sikeresen megtörtént, de rossz dátumra foglalt
     TR-02 (TC-02): A hibaüzenet megfelelően megjelent.
     TR-03 (TC-04): A túl sok vendégre vonatkozó hibaüzenet megfelelően megjelent.
     TR-04 (TC-05): A betelt időpontra vonatkozó hibaüzenet megfelelően megjelent.
