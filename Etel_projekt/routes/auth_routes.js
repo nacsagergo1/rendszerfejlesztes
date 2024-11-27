@@ -51,7 +51,7 @@ router.get('/reset-password', async (req, res) => {
     let hash = await bcrypt.hash(newPassword, 10);
     
     await new UserDAO().updatePassword(record.User_ID, hash); 
-
+    await deleteCode(code); 
     
     res.render('reset_success', { message: `Az új jelszó: ${newPassword}` });
   } catch (error) {
