@@ -111,17 +111,18 @@ router.post('/password-reset', async (req, res) => {
         const user = await new UserDAO().getUserByEmail(email); 
                 
         if (!user) {
-            return res.status(400).send('User not found.');
+            return res.render('login', { error: "Nincs ilyen email cím regisztrálva" });
         }
 
         
         await sendPasswordResetEmail(email); 
 
-        res.status(200).send('Password reset email sent.');
+        return res.redirect('/login');
     } catch (error) {
         console.error('Password reset failed:', error);
-        res.status(500).send('Error during password reset.');
+        return res.render('login', { error: "az email elküldése sikertelen" });
     }
+     
 });
 
 // Admin felhasználók listázása
