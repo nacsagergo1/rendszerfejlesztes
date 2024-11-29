@@ -150,12 +150,7 @@ router.post('/create-review', async (req, res) => {
 
     try {
         console.log("createReview: Most fut a lekérés");
-        const review = await resDAO.createReview({
-            userId,
-            score,
-            comment: message,
-            reservationId
-        });
+        const review = await resDAO.createReview(userId, score, message, reservationId);
 
         if (review) {
             console.log("createReview: Vélemény létrehozva");

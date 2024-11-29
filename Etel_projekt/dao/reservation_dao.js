@@ -261,13 +261,17 @@ class ReservationDAO{
             return false;
         }
 
-        const [result] = await connection.query(
-            `INSERT INTO reviews (User_ID, Score, Comment, Reservation_ID)
-             VALUES (?, ?, ?, ?)`,
-            [userId, score, comment, reservationId]
-        );
+        console.log('Értékek: ', userId, score, comment, reservationId);
+        const [result] = await connection.query('INSERT INTO reviews (User_ID, Score, Comment, Reservation_ID) VALUES (?,?,?,?)', [userId, score, comment, reservationId]);
 
-        return true;
+
+        if(result && result.affectedRows === 1){
+          console.log('review: létre hozta a véleményt');
+          return true;
+        } else {
+          console.log('review: nem hozta létre a véleményt');
+          return false;
+      }
     } catch (error) {
         console.error('Hiba történt a vélemény létrehozása során:', error);
         return false;
