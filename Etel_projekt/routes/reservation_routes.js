@@ -188,7 +188,7 @@ router.delete('/delete-review/:reservationId', async (req, res) => {
 
 router.get('/top-reviews', async (req, res) => {
     try {
-        const reviews = await resCont.getTopReviews(5);
+        const reviews = await resDAO.getTopReviews(5);
         res.json(reviews);
     } catch (error) {
         res.status(500).json({ message: 'Hiba történt a vélemények lekérése során.', error });
@@ -197,7 +197,7 @@ router.get('/top-reviews', async (req, res) => {
 
 router.get('/get-review-stats', async (req, res) => {
     try {
-        const { averageScore, totalReviews } = await new resCont.getAverageScoreAndCount();
+        const { averageScore, totalReviews } = await new resDAO.getAverageScoreAndCount();
 
         if (totalReviews > 0) {
             res.json({ averageScore, totalReviews });

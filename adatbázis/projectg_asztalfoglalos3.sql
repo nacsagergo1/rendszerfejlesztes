@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1:3306
--- Létrehozás ideje: 2024. Nov 23. 20:04
+-- Létrehozás ideje: 2024. Nov 29. 15:29
 -- Kiszolgáló verziója: 8.3.0
 -- PHP verzió: 8.2.18
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `food` (
   `Price` int NOT NULL,
   `Image_path` varchar(255) COLLATE utf8mb3_unicode_ci NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=108 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 --
 -- A tábla adatainak kiíratása `food`
@@ -142,8 +142,7 @@ INSERT INTO `food` (`ID`, `Name`, `Description`, `Category`, `Price`, `Image_pat
 (97, 'Grillezett lazac', 'Friss grillezett lazac citromos vajjal és párolt zöldségekkel.', 'Főétel', 3800, 'img/Food_pics/96.jpg'),
 (98, 'Sertésszelet hagymával', 'Lassú tűzön párolt sertésszelet pirított hagymával és paprikával.', 'Főétel', 2900, 'img/Food_pics/97.jpg'),
 (99, 'Krémes', 'Hagyományos magyar krémes desszert, ropogós tésztaréteggel és vaníliakrémmel.', 'Desszert', 1300, 'img/Food_pics/98.jpg'),
-(100, 'Aranygaluska', 'Lágy aranygaluska diós öntettel, vaníliasodóval tálalva.', 'Desszert', 1400, 'img/Food_pics/99.jpg'),
-(101, 'Lekváros bukta', 'Frissen sütött, lekvárral töltött bukta, porcukorral meghintve.', 'Desszert', 1200, 'img/Food_pics/100.jpg');
+(100, 'Aranygaluska', 'Lágy aranygaluska diós öntettel, vaníliasodóval tálalva.', 'Desszert', 1400, 'img/Food_pics/99.jpg');
 
 -- --------------------------------------------------------
 
@@ -557,7 +556,7 @@ CREATE TABLE IF NOT EXISTS `reservations` (
   `Business` tinyint(1) NOT NULL,
   PRIMARY KEY (`ID`),
   KEY `User_ID` (`User_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 --
 -- A tábla adatainak kiíratása `reservations`
@@ -576,7 +575,8 @@ INSERT INTO `reservations` (`ID`, `User_ID`, `Reservation_Date`, `Expected_Party
 (11, 43, '2024-11-06 14:00:00', 10, 0),
 (12, 4, '2024-11-28 16:00:00', 25, 0),
 (13, 4, '1970-01-01 01:00:00', 1, 0),
-(14, 44, '1970-01-01 01:00:00', 4, 0);
+(14, 44, '1970-01-01 01:00:00', 4, 0),
+(16, 43, '2024-11-30 16:30:00', 8, 0);
 
 -- --------------------------------------------------------
 
@@ -629,7 +629,8 @@ INSERT INTO `reservations_tables` (`Reservation_ID`, `Table_ID`) VALUES
 (13, 3),
 (14, 4),
 (14, 5),
-(11, 12);
+(11, 12),
+(16, 10);
 
 -- --------------------------------------------------------
 
@@ -647,7 +648,18 @@ CREATE TABLE IF NOT EXISTS `reviews` (
   PRIMARY KEY (`ID`),
   KEY `Reservation_ID` (`Reservation_ID`),
   KEY `User_ID` (`User_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+
+--
+-- A tábla adatainak kiíratása `reviews`
+--
+
+INSERT INTO `reviews` (`ID`, `User_ID`, `Score`, `Comment`, `Reservation_ID`) VALUES
+(1, 43, 5, 'nagyon jó', 11),
+(2, 7, 4, 'Csak ajánlani tudom', 1),
+(3, 8, 5, 'Nagyon fincsi, nagyon jó', 3),
+(4, 193, 5, 'No comment', 10),
+(6, 193, 5, 'Nyami', 8);
 
 -- --------------------------------------------------------
 
@@ -704,8 +716,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`ID`, `Email_Address`, `Hash`, `Username`, `Validated`, `Registration_Date`, `Admin`) VALUES
-(0, 'Deleted@deleted.com', '$2b$10$Superinvalidpassword', 'Bin', 1, '2024-11-08 14:11:50', 0),
 (4, 'admin@gmail.com', '$2b$10$nzk.WdmBPqMXNKINioqtWuIbIDY1IFvTvRnH76SbJ4yeABze7CFf6', 'Admin', 1, '2024-11-03 13:58:19', 1),
+(5, 'Deleted@deleted.com', '$2b$10$Superinvalidpassword', 'Bin', 1, '2024-11-08 14:11:50', 0),
 (6, 'eztamugysefogjasenkilatnirajtamkivul@a.com', '$2b$10$XWYmqEXLrEpuPZ647wrqX.cNWQowsrSgpF8Qnw./gbWib.LTDayli', 'Csanád', 0, '2024-11-13 19:04:36', 0),
 (7, 'sfd@sdsa', '$2b$10$5izLSnruudwJOooeS6wbCOItimcRlc.kfz/EvF81fjhErfb5vrlfa', 'dfsdf', 0, '2024-11-13 19:11:03', 0),
 (8, 'stak@gmail.com', '$2b$10$YCq3AJ/k8Hg1deGlrM/uEOp965tqvxXHOwq79LdFOwNQWFMOusZFC', 'stak', 0, '2024-11-13 19:21:10', 0),
@@ -1014,8 +1026,8 @@ ALTER TABLE `reservations_tables`
 -- Megkötések a táblához `reviews`
 --
 ALTER TABLE `reviews`
-  ADD CONSTRAINT `Reviews_ibfk_1` FOREIGN KEY (`Reservation_ID`) REFERENCES `reservations` (`ID`),
-  ADD CONSTRAINT `Reviews_ibfk_2` FOREIGN KEY (`User_ID`) REFERENCES `users` (`ID`);
+  ADD CONSTRAINT `Reviews_ibfk_1` FOREIGN KEY (`Reservation_ID`) REFERENCES `reservations` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `Reviews_ibfk_2` FOREIGN KEY (`User_ID`) REFERENCES `users` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Megkötések a táblához `welcome_drinks`

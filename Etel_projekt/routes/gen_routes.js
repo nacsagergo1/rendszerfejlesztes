@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const FoodDAO = require("../dao/food_dao");
+const reservationDao = require("../dao/reservation_dao");
+const resDAO = new reservationDao();
 
 router.use((req, res, next) => {
     const validRoutes = ['/login', '/register', '/reserve', '/menu', '/reviews', '/contact', '/', '/usersAdmin', '/profile', '/logout','/validate','/reset-password', '/upload', '/addFood', '/deleteFood'];
@@ -10,8 +12,33 @@ router.use((req, res, next) => {
     next();
 });
 
-router.get('/', (req, res) => {
-    return res.render('home');
+router.get('/', async (req, res) => {
+    try {
+        console.log("Most kéri le a review-okat");
+        const reviews = await resDAO.getTopReviews(5);
+        const { averageScore, totalReviews } = await resDAO.getAverageScoreAndCount();
+        console.log("Értékek: ", reviews, averageScore, totalReviews);
+        if(reviews && totalReviews > 0){
+            return res.render('home', {
+                reviews: reviews, 
+                averageScore: averageScore,
+                totalReviews: totalReviews
+            });
+        } else {
+            return res.render('home', {
+                reviews: [],
+                averageScore: 0,
+                totalReviews: 0
+            });
+        }
+        
+    } catch (error) {
+        console.error('Részletes hiba:', error);  // Pontos hiba kiíratása a szerver oldalon
+        res.status(500).json({ 
+            message: 'Hiba történt a vélemények lekérése során.', 
+            error: error.message || 'Ismeretlen hiba'  // Ha van hibaüzenet, adjuk vissza
+        });
+    }
 });
 
 router.get('/login', (req, res) => {

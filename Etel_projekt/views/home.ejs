@@ -76,6 +76,23 @@
     <div class="text-center mt-4">
         <a href="/reserve" class="btn btn-primary btn-lg">Foglalj most</a>
     </div>
+
+    <div>
+        <h2>Vélemények</h2>
+        <div>
+            <p>Értékelések száma: <%= totalReviews %></p>
+            <p>Átlag: <%=  averageScore %></p>
+        </div>
+        <% if(reviews && reviews.length > 0){ %>
+            <% reviews.forEach(review =>{ %> 
+                <div>
+                    <p>Szerző: <%= review.user_name%></p>
+                    <p>Értékelés: <%= review.Score %>/5</p>
+                    <p><%= review.Comment %></p>
+                </div>
+            <% }) %>
+        <% } %>
+    </div>
 </div>
 
 <!-- Bootstrap JS és jQuery (CDN) -->

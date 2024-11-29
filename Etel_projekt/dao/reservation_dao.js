@@ -293,33 +293,40 @@ class ReservationDAO{
   }
 
   async getTopReviews(limit = 5) {
+    console.log("DAO: Most kéri le a review-okat");
     try {
         const [rows] = await connection.query(
-            `SELECT ID, User_ID, Score, Comment, Reservation_ID 
-             FROM reviews 
-             ORDER BY Score DESC, ID ASC 
+            `SELECT r.ID, r.Score, r.Comment, r.Reservation_ID, u.Username AS user_name
+             FROM reviews r
+             JOIN users u ON r.User_ID = u.ID
+             ORDER BY r.Score DESC, r.ID ASC 
              LIMIT ?`,
             [limit]
         );
-
+        console.log("DAO: Lekérte a vélemények top-ot : ", rows);
         return rows;
     } catch (error) {
+      console.log("DAO: Nem sikerült a top lekérése");
         console.error('Hiba történt a vélemények lekérése során:', error);
         return [];
     }
   }
   
   async getAverageScoreAndCount() {
+    console.log("DAO: Most kéri le a review-okat");
     try {
         const [rows] = await connection.query(
             `SELECT ROUND(AVG(Score), 2) AS averageScore, COUNT(*) AS totalReviews FROM reviews`
         );
+
+        console.log("DAO: lekérte a stat-ot: ", rows[0].averageScore, rows[0].totalReviews);
 
         return {
             averageScore: rows[0].averageScore,
             totalReviews: rows[0].totalReviews
         };
     } catch (error) {
+      console.log("DAO: Nem kérte le a stat-okat");
         console.error('Hiba történt az adatok lekérése során:', error);
         throw error;
     }
