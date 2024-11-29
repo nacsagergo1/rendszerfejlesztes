@@ -25,9 +25,6 @@
                     <a href="/reserve" class="nav-link">Foglalás</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/reviews" class="nav-link">Vélemények</a>
-                </li>
-                <li class="nav-item">
                     <a href="/contact" class="nav-link">Kapcsolat</a>
                 </li>
                 <% if (typeof user === 'undefined') { %>
@@ -58,55 +55,57 @@
 </div>
 
 <!-- Tartalom - Rólunk szakasz -->
-<div class="container mt-5 pt-5">
-    <div class="row mt-5">
-        <!-- Bal oldali kép -->
-        <div class="col-md-6 text-center">
-            <img src="img/home.png" alt="A nagyi étterme" class="img-fluid rounded">
+<div id="contact-container" class="container mt-5 pt-5">
+    <div class="container mt-5 pt-5">
+        <div class="row mt-5">
+            <!-- Bal oldali kép -->
+            <div class="col-md-6 text-center">
+                <img src="img/home.png" alt="A nagyi étterme" class="img-fluid rounded">
+            </div>
+            <!-- Jobb oldali szöveg -->
+            <div class="col-md-6">
+                <h2>Rólunk</h2>
+                <p>A nagyi étterme egy hagyományos családi étterem, ahol mindig a friss, helyi alapanyagokból készült ételeket kínáljuk. Szenvedéllyel és szeretettel készült fogásaink mindenkinek a nagyi főztjét idézik, legyen szó vasárnapi ebédről vagy különleges alkalmakról. Célunk, hogy minden vendégünk otthon érezze magát, és élményekkel térjen haza.</p>
+                <p>Látogass el hozzánk, és kóstold meg a nagyi legfinomabb receptjeit egy hangulatos, barátságos környezetben!</p>
+            </div>
         </div>
-        <!-- Jobb oldali szöveg -->
-        <div class="col-md-6">
-            <h2>Rólunk</h2>
-            <p>A nagyi étterme egy hagyományos családi étterem, ahol mindig a friss, helyi alapanyagokból készült ételeket kínáljuk. Szenvedéllyel és szeretettel készült fogásaink mindenkinek a nagyi főztjét idézik, legyen szó vasárnapi ebédről vagy különleges alkalmakról. Célunk, hogy minden vendégünk otthon érezze magát, és élményekkel térjen haza.</p>
-            <p>Látogass el hozzánk, és kóstold meg a nagyi legfinomabb receptjeit egy hangulatos, barátságos környezetben!</p>
-        </div>
-    </div>
 
-    <!-- Középre igazított foglalási gomb -->
-    <div class="text-center mt-4">
-        <a href="/reserve" class="btn btn-primary btn-lg">Foglalj most</a>
-    </div>
-
-    <div id="reviews-section" class="container my-5">
-        <h2 class="text-center mb-4">Vélemények</h2>
-        <div class="text-center mb-4">
-            <p class="review-summary">
-                Értékelések száma: 
-                <span class="badge badge-primary"><%= totalReviews %></span>
-            </p>
-            <p class="review-summary">
-                Átlag: 
-                <span class="badge badge-success"><%= averageScore %></span>
-            </p>
+        <!-- Középre igazított foglalási gomb -->
+        <div class="text-center mt-4">
+            <a href="/reserve" class="btn btn-primary btn-lg">Foglalj most</a>
         </div>
-        <% if (reviews && reviews.length > 0) { %>
-            <div class="row">
-                <% reviews.forEach(review => { %>
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card review-card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary"><%= review.user_name %></h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Értékelés: <%= review.Score %>/5</h6>
-                                <p class="card-text"><%= review.Comment %></p>
+
+        <div id="reviews-section" class="container my-5">
+            <h2 class="text-center mb-4">Vélemények</h2>
+            <div class="text-center mb-4">
+                <p class="review-summary">
+                    Értékelések száma: 
+                    <span class="badge badge-primary"><%= totalReviews %></span>
+                </p>
+                <p class="review-summary">
+                    Átlag: 
+                    <span class="badge badge-success"><%= averageScore %></span>
+                </p>
+            </div>
+            <% if (reviews && reviews.length > 0) { %>
+                <div class="row">
+                    <% reviews.forEach(review => { %>
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card review-card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary"><%= review.user_name %></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Értékelés: <%= review.Score %>/5</h6>
+                                    <p class="card-text"><%= review.Comment %></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                <% }) %>
-            </div>
-        <% } else { %>
-            <p class="text-center text-muted">Nincsenek vélemények.</p>
-        <% } %>
-    </div>        
+                    <% }) %>
+                </div>
+            <% } else { %>
+                <p class="text-center text-muted">Nincsenek vélemények.</p>
+            <% } %>
+        </div>        
+    </div>
 </div>
 
 <!-- Bootstrap JS és jQuery (CDN) -->
