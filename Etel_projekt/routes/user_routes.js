@@ -61,8 +61,9 @@ router.post('/loginUser', async (req, res) => {
         return res.render('login', { error: "Üres mező!" });
     }
 
-    if (!email.includes("@")) {
-        return res.render('login', { error: "Nem megfelelő e-mail cím formátum!" });
+    const emailRegex = /^[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)){
+        return res.render('registration', { error: "Nem megfelelő e-mail cím formátum!" });
     }
 
     try {

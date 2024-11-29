@@ -68,13 +68,12 @@
                     <th>Felhasználó ID</th>
                     <th>Foglalás dátuma</th>
                     <th>Várható létszám</th>
-                    <th>Üzlet</th>
                     <th>Műveletek</th>
                 </tr>
             </thead>
             <tbody id="future-reservations-body">
                 <tr>
-                    <td colspan="6" class="text-center">Nincsenek jövőbeli foglalások.</td>
+                    <td colspan="5" class="text-center">Nincsenek jövőbeli foglalások.</td>
                 </tr>
             </tbody>
         </table>
@@ -90,7 +89,6 @@
                     <th>Felhasználó ID</th>
                     <th>Foglalás dátuma</th>
                     <th>Várható létszám</th>
-                    <th>Üzlet</th>
                     <th>Műveletek</th>
                 </tr>
             </thead>
@@ -155,7 +153,6 @@
                         <td>${booking.User_ID}</td>
                         <td>${new Date(booking.Reservation_Date).toLocaleString()}</td>
                         <td>${booking.Expected_Party_Size}</td>
-                        <td>${booking.Business}</td>
                         <td>
                             <button class="btn btn-warning btn-sm modify-btn" data-id="${booking.ID}">Módosítás</button>
                         </td>
@@ -177,7 +174,6 @@
                         <td>${booking.User_ID}</td>
                         <td>${new Date(booking.Reservation_Date).toLocaleString()}</td>
                         <td>${booking.Expected_Party_Size}</td>
-                        <td>${booking.Business}</td>
                         <td>
                             <button class="btn btn-warning btn-sm modify-btn" data-id="${booking.ID}">Véleményezés</button>
                         </td>
@@ -216,7 +212,6 @@
                         <td>${booking.User_ID}</td>
                         <td>${new Date(booking.Reservation_Date).toLocaleString()}</td>
                         <td>${booking.Expected_Party_Size}</td>
-                        <td>${booking.Business}</td>
                         <td>
                             <button class="btn btn-warning btn-sm modify-btn" data-id="${booking.ID}">Módosítás</button>
                         </td>
@@ -237,7 +232,6 @@
                         <td>${booking.User_ID}</td>
                         <td>${new Date(booking.Reservation_Date).toLocaleString()}</td>
                         <td>${booking.Expected_Party_Size}</td>
-                        <td>${booking.Business}</td>
                         <td>
                             <button class="btn btn-warning btn-sm review-btn" data-id="${booking.ID}">Véleményezés</button>
                         </td>
@@ -259,7 +253,6 @@
         if (booking) {
             $('#reservationDate').val(new Date(booking.Reservation_Date).toISOString().substring(0, 10));
             $('#expectedPartySize').val(booking.Expected_Party_Size);
-            $('#business').val(booking.Business);
 
             const reservationDate = new Date(booking.Reservation_Date);
             $('#reservationHour').val(reservationDate.getHours());
@@ -278,7 +271,6 @@
         if (booking) {
             $('#reservationDate').val(new Date(booking.Reservation_Date).toISOString().substring(0, 10));
             $('#expectedPartySize').val(booking.Expected_Party_Size);
-            $('#business').val(booking.Business);
 
             const reservationDate = new Date(booking.Reservation_Date);
             $('#reservationHour').val(reservationDate.getHours());
@@ -325,6 +317,49 @@
         const unformedDate = $('#reservationDate').val();
         const hour = $('#reservationHour').val();
         const minute = $('#reservationMinute').val();
+
+        const limitDate = '2025-06-01';
+        const currentDate = new Date();
+        const unFormed = new Date($('#reservationDate').val());
+        const currentFormated = currentDate.getFullYear() + '-' + (currentDate.getMonth() + 1) + '-' + currentDate.getDate();
+        const formatedDate = unFormed.getFullYear() + '-' + (unFormed.getMonth() + 1) + '-' + unFormed.getDate();
+
+        if(unformedDate > limitDate){
+            alert("A megadott dátum nem lehet 2025.06.01. után.");
+            return;
+        }
+
+        if(unformedDate < currentDate){
+            alert("Múltba nem lehet módosítani a foglalást.");
+            return;
+        }
+
+        if(formatedDate === currentFormated){
+            alert("Mai foglalásokat már nem lehet módosítani.");
+            return;
+        }
+
+        if(hour >= 24 || hour < 0 || minute >= 60 || minute < 0){
+            alert("Nem létező óra/perc érték.");
+            return;
+        }
+
+        if(hour < 10 || hour > 19 || (hour == 19 && minute > 30)){
+            alert("A kiválasztott időpontban nincs nyitva az étterem.");
+            return;
+        }
+
+        if(numberOfPerson <= 0 || numberOfPerson > 56){
+            alert("A személyek száma min. 1 max. 56.");
+            return;
+        }
+
+        if(!Number.isInteger(parseFloat(hour)) || parseFloat(hour) !== parseInt(hour, 10) 
+            || !Number.isInteger(parseFloat(minute)) || parseFloat(minute) !== parseInt(minute, 10)
+            || !Number.isInteger(parseFloat(numberOfPerson)) || parseFloat(numberOfPerson) !== parseInt(numberOfPerson, 10)){
+                alert('Csak egész számokat lehet megadni az óra, perc és személy mezőkben.');
+                return;
+            }
 
         if (bookingId && numberOfPerson && unformedDate && hour !== "" && minute !== "") {
             const formattedDate = new Date(unformedDate);
@@ -411,6 +446,11 @@
             return;
         }
 
+        if(comment.length > 250){
+            alert('Maximum 250 karakter hosszú lehet a vélemény!');
+            return;
+        }
+
         console.log("jön az ajax hívás");
 
         $.ajax({
@@ -426,11 +466,13 @@
             success: function(response){
                 console.log("Sikeres véleméyn felvitel");
                 alert('Vélemény sikeresen hozzáadva.');
+                document.getElementById('#reviewModal').reset();
                 $('#reviewModal').modal('hide');
             },
             error: function(xhr, status, error) {
                 console.log('Error occurred:', error);
                 alert('Hiba történt a vélemény hozzáadása során.');
+                document.getElementById('#reviewModal').reset();
             }
         });
     })
@@ -456,19 +498,15 @@
                 </div>
                 <div class="form-group">
                     <label for="reservationHour">Óra</label>
-                    <input type="number" id="reservationHour" class="form-control" min="0" max="23" placeholder="Óra">
+                    <input type="number" id="reservationHour" class="form-control" min="0" max="23" placeholder="Óra" pattern="^[0-9]+$">
                 </div>
                 <div class="form-group">
                     <label for="reservationMinute">Perc</label>
-                    <input type="number" id="reservationMinute" class="form-control" min="0" max="59" placeholder="Perc">
+                    <input type="number" id="reservationMinute" class="form-control" min="0" max="59" placeholder="Perc" pattern="^[0-9]+$">
                 </div>
                 <div class="form-group">
                     <label for="expectedPartySize">Várható létszám</label>
-                    <input type="number" id="expectedPartySize" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="business">Üzlet</label>
-                    <input type="text" id="business" class="form-control">
+                    <input type="number" id="expectedPartySize" class="form-control" pattern="^[0-9]+$">
                 </div>
             </div>
             <div class="modal-footer">
@@ -504,7 +542,7 @@
                 </div>
                 <div class="form-group">
                     <label for="textReview">Ossza meg tapasztalatait:</label>
-                    <textarea id="textReview" class="form-control" rows="3" placeholder="Írjon egy véleményt..."></textarea>
+                    <textarea id="textReview" class="form-control" rows="3" placeholder="Írjon egy véleményt...(max. 250 karaker)"></textarea>
                     <input type="hidden" id="userID" value="<%= user.id %>">
                 </div>
             </div>
