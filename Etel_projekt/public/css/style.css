@@ -312,6 +312,66 @@ tr:hover {
     background-color: darkgray;
 }
 
+/* Home page reviews */
+.review-summary {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-summary .badge {
+    font-size: 1rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 10px;
+}
+
+/* Vélemények szekció háttér */
+#reviews-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#reviews-section h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Kártyák alapstílusa */
+.review-card {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    border-color: #007bff; /* Körvonal kiemelés */
+}
+
+/* Kártya tartalom */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #495057;
+    margin-top: 10px;
+    text-align: center;
+}
 
 /* Mobile View */
 @media (max-width: 768px) {

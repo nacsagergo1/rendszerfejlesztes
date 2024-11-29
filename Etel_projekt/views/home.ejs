@@ -77,22 +77,36 @@
         <a href="/reserve" class="btn btn-primary btn-lg">Foglalj most</a>
     </div>
 
-    <div>
-        <h2>Vélemények</h2>
-        <div>
-            <p>Értékelések száma: <%= totalReviews %></p>
-            <p>Átlag: <%=  averageScore %></p>
+    <div id="reviews-section" class="container my-5">
+        <h2 class="text-center mb-4">Vélemények</h2>
+        <div class="text-center mb-4">
+            <p class="review-summary">
+                Értékelések száma: 
+                <span class="badge badge-primary"><%= totalReviews %></span>
+            </p>
+            <p class="review-summary">
+                Átlag: 
+                <span class="badge badge-success"><%= averageScore %></span>
+            </p>
         </div>
-        <% if(reviews && reviews.length > 0){ %>
-            <% reviews.forEach(review =>{ %> 
-                <div>
-                    <p>Szerző: <%= review.user_name%></p>
-                    <p>Értékelés: <%= review.Score %>/5</p>
-                    <p><%= review.Comment %></p>
-                </div>
-            <% }) %>
+        <% if (reviews && reviews.length > 0) { %>
+            <div class="row">
+                <% reviews.forEach(review => { %>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card review-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary"><%= review.user_name %></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Értékelés: <%= review.Score %>/5</h6>
+                                <p class="card-text"><%= review.Comment %></p>
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        <% } else { %>
+            <p class="text-center text-muted">Nincsenek vélemények.</p>
         <% } %>
-    </div>
+    </div>        
 </div>
 
 <!-- Bootstrap JS és jQuery (CDN) -->
