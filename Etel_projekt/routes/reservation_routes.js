@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const ReservationController = require('../config/reservationController');
+const ReservationDAO = require("../dao/reservation_dao");
 const resCont = new ReservationController();
+const resDAO = new ReservationDAO;
 
 router.get('/free-space', async (req, res) => {
     if (!req.session.user) {
@@ -137,15 +139,18 @@ router.post('/create-review', async (req, res) => {
     const { message, score, userId, reservationId } = req.body;
 
     if (!user) {
+        console.log("createReview: Hiányzik a user.");
         return res.status(403).json({ message: 'Nincs jogosultság vélemény hozzáadására.' });
     }
 
     if (score < 1 || score > 5) {
+        console.log("createReview: Nem jó értékelés csillag");
         return res.status(400).json({ message: 'Az értékelésnek 1 és 5 között kell lennie.' });
     }
 
     try {
-        const review = await await resCont.createReview({
+        console.log("createReview: Most fut a lekérés");
+        const review = await resDAO.createReview({
             userId,
             score,
             comment: message,
@@ -153,11 +158,14 @@ router.post('/create-review', async (req, res) => {
         });
 
         if (review) {
+            console.log("createReview: Vélemény létrehozva");
             res.json({ message: 'A vélemény sikeresen hozzáadva.', review });
         } else {
+            console.log("createReview: Véleményt nem hozta létre");
             res.status(400).json({ message: 'Nem sikerült létrehozni a véleményt.' });
         }
     } catch (error) {
+        console.log("createReview: Véleményt nem hozta létre, db hiba.", error)
         res.status(500).json({ message: 'Hiba történt a vélemény létrehozása során.', error });
     }
 });

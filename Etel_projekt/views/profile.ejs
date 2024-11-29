@@ -396,6 +396,45 @@
         })
     });
 
+    $(document).on('click', '#submitReviewBtn', async function(e){
+        e.preventDefault();
+
+        console.log("eljut a submit query-ba");
+
+        const rating = $('input[name="rating"]:checked').val();
+        const comment = $('#textReview').val();
+        const userId =  $('#userID').val();
+        const reservationId = window.currentBookingId;
+
+        if(!rating || !comment || rating == null || comment.trim() === ""){
+            alert('Töltsön ki minden mezőt!');
+            return;
+        }
+
+        console.log("jön az ajax hívás");
+
+        $.ajax({
+            url: '/create-review',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                message: comment,
+                score: rating,
+                userId: userId, 
+                reservationId: reservationId
+            }),
+            success: function(response){
+                console.log("Sikeres véleméyn felvitel");
+                alert('Vélemény sikeresen hozzáadva.');
+                $('#reviewModal').modal('hide');
+            },
+            error: function(xhr, status, error) {
+                console.log('Error occurred:', error);
+                alert('Hiba történt a vélemény hozzáadása során.');
+            }
+        });
+    })
+
     document.addEventListener('DOMContentLoaded', fetchReservations);
 </script>
 
@@ -466,6 +505,7 @@
                 <div class="form-group">
                     <label for="textReview">Ossza meg tapasztalatait:</label>
                     <textarea id="textReview" class="form-control" rows="3" placeholder="Írjon egy véleményt..."></textarea>
+                    <input type="hidden" id="userID" value="<%= user.id %>">
                 </div>
             </div>
             <div class="modal-footer">
