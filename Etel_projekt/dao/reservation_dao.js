@@ -257,6 +257,8 @@ class ReservationDAO{
             [reservationId]
         );
 
+        console.log(existingReview);
+
         if (existingReview.length > 0) {
             return false;
         }

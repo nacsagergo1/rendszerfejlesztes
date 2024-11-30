@@ -152,12 +152,13 @@ router.post('/create-review', async (req, res) => {
         console.log("createReview: Most fut a lekérés");
         const review = await resDAO.createReview(userId, score, message, reservationId);
 
+        console.log(review);
         if (review) {
             console.log("createReview: Vélemény létrehozva");
             res.json({ message: 'A vélemény sikeresen hozzáadva.', review });
         } else {
             console.log("createReview: Véleményt nem hozta létre");
-            res.status(400).json({ message: 'Nem sikerült létrehozni a véleményt.' });
+            res.status(400).json({ message: 'Ehhez a foglaláshoz már írt véleményt.' });
         }
     } catch (error) {
         console.log("createReview: Véleményt nem hozta létre, db hiba.", error)

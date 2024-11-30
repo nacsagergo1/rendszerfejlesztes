@@ -463,14 +463,14 @@
                 reservationId: reservationId
             }),
             success: function(response){
-                console.log("Sikeres véleméyn felvitel");
+                console.log("Sikeres vélemény felvitel");
                 alert('Vélemény sikeresen hozzáadva.');
                 document.getElementById('#reviewModal').reset();
                 $('#reviewModal').modal('hide');
             },
             error: function(xhr, status, error) {
                 console.log('Error occurred:', error);
-                alert('Hiba történt a vélemény hozzáadása során.');
+                alert('Hiba történt: ' + (xhr.responseJSON.message || 'Ismeretlen hiba történt.'));
                 document.getElementById('#reviewModal').reset();
             }
         });
